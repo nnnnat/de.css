@@ -1,0 +1,11 @@
+# ide junk
+.alm
+.idea
+.vscode
+
+# npm junk
+*.log
+node_modules
+
+# os junk
+.DS_Store
