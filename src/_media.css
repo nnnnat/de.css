@@ -1,0 +1,32 @@
+/*
+  media:
+*/
+
+audio,
+figure,
+img,
+video {
+  display: block;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* video embeds */
+.vd {
+  display: block;
+  height: 0;
+  max-width: 100%;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+
+  iframe,
+  object,
+  embed {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+}

@@ -1,0 +1,28 @@
+/*
+  container
+*/
+.cn {
+  margin: auto;
+  padding: $ms2;
+  width: 100%;
+
+  &0 {
+    max-width: $xs;
+  }
+
+  &1 {
+    max-width: $sm;
+  }
+
+  &2 {
+    max-width: $md;
+  }
+
+  &3 {
+    max-width: $lg;
+  }
+
+  &4 {
+    max-width: $xl;
+  }
+}

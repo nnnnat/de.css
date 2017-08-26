@@ -1,0 +1,105 @@
+/*
+  form:
+*/
+
+form {
+
+}
+
+/* label */
+label {
+  display: block;
+  font-size: $ms1;
+  line-height: $leadingTitle;
+  margin: 0 0 $ms2;
+  width: 100%;
+
+  .group &,
+  .gp & {
+    margin: 0 $ms $ms2;
+
+    &:first-of-type,
+    &:last-of-type {
+      margin:  0 0 $ms2;
+    }
+  }
+}
+
+legend {
+  display: block;
+  font-size:  $ms2;
+  line-height: $leadingTitle;
+  margin:  0;
+}
+
+/* fields */
+:--txInput,
+select,
+textarea {
+  background-color: $white;
+  border: $line solid $gray;
+  border-radius: 0;
+  color: $black;
+  display: block;
+  font-size: $ms1;
+  margin: $ms 0 0;
+  padding: $ms;
+  width: inherit;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  &:invalid {
+    border-color: $red;
+    color: $red;
+  }
+
+  &:disabled {
+    background-color: $gray;
+    border-color: color($gray shade(30%));
+    cursor: not-allowed;
+  }
+}
+
+input[type=radio],
+input[type=checkbox] {
+  font-size: $ms2;
+  margin: 0 $ms 0 0;
+
+  &:disabled {
+    background-color: $gray;
+    border-color: color($gray shade(30%));
+    cursor: not-allowed;
+  }
+}
+
+select {
+  background-image:  url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2IiB2aWV3Qm94PSIwIDAgMTYgMTYiPgo8cGF0aCBkPSJNMTIuNDcxIDUuNTI5Yy0wLjI1OC0wLjI1OC0wLjY4My0wLjI1OC0wLjk0MiAwbC0zLjUyOSAzLjUyOS0zLjUyOS0zLjUyOWMtMC4yNTgtMC4yNTgtMC42ODMtMC4yNTgtMC45NDIgMHMtMC4yNTggMC42ODMgMCAwLjk0Mmw0IDRjMC4xMjkgMC4xMjkgMC4zIDAuMTk2IDAuNDcxIDAuMTk2czAuMzQyLTAuMDY3IDAuNDcxLTAuMTk2bDQtNGMwLjI2Mi0wLjI1OCAwLjI2Mi0wLjY4MyAwLTAuOTQyeiI+PC9wYXRoPgo8L3N2Zz4=);
+  background-position: calc(100% - $ms);
+  background-size: $ms3;
+}
+
+textarea {
+  min-height:  8.75rem;
+  resize: vertical;
+}
+
+::placeholder {
+  color: inherit;
+  opacity:  .5;
+}
+
+/* errors */
+.err {
+  color: $red;
+  display: none;
+  font-size: 80%;
+  margin: $ms 0 0;
+
+  :invalid + & {
+    display: block;
+  }
+}
+
+

@@ -1,0 +1,114 @@
+{
+  "name": "de.css",
+  "version": "1.0.0",
+  "description": "de.css is a default set of CSS Modules for designing mobile first interfaces",
+  "styles": "/dist/de.min.css",
+  "main": "/dist/de.css",
+  "scripts": {
+    "build": "node_modules/.bin/postcss dist/de.css -u cssnano -o dist/de.min.css --no-map",
+    "prebuild": "npm i && npm start",
+    "start": "npm run css",
+    "dev": "run-p browserSync css:watch",
+    "css": "node_modules/.bin/postcss src/de.css -o dist/de.css",
+    "css:watch": "node_modules/.bin/postcss src/de.css -o dist/de.css -w",
+    "browserSync": "node_modules/.bin/browser-sync start -s 'dist' -f 'dist' --port 3000 --no-ghost-mode"
+  },
+  "keywords": [
+    "internets"
+  ],
+  "author": "Nat Hamilton <info@nathamilton.com>",
+  "license": "MIT",
+  "postcss": {
+    "plugins": {
+      "postcss-import": {},
+      "postcss-each": {},
+      "postcss-simple-vars": {
+        "variables": {
+          "aqua": "#7FDBFF",
+          "blue": "#0074D9",
+          "navy": "#001F3F",
+          "teal": "#39CCCC",
+          "green": "#2ECC40",
+          "olive": "#3D9970",
+          "lime": "#01FF70",
+          "yellow": "#FFDC00",
+          "orange": "#FF851B",
+          "red": "#FF4136",
+          "fuchsia": "#F012BE",
+          "purple": "#B10DC9",
+          "maroon": "#85144B",
+          "white": "#FFFFFF",
+          "silver": "#DDDDDD",
+          "gray": "#AAAAAA",
+          "black": "#111111",
+          "font": "system-ui, sans-serif",
+          "leading": "1.5",
+          "leadingTitle": "1.25",
+          "line": ".065rem",
+          "ms": ".5rem",
+          "ms0": ".5rem",
+          "ms1": ".875rem",
+          "ms2": "1rem",
+          "ms3": "1.25rem",
+          "ms4": "1.5rem",
+          "ms5": "2.25rem",
+          "ms6": "3rem",
+          "xs": "30rem",
+          "sm": "48rem",
+          "md": "62rem",
+          "lg": "75rem",
+          "xl": "100rem"
+        }
+      },
+      "postcss-nested": {},
+      "postcss-custom-media": {
+        "extensions": {
+          "--xs": "(min-width: 30rem)",
+          "--sm": "(min-width: 48rem)",
+          "--md": "(min-width: 62rem)",
+          "--lg": "(min-width: 75rem)",
+          "--xl": "(min-width: 100rem)"
+        }
+      },
+      "postcss-custom-selectors": {
+        "extensions": {
+          ":--enter": ":hover, :focus",
+          ":--txInput": "input[type=text], input[type=email], input[type=password], input[type=search], input[type=number], input[type=tel], input[type=date]"
+        }
+      },
+      "postcss-color-function": {},
+      "postcss-font-family-system-ui": {},
+      "autoprefixer": {}
+    }
+  },
+  "stylelint": {
+    "extends": "stylelint-de-standard"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "IE 11"
+  ],
+  "devDependencies": {
+    "autoprefixer": "^7.1.2",
+    "browser-sync": "^2.18.13",
+    "cssnano": "^3.10.0",
+    "npm-run-all": "^4.1.0",
+    "postcss": "^6.0.8",
+    "postcss-cli": "^4.1.0",
+    "postcss-color-function": "^4.0.0",
+    "postcss-custom-media": "^6.0.0",
+    "postcss-custom-selectors": "^4.0.1",
+    "postcss-each": "^0.10.0",
+    "postcss-font-family-system-ui": "^2.0.1",
+    "postcss-import": "^10.0.0",
+    "postcss-load-config": "^1.2.0",
+    "postcss-loader": "^2.0.6",
+    "postcss-nested": "^2.1.0",
+    "postcss-simple-vars": "^4.0.0",
+    "stylelint": "^8.0.0",
+    "stylelint-de-standard": "1.0.0"
+  },
+  "dependencies": {
+    "reset.css": "^2.0.2"
+  }
+}

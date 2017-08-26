@@ -1,0 +1,671 @@
+/*
+  cell
+*/
+.cl {
+  flex-basis: 100%;
+  max-width: 100%;
+  flex-grow: 0;
+  flex-shrink: 1;
+  max-width: 100%;
+  width: auto;
+
+  /* base cell sizes */
+  &--1 {
+    flex-basis: 8.3333%;
+    max-width: 8.3333%;
+  }
+
+  &--1-6,
+  &--2 {
+    flex-basis: 16.6667%;
+    max-width: 16.6667%;
+  }
+
+  &--1-5 {
+    flex-basis: 20%;
+    max-width: 20%;
+  }
+
+  &--1-4,
+  &--3,
+  &--qt {
+    flex-basis: 25%;
+    max-width: 25%;
+  }
+
+  &--2-6,
+  &--4,
+  &--td {
+    flex-basis: 33.3333%;
+    max-width: 33.3333%;
+  }
+
+  &--2-5 {
+    flex-basis: 40%;
+    max-width: 40%;
+  }
+
+  &--5 {
+    flex-basis: 41.6667%;
+    max-width: 41.6667%;
+  }
+
+  &--2-4,
+  &--3-6,
+  &--6,
+  &--hf {
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+
+  &--7 {
+    flex-basis: 58.3333%;
+    max-width: 58.3333%;
+  }
+
+  &--3-5 {
+    flex-basis: 60%;
+    max-width: 60%;
+  }
+
+  &--4-6,
+  &--8 {
+    flex-basis: 66.6667%;
+    max-width: 66.6667%;
+  }
+
+  &--3-4,
+  &--9 {
+    flex-basis: 75%;
+    max-width: 75%;
+  }
+
+  &--4-5 {
+    flex-basis: 80%;
+    max-width: 80%;
+  }
+
+  &--5-6,
+  &--10 {
+    flex-basis: 83.3333%;
+    max-width: 83.3333%;
+  }
+
+  &--11 {
+    flex-basis: 91.6667%;
+    max-width: 91.6667%;
+  }
+
+  &--4-4,
+  &--5-5,
+  &--6-6,
+  &--12,
+  &--full {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+
+  &--fit {
+    flex-grow: 1;
+    flex-basis: auto;
+    max-width: auto;
+  }
+
+  /* order */
+  @each $i in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 {
+    &--or$(i) {
+      order: $(i);
+    }
+  }
+
+  /* extra small cell sizes */
+  @media (--xs) {
+    &--xs-1 {
+      flex-basis: 8.3333%;
+      max-width: 8.3333%;
+    }
+
+    &--xs-1-6,
+    &--xs-2 {
+      flex-basis: 16.6667%;
+      max-width: 16.6667%;
+    }
+
+    &--xs-1-5 {
+      flex-basis: 20%;
+      max-width: 20%;
+    }
+
+    &--xs-1-4,
+    &--xs-3,
+    &--xs-qt {
+      flex-basis: 25%;
+      max-width: 25%;
+    }
+
+    &--xs-2-6,
+    &--xs-4,
+    &--xs-td {
+      flex-basis: 33.3333%;
+      max-width: 33.3333%;
+    }
+
+    &--xs-2-5 {
+      flex-basis: 40%;
+      max-width: 40%;
+    }
+
+    &--xs-5 {
+      flex-basis: 41.6667%;
+      max-width: 41.6667%;
+    }
+
+    &--xs-2-4,
+    &--xs-3-6,
+    &--xs-6,
+    &--xs-hf {
+      flex-basis: 50%;
+      max-width: 50%;
+    }
+
+    &--xs-7 {
+      flex-basis: 58.3333%;
+      max-width: 58.3333%;
+    }
+
+    &--xs-3-5 {
+      flex-basis: 60%;
+      max-width: 60%;
+    }
+
+    &--xs-4-6,
+    &--xs-8 {
+      flex-basis: 66.6667%;
+      max-width: 66.6667%;
+    }
+
+    &--xs-3-4,
+    &--xs-9 {
+      flex-basis: 75%;
+      max-width: 75%;
+    }
+
+    &--xs-4-5 {
+      flex-basis: 80%;
+      max-width: 80%;
+    }
+
+    &--xs-5-6,
+    &--xs-10 {
+      flex-basis: 83.3333%;
+      max-width: 83.3333%;
+    }
+
+    &--xs-11 {
+      flex-basis: 91.6667%;
+      max-width: 91.6667%;
+    }
+
+    &--xs-4-4,
+    &--xs-5-5,
+    &--xs-6-6,
+    &--xs-12,
+    &--xs-full {
+      flex-basis: 100%;
+      max-width: 100%;
+    }
+
+    &--xs-fit {
+      flex-grow: 1;
+      flex-basis: auto;
+      max-width: auto;
+    }
+
+    /* order */
+    @each $i in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 {
+      &--xs-or$(i) {
+        order: $(i);
+      }
+    }
+  }
+
+  /* small cell sizes */
+  @media (--sm) {
+    &--sm-1 {
+      flex-basis: 8.3333%;
+      max-width: 8.3333%;
+    }
+
+    &--sm-1-6,
+    &--sm-2 {
+      flex-basis: 16.6667%;
+      max-width: 16.6667%;
+    }
+
+    &--sm-1-5 {
+      flex-basis: 20%;
+      max-width: 20%;
+    }
+
+    &--sm-1-4,
+    &--sm-3,
+    &--sm-qt {
+      flex-basis: 25%;
+      max-width: 25%;
+    }
+
+    &--sm-2-6,
+    &--sm-4,
+    &--sm-td {
+      flex-basis: 33.3333%;
+      max-width: 33.3333%;
+    }
+
+    &--sm-2-5 {
+      flex-basis: 40%;
+      max-width: 40%;
+    }
+
+    &--sm-5 {
+      flex-basis: 41.6667%;
+      max-width: 41.6667%;
+    }
+
+    &--sm-2-4,
+    &--sm-3-6,
+    &--sm-6,
+    &--sm-hf {
+      flex-basis: 50%;
+      max-width: 50%;
+    }
+
+    &--sm-7 {
+      flex-basis: 58.3333%;
+      max-width: 58.3333%;
+    }
+
+    &--sm-3-5 {
+      flex-basis: 60%;
+      max-width: 60%;
+    }
+
+    &--sm-4-6,
+    &--sm-8 {
+      flex-basis: 66.6667%;
+      max-width: 66.6667%;
+    }
+
+    &--sm-3-4,
+    &--sm-9 {
+      flex-basis: 75%;
+      max-width: 75%;
+    }
+
+    &--sm-4-5 {
+      flex-basis: 80%;
+      max-width: 80%;
+    }
+
+    &--sm-5-6,
+    &--sm-10 {
+      flex-basis: 83.3333%;
+      max-width: 83.3333%;
+    }
+
+    &--sm-11 {
+      flex-basis: 91.6667%;
+      max-width: 91.6667%;
+    }
+
+    &--sm-4-4,
+    &--sm-5-5,
+    &--sm-6-6,
+    &--sm-12,
+    &--sm-full {
+      flex-basis: 100%;
+      max-width: 100%;
+    }
+
+    &--sm-fit {
+      flex-grow: 1;
+      flex-basis: auto;
+      max-width: auto;
+    }
+
+    @each $i in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 {
+      &--sm-or$(i) {
+        order: $(i);
+      }
+    }
+  }
+
+  /* medium cell sizes */
+  @media (--md) {
+    &--md-1 {
+      flex-basis: 8.3333%;
+      max-width: 8.3333%;
+    }
+
+    &--md-1-6,
+    &--md-2 {
+      flex-basis: 16.6667%;
+      max-width: 16.6667%;
+    }
+
+    &--md-1-5 {
+      flex-basis: 20%;
+      max-width: 20%;
+    }
+
+    &--md-1-4,
+    &--md-3,
+    &--md-qt {
+      flex-basis: 25%;
+      max-width: 25%;
+    }
+
+    &--md-2-6,
+    &--md-4,
+    &--md-td {
+      flex-basis: 33.3333%;
+      max-width: 33.3333%;
+    }
+
+    &--md-2-5 {
+      flex-basis: 40%;
+      max-width: 40%;
+    }
+
+    &--md-5 {
+      flex-basis: 41.6667%;
+      max-width: 41.6667%;
+    }
+
+    &--md-2-4,
+    &--md-3-6,
+    &--md-6,
+    &--md-hf {
+      flex-basis: 50%;
+      max-width: 50%;
+    }
+
+    &--md-7 {
+      flex-basis: 58.3333%;
+      max-width: 58.3333%;
+    }
+
+    &--md-3-5 {
+      flex-basis: 60%;
+      max-width: 60%;
+    }
+
+    &--md-4-6,
+    &--md-8 {
+      flex-basis: 66.6667%;
+      max-width: 66.6667%;
+    }
+
+    &--md-3-4,
+    &--md-9 {
+      flex-basis: 75%;
+      max-width: 75%;
+    }
+
+    &--md-4-5 {
+      flex-basis: 80%;
+      max-width: 80%;
+    }
+
+    &--md-5-6,
+    &--md-10 {
+      flex-basis: 83.3333%;
+      max-width: 83.3333%;
+    }
+
+    &--md-11 {
+      flex-basis: 91.6667%;
+      max-width: 91.6667%;
+    }
+
+    &--md-4-4,
+    &--md-5-5,
+    &--md-6-6,
+    &--md-12,
+    &--md-full {
+      flex-basis: 100%;
+      max-width: 100%;
+    }
+
+    &--md-fit {
+      flex-grow: 1;
+      flex-basis: auto;
+      max-width: auto;
+    }
+
+    @each $i in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 {
+      &--md-or$(i) {
+        order: $(i);
+      }
+    }
+  }
+
+  /* large cell sizes */
+  @media (--lg) {
+    &--lg-1 {
+      flex-basis: 8.3333%;
+      max-width: 8.3333%;
+    }
+
+    &--lg-1-6,
+    &--lg-2 {
+      flex-basis: 16.6667%;
+      max-width: 16.6667%;
+    }
+
+    &--lg-1-5 {
+      flex-basis: 20%;
+      max-width: 20%;
+    }
+
+    &--lg-1-4,
+    &--lg-3,
+    &--lg-qt {
+      flex-basis: 25%;
+      max-width: 25%;
+    }
+
+    &--lg-2-6,
+    &--lg-4,
+    &--lg-td {
+      flex-basis: 33.3333%;
+      max-width: 33.3333%;
+    }
+
+    &--lg-2-5 {
+      flex-basis: 40%;
+      max-width: 40%;
+    }
+
+    &--lg-5 {
+      flex-basis: 41.6667%;
+      max-width: 41.6667%;
+    }
+
+    &--lg-2-4,
+    &--lg-3-6,
+    &--lg-6,
+    &--lg-hf {
+      flex-basis: 50%;
+      max-width: 50%;
+    }
+
+    &--lg-7 {
+      flex-basis: 58.3333%;
+      max-width: 58.3333%;
+    }
+
+    &--lg-3-5 {
+      flex-basis: 60%;
+      max-width: 60%;
+    }
+
+    &--lg-4-6,
+    &--lg-8 {
+      flex-basis: 66.6667%;
+      max-width: 66.6667%;
+    }
+
+    &--lg-3-4,
+    &--lg-9 {
+      flex-basis: 75%;
+      max-width: 75%;
+    }
+
+    &--lg-4-5 {
+      flex-basis: 80%;
+      max-width: 80%;
+    }
+
+    &--lg-5-6,
+    &--lg-10 {
+      flex-basis: 83.3333%;
+      max-width: 83.3333%;
+    }
+
+    &--lg-11 {
+      flex-basis: 91.6667%;
+      max-width: 91.6667%;
+    }
+
+    &--lg-4-4,
+    &--lg-5-5,
+    &--lg-6-6,
+    &--lg-12,
+    &--lg-full {
+      flex-basis: 100%;
+      max-width: 100%;
+    }
+
+    &--lg-fit {
+      flex-grow: 1;
+      flex-basis: auto;
+      max-width: auto;
+    }
+
+    @each $i in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 {
+      &--lg-or$(i) {
+        order: $(i);
+      }
+    }
+  }
+
+  /* extra large cell sizes */
+  @media (--xl) {
+    &--xl-1 {
+      flex-basis: 8.3333%;
+      max-width: 8.3333%;
+    }
+
+    &--xl-1-6,
+    &--xl-2 {
+      flex-basis: 16.6667%;
+      max-width: 16.6667%;
+    }
+
+    &--xl-1-5 {
+      flex-basis: 20%;
+      max-width: 20%;
+    }
+
+    &--xl-1-4,
+    &--xl-3,
+    &--xl-qt {
+      flex-basis: 25%;
+      max-width: 25%;
+    }
+
+    &--xl-2-6,
+    &--xl-4,
+    &--xl-td {
+      flex-basis: 33.3333%;
+      max-width: 33.3333%;
+    }
+
+    &--xl-2-5 {
+      flex-basis: 40%;
+      max-width: 40%;
+    }
+
+    &--xl-5 {
+      flex-basis: 41.6667%;
+      max-width: 41.6667%;
+    }
+
+    &--xl-2-4,
+    &--xl-3-6,
+    &--xl-6,
+    &--xl-hf {
+      flex-basis: 50%;
+      max-width: 50%;
+    }
+
+    &--xl-7 {
+      flex-basis: 58.3333%;
+      max-width: 58.3333%;
+    }
+
+    &--xl-3-5 {
+      flex-basis: 60%;
+      max-width: 60%;
+    }
+
+    &--xl-4-6,
+    &--xl-8 {
+      flex-basis: 66.6667%;
+      max-width: 66.6667%;
+    }
+
+    &--xl-3-4,
+    &--xl-9 {
+      flex-basis: 75%;
+      max-width: 75%;
+    }
+
+    &--xl-4-5 {
+      flex-basis: 80%;
+      max-width: 80%;
+    }
+
+    &--xl-5-6,
+    &--xl-10 {
+      flex-basis: 83.3333%;
+      max-width: 83.3333%;
+    }
+
+    &--xl-11 {
+      flex-basis: 91.6667%;
+      max-width: 91.6667%;
+    }
+
+    &--xl-4-4,
+    &--xl-5-5,
+    &--xl-6-6,
+    &--xl-12,
+    &--xl-full {
+      flex-basis: 100%;
+      max-width: 100%;
+    }
+
+    &--xl-fit {
+      flex-grow: 1;
+      flex-basis: auto;
+      max-width: auto;
+    }
+
+    @each $i in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 {
+      &--xl-or$(i) {
+        order: $(i);
+      }
+    }
+  }
+}

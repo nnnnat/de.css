@@ -1,0 +1,76 @@
+/*
+ backgbround:
+*/
+.bg {
+
+  /* background color utils */
+  &--navy {
+    background-color: $navy;
+  }
+
+  &--blue {
+    background-color: $blue;
+  }
+
+  &--aqua {
+    background-color: $aqua;
+  }
+
+  &--teal {
+    background-color: $teal;
+  }
+
+  &--olive {
+    background-color: $olive;
+  }
+
+  &--green {
+    background-color: $green;
+  }
+
+  &--lime {
+    background-color: $lime;
+  }
+
+  &--yellow {
+    background-color: $yellow;
+  }
+
+  &--orange {
+    background-color: $orange;
+  }
+
+  &--red {
+    background-color: $red;
+  }
+
+  &--fuchsia,
+  &--pink {
+    background-color: $fuchsia;
+  }
+
+  &--purple {
+    background-color: $purple;
+  }
+
+  &--maroon {
+    background-color: $maroon;
+  }
+
+  &--white {
+    background-color: $white;
+  }
+
+  &--gray,
+  &--grey {
+    background-color: $gray;
+  }
+
+  &--silver {
+    background-color: $silver;
+  }
+
+  &--black {
+    background-color: $black;
+  }
+}

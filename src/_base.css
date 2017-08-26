@@ -1,0 +1,38 @@
+/*
+  base:
+*/
+
+*,
+*:before,
+*:after {
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+}
+
+html {
+  cursor: default;
+}
+
+a,
+area,
+button,
+input,
+label,
+select,
+textarea,
+[tabindex] {
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+}
+
+/* links */
+a:not(.btn) {
+  border-bottom: $line solid currentColor;
+  color: inherit;
+  opacity: 1;
+  text-decoration: none;
+
+  &:--enter {
+    opacity: .75;
+  }
+}

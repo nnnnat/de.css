@@ -1,0 +1,150 @@
+/*
+  text:
+*/
+.tx {
+  /* transform */
+  &--uppercase {
+    text-transform: uppercase;
+  }
+
+  &--lowercase {
+    text-transform: lowercase;
+  }
+
+  &--capitalize {
+    text-transform: capitalize;
+  }
+
+  /* alignment */
+  &--center {
+    text-align: center;
+  }
+
+  &--left {
+    text-align: left;
+  }
+
+  &--right {
+    text-align: right;
+  }
+
+  &--justify {
+    text-align: justify;
+  }
+
+  /* simple size bumps */
+  &--large {
+    font-size: 180%;
+  }
+
+  &--small {
+    font-size: 50%;
+  }
+
+  &--lead {
+    font-size: $ms4;
+    line-height: $leadingTitle;
+    margin: 0 0 $ms4;
+  }
+
+  /* line measue */
+  &--measure {
+    max-width: 30em;
+  }
+
+  &--measure-wide {
+    max-width: 34em;
+  }
+
+  &--measure-narrow {
+    max-width: 20em;
+  }
+
+  /* display headlines */
+  &--display1 {
+    font-size: 6rem;
+    line-height: $leadingTitle;
+    margin: 0;
+    max-width: 30em;
+    word-break: break-all;
+  }
+
+  &--display0 {
+    font-size: 5rem;
+    line-height: $leadingTitle;
+    margin: 0;
+    max-width: 30em;
+    word-break: break-all;
+  }
+
+  /* color utils */
+  &--navy {
+    color: $navy;
+  }
+
+  &--blue {
+    color: $blue;
+  }
+
+  &--aqua {
+    color: $aqua;
+  }
+
+  &--teal {
+    color: $teal;
+  }
+
+  &--olive {
+    color: $olive;
+  }
+
+  &--green {
+    color: $green;
+  }
+
+  &--lime {
+    color: $lime;
+  }
+
+  &--yellow {
+    color: $yellow;
+  }
+
+  &--orange {
+    color: $orange;
+  }
+
+  &--red {
+    color: $red;
+  }
+
+  &--fuchsia,
+  &--pink {
+    color: $fuchsia;
+  }
+
+  &--purple {
+    color: $purple;
+  }
+
+  &--maroon {
+    color: $maroon;
+  }
+
+  &--white {
+    color: $white;
+  }
+
+  &--silver {
+    color: $silver;
+  }
+
+  &--gray,
+  &--grey {
+    color: $gray;
+  }
+
+  &--black {
+    color: $black;
+  }
+}

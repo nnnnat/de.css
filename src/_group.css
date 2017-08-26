@@ -1,0 +1,32 @@
+/*
+  group:
+*/
+.gp {
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 100%;
+  width: 100%;
+
+  &--start {
+    justify-content: flex-start;
+  }
+
+  &--end {
+    justify-content: flex-end;
+  }
+
+  &--center {
+    justify-content: center;
+  }
+
+  &--full {
+    flex-wrap: wrap;
+    justify-content: center;
+
+    & > * {
+      flex: 1 1 auto;
+    }
+  }
+}

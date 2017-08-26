@@ -1,0 +1,61 @@
+/*
+  button:
+*/
+.btn,
+button,
+input[type="submit"],
+input[type="reset"] {
+  background-color: $black;
+  border: $line solid transparent;
+  color: $white;
+  cursor: pointer;
+  display: inline-block;
+  font-family: inherit;
+  font-size: $ms1;
+  font-weight: bold;
+  line-height: $leading;
+  letter-spacing: $line;
+  margin: 0;
+  padding: $ms $ms2;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  &:disabled {
+    background-color: $gray;
+    border-color: $gray;
+    color: color($gray shade(55%));
+    cursor: not-allowed;
+
+    &:--enter {
+      background-color: $gray;
+      border-color: $gray;
+      color: color($gray shade(50%));
+    }
+  }
+
+  &:--enter {
+    background-color: $white;
+    border-color: currentColor;
+    color: $black;
+  }
+
+  &--alt {
+    background-color: transparent;
+    border-color: currentColor;
+    color: $black;
+
+    &:disabled,
+    &:disabled:--enter {
+      background-color: transparent;
+      border-color: currentColor;
+      color: color($gray shade(25%));
+    }
+  }
+}

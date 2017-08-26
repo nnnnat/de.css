@@ -1,0 +1,199 @@
+/*
+  type:
+*/
+
+body {
+  font: normal normal $ms2/$leading $font;
+}
+
+/* headers */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  letter-spacing: $line;
+  line-height: $leadingTitle;
+  margin: 0 0 $ms;
+}
+
+h1 {
+  font-size: $ms6;
+}
+
+h2 {
+  font-size: $ms5;
+}
+
+h3 {
+  font-size: $ms4;
+}
+
+h4 {
+  font-size: $ms3;
+}
+
+h5 {
+  font-size: $ms2;
+}
+
+h6 {
+  font-size: $ms1;
+}
+
+/* copy */
+p {
+  font-size: $ms2;
+  margin: 0 0 $ms1;
+}
+
+figcaption {
+  font-size: $ms2;
+  margin: $ms2 0;
+  font-style: italic;
+}
+
+blockquote {
+  border-left: $line solid currentColor;
+  font-size: 125%;
+  line-height: $leadingTitle;
+  margin: $ms 0;
+  padding: 0 0 0 $ms4;
+}
+
+address {
+  font-size: $ms2;
+  margin: 0 0 $ms1;
+}
+
+caption {
+  margin: 0 0 $ms;
+  text-align: left;
+}
+
+/* list */
+ul {
+  list-style: disc;
+  margin: $ms2 0 $ms2 $ms;
+  padding: 0 0 0 $ms2;
+
+  & ul,
+  & ol {
+    margin: .25rem 0;
+  }
+
+  & ul {
+    list-style: circle;
+  }
+}
+
+ol {
+  list-style: decimal;
+  margin: $ms2 0 $ms2 $ms;
+  padding: 0 0 0 $ms2;
+
+  & ul,
+  & ol {
+    margin: .25rem 0;
+  }
+}
+
+dl {
+  margin: $ms2 0;
+
+  & dt {
+    font-weight: bold;
+    margin: 0 0 $ms;
+  }
+
+  & dd {
+    margin: 0 0 $ms2;
+
+    &:last-of-type {
+      margin: 0;
+    }
+  }
+}
+
+/* inline tags */
+mark {
+  background-color: $yellow;
+  color: $navy;
+  padding: .25rem;
+}
+
+small {
+  font-size: 80%;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+del {
+  background-color: color($gray a(50%));
+  color: $navy;
+  padding: .25rem;
+}
+
+ins {
+  background-color: color($yellow a(50%));
+  color: $navy;
+  padding: .25rem;
+}
+
+i,
+em {
+  font-style: italic;
+}
+
+abbr {
+  cursor: help;
+  border-bottom: $line dotted color($black a(50%));
+}
+
+code {
+  background-color: $silver;
+  color: $black;
+  display: inline-block;
+  font-family: monospace;
+  font-size: 80%;
+  margin: $ms 0;
+  padding: $ms $ms2;
+  word-break: break-all;
+}
+
+pre {
+  background-color: $silver;
+  margin: $ms2 0;
+  white-space: pre-wrap;
+}
+
+::selection {
+  background-color: $aqua;
+  color: $white;
+  text-shadow: none;
+}
+
+/* hr */
+hr {
+  border: none;
+  border-top: $line solid currentColor;
+  color: inherit;
+  display: block;
+  margin: $ms4 0;
+}
+
+/* icons */
+.icon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  vertical-align: bottom;
+}
