@@ -11,7 +11,8 @@
     "dev": "run-p browserSync css:watch",
     "css": "node_modules/.bin/postcss src/de.css -o dist/de.css",
     "css:watch": "node_modules/.bin/postcss src/de.css -o dist/de.css -w",
-    "browserSync": "node_modules/.bin/browser-sync start -s 'dist' -f 'dist' --port 3000 --no-ghost-mode"
+    "browserSync": "node_modules/.bin/browser-sync start -s 'dist' -f 'dist' --port 3000 --no-ghost-mode",
+    "lint": "node_modules/.bin/stylelint ./src/**/*.css"
   },
   "keywords": [
     "internets"

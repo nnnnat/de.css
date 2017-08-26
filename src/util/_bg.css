@@ -2,7 +2,6 @@
  backgbround:
 */
 .bg {
-
   /* background color utils */
   &--navy {
     background-color: $navy;
