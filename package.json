@@ -1,6 +1,6 @@
 {
   "name": "de.css",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "de.css is a default set of CSS Modules for designing mobile first interfaces",
   "styles": "/dist/de.min.css",
   "main": "/dist/de.css",
@@ -15,8 +15,16 @@
     "lint": "node_modules/.bin/stylelint ./src/**/*.css"
   },
   "keywords": [
-    "internets"
-  ],
+    "internet",
+    "world wide web",
+    "the net",
+    "the web",
+    "CSS"
+],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:nnnnat/de.css.git"
+  },
   "author": "Nat Hamilton <info@nathamilton.com>",
   "license": "MIT",
   "postcss": {
