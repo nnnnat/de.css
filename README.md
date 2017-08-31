@@ -28,7 +28,7 @@ You can report issues [here](https://github.com/nnnnat/de.css/issues)
 
 ### Frameworks
 * [pure.css](https://purecss.io/)
-* [tacyons.css](tachyons.io)
+* [tacyons.css](http://tachyons.io)
 * [basscss](http://basscss.com/)
 * [bootstrap](http://getbootstrap.com/)
 * [foundation](http://foundation.zurb.com/)
@@ -36,7 +36,7 @@ You can report issues [here](https://github.com/nnnnat/de.css/issues)
 ### Projects
 * [CSS Reset](https://meyerweb.com/eric/tools/css/reset/)
 * [sanitize.css](https://jonathantneal.github.io/sanitize.css/)
-* [Colors](clrs.cc)
+* [Colors](http://clrs.cc)
 
 ### Ideas
 * [OOCSS](https://github.com/stubbornella/oocss/wiki/FAQ)
