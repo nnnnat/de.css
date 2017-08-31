@@ -46,7 +46,7 @@ You can report issues [here](https://github.com/nnnnat/de.css/issues)
 ## Resources
 * [A11y color combos](http://clrs.cc/a11y/)
 * [Feather icons](https://feathericons.com/)
-* [icomoon](icomoon.io/app)
+* [icomoon](https://icomoon.io/app)
 * [modular scale](http://www.modularscale.com/)
 * [solved by flexbox](https://philipwalton.github.io/solved-by-flexbox/)
 * [Embed Responsively](http://embedresponsively.com/)
