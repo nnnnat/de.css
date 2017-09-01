@@ -5,7 +5,7 @@ de.css is a default set of CSS Modules for designing mobile first interfaces
 ## Usage
 
 ```npm i -S de.css``` or
-```TODO: link cdn```
+```<link rel="stylesheet" href="https://unpkg.com/de.css/dist/de.min.css">```
 ## Features
 * IE11+ support
 * Mobile first
