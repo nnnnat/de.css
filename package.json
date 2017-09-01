@@ -2,8 +2,7 @@
   "name": "de.css",
   "version": "0.1.0",
   "description": "de.css is a default set of CSS Modules for designing mobile first interfaces",
-  "styles": "/dist/de.min.css",
-  "main": "/dist/de.css",
+  "main": "/dist/de.min.css",
   "scripts": {
     "build": "node_modules/.bin/postcss dist/de.css -u cssnano -o dist/de.min.css --no-map",
     "prebuild": "npm i && npm run lint && npm start",
