@@ -110,7 +110,6 @@
     "postcss-font-family-system-ui": "^2.0.1",
     "postcss-import": "^10.0.0",
     "postcss-load-config": "^1.2.0",
-    "postcss-loader": "^2.0.6",
     "postcss-nested": "^2.1.0",
     "postcss-simple-vars": "^4.0.0",
     "stylelint": "^8.0.0",
