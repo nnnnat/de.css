@@ -26,24 +26,24 @@
     background-color: $white;
   }
 
-  &--darkwhite,
-  &--darkwhite {
-    background-color: $darkwhite;
+  &--gray0,
+  &--grey0 {
+    background-color: $gray0;
   }
 
-  &--lightgray,
-  &--lightgrey {
-    background-color: $lightgray;
+  &--gray1,
+  &--grey1 {
+    background-color: $gray1;
   }
 
-  &--gray,
-  &--grey {
-    background-color: $gray;
+  &--gray2,
+  &--grey2 {
+    background-color: $gray2;
   }
 
-  &--darkgray,
-  &--darkgrey {
-    background-color: $darkgray;
+  &--gray3,
+  &--grey3 {
+    background-color: $gray3;
   }
 
   &--black {

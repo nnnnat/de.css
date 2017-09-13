@@ -47,7 +47,7 @@ h6 {
 /* copy */
 p {
   font-size: $ms2;
-  margin: 0 0 $ms1;
+  margin: 0 0 $ms2;
 }
 
 figcaption {
@@ -135,7 +135,7 @@ strong {
 }
 
 del {
-  background-color: color($gray a(50%));
+  background-color: color($gray2 a(50%));
   color: $secondary;
   padding: .25rem;
 }
@@ -157,7 +157,7 @@ abbr {
 }
 
 code {
-  background-color: $lightgray;
+  background-color: $gray1;
   color: $black;
   display: inline-block;
   font-family: monospace;
@@ -168,7 +168,7 @@ code {
 }
 
 pre {
-  background-color: $lightgray;
+  background-color: $gray1;
   margin: $ms2 0;
   white-space: pre-wrap;
 }

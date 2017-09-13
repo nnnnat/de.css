@@ -147,7 +147,7 @@ h6 {
 
 p {
   font-size: 1rem;
-  margin: 0 0 .875rem;
+  margin: 0 0 1rem;
 }
 
 figcaption {
@@ -2367,23 +2367,23 @@ th {
     background-color: #FFFFFF;
   }
 
-.bg--darkwhite,
-  .bg--darkwhite {
+.bg--gray0,
+  .bg--grey0 {
     background-color: #F9F9F9;
   }
 
-.bg--lightgray,
-  .bg--lightgrey {
+.bg--gray1,
+  .bg--grey1 {
     background-color: #E9E9E9;
   }
 
-.bg--gray,
-  .bg--grey {
+.bg--gray2,
+  .bg--grey2 {
     background-color: #B2B2B2;
   }
 
-.bg--darkgray,
-  .bg--darkgrey {
+.bg--gray3,
+  .bg--grey3 {
     background-color: #6B6B6B;
   }
 
@@ -2429,6 +2429,11 @@ th {
 
 /* simple size bumps */
 
+.tx--lead {
+    font-size: 1.5rem;
+    line-height: 1.25;
+  }
+
 .tx--large {
     font-size: 180%;
   }
@@ -2437,38 +2442,32 @@ th {
     font-size: 50%;
   }
 
-.tx--lead {
-    font-size: 1.5rem;
-    line-height: 1.25;
-    margin: 0 0 1.5rem;
-  }
-
 /* line measue */
 
-.tx--measure {
-    max-width: 30em;
+.tx--measure0 {
+    max-width: 24em;
   }
 
-.tx--measure-wide {
+.tx--measure1 {
     max-width: 34em;
   }
 
-.tx--measure-narrow {
-    max-width: 20em;
+.tx--measure2 {
+    max-width: 40em;
   }
 
 /* display headlines */
 
-.tx--display1 {
-    font-size: 6rem;
+.tx--display0 {
+    font-size: 5rem;
     line-height: 1.25;
     margin: 0;
     max-width: 30em;
     word-break: break-all;
   }
 
-.tx--display0 {
-    font-size: 5rem;
+.tx--display1 {
+    font-size: 6rem;
     line-height: 1.25;
     margin: 0;
     max-width: 30em;
@@ -2501,23 +2500,23 @@ th {
     color: #FFFFFF;
   }
 
-.tx--darkwhite,
-  .tx--darkwhite {
+.tx--gray0,
+  .tx--grey0 {
     color: #F9F9F9;
   }
 
-.tx--lightgray,
-  .tx--lightgrey {
+.tx--gray1,
+  .tx--grey1 {
     color: #E9E9E9;
   }
 
-.tx--gray,
-  .tx--grey {
+.tx--gray2,
+  .tx--grey2 {
     color: #B2B2B2;
   }
 
-.tx--darkgray,
-  .tx--darkgrey {
+.tx--gray3,
+  .tx--grey3 {
     color: #6B6B6B;
   }
 
@@ -2581,23 +2580,23 @@ th {
     border-color: #FFFFFF;
   }
 
-.bdr--darkwhite,
-  .bdr--darkwhite {
+.bdr--gray0,
+  .bdr--grey0 {
     border-color: #F9F9F9;
   }
 
-.bdr--lightgray,
-  .bdr--lightgrey {
+.bdr--gray1,
+  .bdr--grey1 {
     border-color: #E9E9E9;
   }
 
-.bdr--gray,
-  .bdr--grey {
+.bdr--gray2,
+  .bdr--grey2 {
     border-color: #B2B2B2;
   }
 
-.bdr--darkgray,
-  .bdr--darkgrey {
+.bdr--gray3,
+  .bdr--grey3 {
     border-color: #6B6B6B;
   }
 

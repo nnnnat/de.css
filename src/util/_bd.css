@@ -50,24 +50,24 @@
     border-color: $white;
   }
 
-  &--darkwhite,
-  &--darkwhite {
-    border-color: $darkwhite;
+  &--gray0,
+  &--grey0 {
+    border-color: $gray0;
   }
 
-  &--lightgray,
-  &--lightgrey {
-    border-color: $lightgray;
+  &--gray1,
+  &--grey1 {
+    border-color: $gray1;
   }
 
-  &--gray,
-  &--grey {
-    border-color: $gray;
+  &--gray2,
+  &--grey2 {
+    border-color: $gray2;
   }
 
-  &--darkgray,
-  &--darkgrey {
-    border-color: $darkgray;
+  &--gray3,
+  &--grey3 {
+    border-color: $gray3;
   }
 
   &--black {

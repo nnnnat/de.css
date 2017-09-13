@@ -33,10 +33,10 @@
       "postcss-simple-vars": {
         "variables": {
           "white": "#FFFFFF",
-          "darkwhite": "#F9F9F9",
-          "lightgray": "#E9E9E9",
-          "gray": "#B2B2B2",
-          "darkgray": "#6B6B6B",
+          "gray0": "#F9F9F9",
+          "gray1": "#E9E9E9",
+          "gray2": "#B2B2B2",
+          "gray3": "#6B6B6B",
           "black": "#2F2F2F",
           "error": "#F2416A",
           "alert": "#F5C650",

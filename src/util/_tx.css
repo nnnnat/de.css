@@ -33,6 +33,11 @@
   }
 
   /* simple size bumps */
+  &--lead {
+    font-size: $ms4;
+    line-height: $leadingTitle;
+  }
+
   &--large {
     font-size: 180%;
   }
@@ -41,36 +46,30 @@
     font-size: 50%;
   }
 
-  &--lead {
-    font-size: $ms4;
-    line-height: $leadingTitle;
-    margin: 0 0 $ms4;
-  }
-
   /* line measue */
-  &--measure {
-    max-width: 30em;
+  &--measure0 {
+    max-width: 24em;
   }
 
-  &--measure-wide {
+  &--measure1 {
     max-width: 34em;
   }
 
-  &--measure-narrow {
-    max-width: 20em;
+  &--measure2 {
+    max-width: 40em;
   }
 
   /* display headlines */
-  &--display1 {
-    font-size: 6rem;
+  &--display0 {
+    font-size: 5rem;
     line-height: $leadingTitle;
     margin: 0;
     max-width: 30em;
     word-break: break-all;
   }
 
-  &--display0 {
-    font-size: 5rem;
+  &--display1 {
+    font-size: 6rem;
     line-height: $leadingTitle;
     margin: 0;
     max-width: 30em;
@@ -102,24 +101,24 @@
     color: $white;
   }
 
-  &--darkwhite,
-  &--darkwhite {
-    color: $darkwhite;
+  &--gray0,
+  &--grey0 {
+    color: $gray0;
   }
 
-  &--lightgray,
-  &--lightgrey {
-    color: $lightgray;
+  &--gray1,
+  &--grey1 {
+    color: $gray1;
   }
 
-  &--gray,
-  &--grey {
-    color: $gray;
+  &--gray2,
+  &--grey2 {
+    color: $gray2;
   }
 
-  &--darkgray,
-  &--darkgrey {
-    color: $darkgray;
+  &--gray3,
+  &--grey3 {
+    color: $gray3;
   }
 
   &--black {

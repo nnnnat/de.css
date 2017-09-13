@@ -37,7 +37,7 @@ legend {
 select,
 textarea {
   background-color: $white;
-  border: $line solid $gray;
+  border: $line solid $gray2;
   border-radius: 0;
   color: $black;
   display: block;
@@ -56,8 +56,8 @@ textarea {
   }
 
   &:disabled {
-    background-color: $gray;
-    border-color: color($gray shade(30%));
+    background-color: $gray2;
+    border-color: color($gray2 shade(30%));
     cursor: not-allowed;
   }
 }
@@ -68,8 +68,8 @@ input[type=checkbox] {
   margin: 0 $ms 0 0;
 
   &:disabled {
-    background-color: $gray;
-    border-color: color($gray shade(30%));
+    background-color: $gray2;
+    border-color: color($gray2 shade(30%));
     cursor: not-allowed;
   }
 }

@@ -28,15 +28,15 @@ input[type="reset"] {
   appearance: none;
 
   &:disabled {
-    background-color: $gray;
-    border-color: $gray;
-    color: color($gray shade(55%));
+    background-color: $gray2;
+    border-color: $gray2;
+    color: color($gray2 shade(55%));
     cursor: not-allowed;
 
     &:--enter {
-      background-color: $gray;
-      border-color: $gray;
-      color: color($gray shade(50%));
+      background-color: $gray2;
+      border-color: $gray2;
+      color: color($gray2 shade(50%));
     }
   }
 
@@ -55,7 +55,7 @@ input[type="reset"] {
     &:disabled:--enter {
       background-color: transparent;
       border-color: currentColor;
-      color: color($gray shade(25%));
+      color: color($gray2 shade(25%));
     }
   }
 }
