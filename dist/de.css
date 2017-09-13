@@ -2345,6 +2345,7 @@ th {
 
 .bg {
   /* background color utils */
+  
   /*&--navy {
     background-color: $navy;
   }
@@ -2423,6 +2424,7 @@ th {
 .tx {
 
   /* color utils */
+  
   /*&--navy {
     color: $navy;
   }
@@ -2582,6 +2584,7 @@ th {
   border: .065rem solid currentColor;
 
   /* color utils */
+  
   /*&--navy {
     border-color: $navy;
   }
