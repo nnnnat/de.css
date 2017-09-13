@@ -4,6 +4,7 @@
 
 body {
   font: normal normal $ms2/$leading $font;
+  color: $black;
 }
 
 /* headers */
@@ -119,8 +120,8 @@ dl {
 
 /* inline tags */
 mark {
-  background-color: $yellow;
-  color: $navy;
+  background-color: $alert;
+  color: $secondary;
   padding: .25rem;
 }
 
@@ -135,13 +136,13 @@ strong {
 
 del {
   background-color: color($gray a(50%));
-  color: $navy;
+  color: $secondary;
   padding: .25rem;
 }
 
 ins {
-  background-color: color($yellow a(50%));
-  color: $navy;
+  background-color: color($alert a(50%));
+  color: $secondary;
   padding: .25rem;
 }
 
@@ -156,7 +157,7 @@ abbr {
 }
 
 code {
-  background-color: $silver;
+  background-color: $lightgray;
   color: $black;
   display: inline-block;
   font-family: monospace;
@@ -167,13 +168,13 @@ code {
 }
 
 pre {
-  background-color: $silver;
+  background-color: $lightgray;
   margin: $ms2 0;
   white-space: pre-wrap;
 }
 
 ::selection {
-  background-color: $aqua;
+  background-color: $primary;
   color: $white;
   text-shadow: none;
 }

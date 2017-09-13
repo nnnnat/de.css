@@ -51,8 +51,8 @@ textarea {
   appearance: none;
 
   &:invalid {
-    border-color: $red;
-    color: $red;
+    border-color: $error;
+    color: $error;
   }
 
   &:disabled {
@@ -92,7 +92,7 @@ textarea {
 
 /* errors */
 .err {
-  color: $red;
+  color: $error;
   display: none;
   font-size: 80%;
   margin: $ms 0 0;
@@ -101,5 +101,3 @@ textarea {
     display: block;
   }
 }
-
-

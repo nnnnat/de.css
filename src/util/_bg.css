@@ -3,7 +3,7 @@
 */
 .bg {
   /* background color utils */
-  &--navy {
+  /*&--navy {
     background-color: $navy;
   }
 
@@ -71,5 +71,5 @@
 
   &--black {
     background-color: $black;
-  }
+  }*/
 }

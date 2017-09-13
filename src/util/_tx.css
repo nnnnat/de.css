@@ -78,7 +78,7 @@
   }
 
   /* color utils */
-  &--navy {
+  /*&--navy {
     color: $navy;
   }
 
@@ -146,5 +146,5 @@
 
   &--black {
     color: $black;
-  }
+  }*/
 }

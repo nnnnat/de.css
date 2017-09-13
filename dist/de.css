@@ -102,6 +102,7 @@ a:not(.btn):focus {
 
 body {
   font: normal normal 1rem/1.5 system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  color: #2F2F2F;
 }
 
 /* headers */
@@ -221,8 +222,8 @@ dl dd:last-of-type {
 /* inline tags */
 
 mark {
-  background-color: #FFDC00;
-  color: #001F3F;
+  background-color: #F5C650;
+  color: #623E79;
   padding: .25rem;
 }
 
@@ -236,14 +237,14 @@ strong {
 }
 
 del {
-  background-color: rgba(170, 170, 170, 0.5);
-  color: #001F3F;
+  background-color: rgba(178, 178, 178, 0.5);
+  color: #623E79;
   padding: .25rem;
 }
 
 ins {
-  background-color: rgba(255, 220, 0, 0.5);
-  color: #001F3F;
+  background-color: rgba(245, 198, 80, 0.5);
+  color: #623E79;
   padding: .25rem;
 }
 
@@ -254,12 +255,12 @@ em {
 
 abbr {
   cursor: help;
-  border-bottom: .065rem dotted rgba(17, 17, 17, 0.5);
+  border-bottom: .065rem dotted rgba(47, 47, 47, 0.5);
 }
 
 code {
-  background-color: #DDDDDD;
-  color: #111111;
+  background-color: #E9E9E9;
+  color: #2F2F2F;
   display: inline-block;
   font-family: monospace;
   font-size: 80%;
@@ -269,19 +270,19 @@ code {
 }
 
 pre {
-  background-color: #DDDDDD;
+  background-color: #E9E9E9;
   margin: 1rem 0;
   white-space: pre-wrap;
 }
 
 ::-moz-selection {
-  background-color: #7FDBFF;
+  background-color: #AC6BD6;
   color: #FFFFFF;
   text-shadow: none;
 }
 
 ::selection {
-  background-color: #7FDBFF;
+  background-color: #AC6BD6;
   color: #FFFFFF;
   text-shadow: none;
 }
@@ -350,7 +351,7 @@ video {
 button,
 input[type="submit"],
 input[type="reset"] {
-  background-color: #111111;
+  background-color: #2F2F2F;
   border: .065rem solid transparent;
   color: #FFFFFF;
   cursor: pointer;
@@ -374,9 +375,9 @@ input[type="reset"] {
 }
 
 .btn:disabled, button:disabled, input[type="submit"]:disabled, input[type="reset"]:disabled {
-    background-color: #AAAAAA;
-    border-color: #AAAAAA;
-    color: rgb(76, 76, 76);
+    background-color: #B2B2B2;
+    border-color: #B2B2B2;
+    color: rgb(80, 80, 80);
     cursor: not-allowed;
   }
 
@@ -388,9 +389,9 @@ input[type="submit"]:disabled:hover,
 input[type="submit"]:disabled:focus,
 input[type="reset"]:disabled:hover,
 input[type="reset"]:disabled:focus {
-      background-color: #AAAAAA;
-      border-color: #AAAAAA;
-      color: rgb(85, 85, 85);
+      background-color: #B2B2B2;
+      border-color: #B2B2B2;
+      color: rgb(89, 89, 89);
     }
 
 .btn:hover,
@@ -403,13 +404,13 @@ input[type="reset"]:hover,
 input[type="reset"]:focus {
     background-color: #FFFFFF;
     border-color: currentColor;
-    color: #111111;
+    color: #2F2F2F;
   }
 
 .btn--alt, button--alt, input[type="submit"]--alt, input[type="reset"]--alt {
     background-color: transparent;
     border-color: currentColor;
-    color: #111111;
+    color: #2F2F2F;
   }
 
 .btn--alt:disabled,
@@ -426,7 +427,7 @@ input[type="reset"]--alt:disabled:hover,
 input[type="reset"]--alt:disabled:focus {
       background-color: transparent;
       border-color: currentColor;
-      color: rgb(128, 128, 128);
+      color: rgb(134, 134, 134);
     }
 
 /*
@@ -478,9 +479,9 @@ input[type=date],
 select,
 textarea {
   background-color: #FFFFFF;
-  border: .065rem solid #AAAAAA;
+  border: .065rem solid #B2B2B2;
   border-radius: 0;
-  color: #111111;
+  color: #2F2F2F;
   display: block;
   font-size: .875rem;
   margin: .5rem 0 0;
@@ -501,8 +502,8 @@ input[type=tel]:invalid,
 input[type=date]:invalid,
 select:invalid,
 textarea:invalid {
-    border-color: #FF4136;
-    color: #FF4136;
+    border-color: #F2416A;
+    color: #F2416A;
   }
 
 input[type=text]:disabled,
@@ -514,8 +515,8 @@ input[type=tel]:disabled,
 input[type=date]:disabled,
 select:disabled,
 textarea:disabled {
-    background-color: #AAAAAA;
-    border-color: rgb(119, 119, 119);
+    background-color: #B2B2B2;
+    border-color: rgb(125, 125, 125);
     cursor: not-allowed;
   }
 
@@ -526,8 +527,8 @@ input[type=checkbox] {
 }
 
 input[type=radio]:disabled, input[type=checkbox]:disabled {
-    background-color: #AAAAAA;
-    border-color: rgb(119, 119, 119);
+    background-color: #B2B2B2;
+    border-color: rgb(125, 125, 125);
     cursor: not-allowed;
   }
 
@@ -560,7 +561,7 @@ textarea {
 /* errors */
 
 .err {
-  color: #FF4136;
+  color: #F2416A;
   display: none;
   font-size: 80%;
   margin: .5rem 0 0;
@@ -575,8 +576,8 @@ textarea {
 */
 
 .tb {
-  -webkit-box-shadow:  inset -5px 0px 3rem -.875rem rgba(17, 17, 17, 0.5);
-          box-shadow:  inset -5px 0px 3rem -.875rem rgba(17, 17, 17, 0.5);
+  -webkit-box-shadow:  inset -5px 0px 3rem -.875rem rgba(47, 47, 47, 0.5);
+          box-shadow:  inset -5px 0px 3rem -.875rem rgba(47, 47, 47, 0.5);
   display: block;
   max-width:  100%;
   overflow-x: scroll;
@@ -2342,81 +2343,156 @@ th {
  backgbround:
 */
 
-/* background color utils */
-
-.bg--navy {
-    background-color: #001F3F;
+.bg {
+  /* background color utils */
+  /*&--navy {
+    background-color: $navy;
   }
 
-.bg--blue {
-    background-color: #0074D9;
+  &--blue {
+    background-color: $blue;
   }
 
-.bg--aqua {
-    background-color: #7FDBFF;
+  &--aqua {
+    background-color: $aqua;
   }
 
-.bg--teal {
-    background-color: #39CCCC;
+  &--teal {
+    background-color: $teal;
   }
 
-.bg--olive {
-    background-color: #3D9970;
+  &--olive {
+    background-color: $olive;
   }
 
-.bg--green {
-    background-color: #2ECC40;
+  &--green {
+    background-color: $green;
   }
 
-.bg--lime {
-    background-color: #01FF70;
+  &--lime {
+    background-color: $lime;
   }
 
-.bg--yellow {
-    background-color: #FFDC00;
+  &--yellow {
+    background-color: $yellow;
   }
 
-.bg--orange {
-    background-color: #FF851B;
+  &--orange {
+    background-color: $orange;
   }
 
-.bg--red {
-    background-color: #FF4136;
+  &--red {
+    background-color: $red;
   }
 
-.bg--fuchsia,
-  .bg--pink {
-    background-color: #F012BE;
+  &--fuchsia,
+  &--pink {
+    background-color: $fuchsia;
   }
 
-.bg--purple {
-    background-color: #B10DC9;
+  &--purple {
+    background-color: $purple;
   }
 
-.bg--maroon {
-    background-color: #85144B;
+  &--maroon {
+    background-color: $maroon;
   }
 
-.bg--white {
-    background-color: #FFFFFF;
+  &--white {
+    background-color: $white;
   }
 
-.bg--gray,
-  .bg--grey {
-    background-color: #AAAAAA;
+  &--gray,
+  &--grey {
+    background-color: $gray;
   }
 
-.bg--silver {
-    background-color: #DDDDDD;
+  &--silver {
+    background-color: $silver;
   }
 
-.bg--black {
-    background-color: #111111;
-  }
+  &--black {
+    background-color: $black;
+  }*/
+}
 
 /*
   text:
 */
+
+.tx {
+
+  /* color utils */
+  /*&--navy {
+    color: $navy;
+  }
+
+  &--blue {
+    color: $blue;
+  }
+
+  &--aqua {
+    color: $aqua;
+  }
+
+  &--teal {
+    color: $teal;
+  }
+
+  &--olive {
+    color: $olive;
+  }
+
+  &--green {
+    color: $green;
+  }
+
+  &--lime {
+    color: $lime;
+  }
+
+  &--yellow {
+    color: $yellow;
+  }
+
+  &--orange {
+    color: $orange;
+  }
+
+  &--red {
+    color: $red;
+  }
+
+  &--fuchsia,
+  &--pink {
+    color: $fuchsia;
+  }
+
+  &--purple {
+    color: $purple;
+  }
+
+  &--maroon {
+    color: $maroon;
+  }
+
+  &--white {
+    color: $white;
+  }
+
+  &--silver {
+    color: $silver;
+  }
+
+  &--gray,
+  &--grey {
+    color: $gray;
+  }
+
+  &--black {
+    color: $black;
+  }*/
+}
 
 /* transform */
 
@@ -2498,84 +2574,83 @@ th {
     word-break: break-all;
   }
 
-/* color utils */
-
-.tx--navy {
-    color: #001F3F;
-  }
-
-.tx--blue {
-    color: #0074D9;
-  }
-
-.tx--aqua {
-    color: #7FDBFF;
-  }
-
-.tx--teal {
-    color: #39CCCC;
-  }
-
-.tx--olive {
-    color: #3D9970;
-  }
-
-.tx--green {
-    color: #2ECC40;
-  }
-
-.tx--lime {
-    color: #01FF70;
-  }
-
-.tx--yellow {
-    color: #FFDC00;
-  }
-
-.tx--orange {
-    color: #FF851B;
-  }
-
-.tx--red {
-    color: #FF4136;
-  }
-
-.tx--fuchsia,
-  .tx--pink {
-    color: #F012BE;
-  }
-
-.tx--purple {
-    color: #B10DC9;
-  }
-
-.tx--maroon {
-    color: #85144B;
-  }
-
-.tx--white {
-    color: #FFFFFF;
-  }
-
-.tx--silver {
-    color: #DDDDDD;
-  }
-
-.tx--gray,
-  .tx--grey {
-    color: #AAAAAA;
-  }
-
-.tx--black {
-    color: #111111;
-  }
-
 /*
   border:
 */
 
 .bdr {
   border: .065rem solid currentColor;
+
+  /* color utils */
+  /*&--navy {
+    border-color: $navy;
+  }
+
+  &--blue {
+    border-color: $blue;
+  }
+
+  &--aqua {
+    border-color: $aqua;
+  }
+
+  &--teal {
+    border-color: $teal;
+  }
+
+  &--olive {
+    border-color: $olive;
+  }
+
+  &--green {
+    border-color: $green;
+  }
+
+  &--lime {
+    border-color: $lime;
+  }
+
+  &--yellow {
+    border-color: $yellow;
+  }
+
+  &--orange {
+    border-color: $orange;
+  }
+
+  &--red {
+    border-color: $red;
+  }
+
+  &--fuchsia,
+  &--pink {
+    border-color: $fuchsia;
+  }
+
+  &--purple {
+    border-color: $purple;
+  }
+
+  &--maroon {
+    border-color: $maroon;
+  }
+
+  &--white {
+    border-color: $white;
+  }
+
+  &--gray,
+  &--grey {
+    border-color: $gray;
+  }
+
+  &--silver {
+    border-color: $silver;
+  }
+
+  &--black {
+    border-color: $black;
+  }*/
 }
 
 /* position utils */
@@ -2598,78 +2673,6 @@ th {
 .bdr--r {
     border: none;
     border-right: .065rem solid currentColor;
-  }
-
-/* color utils */
-
-.bdr--navy {
-    border-color: #001F3F;
-  }
-
-.bdr--blue {
-    border-color: #0074D9;
-  }
-
-.bdr--aqua {
-    border-color: #7FDBFF;
-  }
-
-.bdr--teal {
-    border-color: #39CCCC;
-  }
-
-.bdr--olive {
-    border-color: #3D9970;
-  }
-
-.bdr--green {
-    border-color: #2ECC40;
-  }
-
-.bdr--lime {
-    border-color: #01FF70;
-  }
-
-.bdr--yellow {
-    border-color: #FFDC00;
-  }
-
-.bdr--orange {
-    border-color: #FF851B;
-  }
-
-.bdr--red {
-    border-color: #FF4136;
-  }
-
-.bdr--fuchsia,
-  .bdr--pink {
-    border-color: #F012BE;
-  }
-
-.bdr--purple {
-    border-color: #B10DC9;
-  }
-
-.bdr--maroon {
-    border-color: #85144B;
-  }
-
-.bdr--white {
-    border-color: #FFFFFF;
-  }
-
-.bdr--gray,
-  .bdr--grey {
-    border-color: #AAAAAA;
-  }
-
-.bdr--silver {
-    border-color: #DDDDDD;
-  }
-
-.bdr--black {
-    border-color: #111111;
   }
 
 /*
