@@ -78,66 +78,38 @@
   }
 
   /* color utils */
-  
-  /*&--navy {
-    color: $navy;
+  &--primary {
+    color: $primary;
   }
 
-  &--blue {
-    color: $blue;
+  &--secondary {
+    color: $secondary;
   }
 
-  &--aqua {
-    color: $aqua;
+  &--error {
+    color: $error;
   }
 
-  &--teal {
-    color: $teal;
+  &--alert {
+    color: $alert;
   }
 
-  &--olive {
-    color: $olive;
-  }
-
-  &--green {
-    color: $green;
-  }
-
-  &--lime {
-    color: $lime;
-  }
-
-  &--yellow {
-    color: $yellow;
-  }
-
-  &--orange {
-    color: $orange;
-  }
-
-  &--red {
-    color: $red;
-  }
-
-  &--fuchsia,
-  &--pink {
-    color: $fuchsia;
-  }
-
-  &--purple {
-    color: $purple;
-  }
-
-  &--maroon {
-    color: $maroon;
+  &--success {
+    color: $success;
   }
 
   &--white {
     color: $white;
   }
 
-  &--silver {
-    color: $silver;
+  &--darkwhite,
+  &--darkwhite {
+    color: $darkwhite;
+  }
+
+  &--lightgray,
+  &--lightgrey {
+    color: $lightgray;
   }
 
   &--gray,
@@ -145,7 +117,12 @@
     color: $gray;
   }
 
+  &--darkgray,
+  &--darkgrey {
+    color: $darkgray;
+  }
+
   &--black {
     color: $black;
-  }*/
+  }
 }

@@ -2340,161 +2340,60 @@ th {
 }
 
 /*
- backgbround:
+ background:
 */
 
-.bg {
-  /* background color utils */
-  
-  /*&--navy {
-    background-color: $navy;
+.bg--primary {
+    background-color: #AC6BD6;
   }
 
-  &--blue {
-    background-color: $blue;
+.bg--secondary {
+    background-color: #623E79;
   }
 
-  &--aqua {
-    background-color: $aqua;
+.bg--error {
+    background-color: #F2416A;
   }
 
-  &--teal {
-    background-color: $teal;
+.bg--alert {
+    background-color: #F5C650;
   }
 
-  &--olive {
-    background-color: $olive;
+.bg--success {
+    background-color: #51D6B4;
   }
 
-  &--green {
-    background-color: $green;
+.bg--white {
+    background-color: #FFFFFF;
   }
 
-  &--lime {
-    background-color: $lime;
+.bg--darkwhite,
+  .bg--darkwhite {
+    background-color: #F9F9F9;
   }
 
-  &--yellow {
-    background-color: $yellow;
+.bg--lightgray,
+  .bg--lightgrey {
+    background-color: #E9E9E9;
   }
 
-  &--orange {
-    background-color: $orange;
+.bg--gray,
+  .bg--grey {
+    background-color: #B2B2B2;
   }
 
-  &--red {
-    background-color: $red;
+.bg--darkgray,
+  .bg--darkgrey {
+    background-color: #6B6B6B;
   }
 
-  &--fuchsia,
-  &--pink {
-    background-color: $fuchsia;
+.bg--black {
+    background-color: #2F2F2F;
   }
-
-  &--purple {
-    background-color: $purple;
-  }
-
-  &--maroon {
-    background-color: $maroon;
-  }
-
-  &--white {
-    background-color: $white;
-  }
-
-  &--gray,
-  &--grey {
-    background-color: $gray;
-  }
-
-  &--silver {
-    background-color: $silver;
-  }
-
-  &--black {
-    background-color: $black;
-  }*/
-}
 
 /*
   text:
 */
-
-.tx {
-
-  /* color utils */
-  
-  /*&--navy {
-    color: $navy;
-  }
-
-  &--blue {
-    color: $blue;
-  }
-
-  &--aqua {
-    color: $aqua;
-  }
-
-  &--teal {
-    color: $teal;
-  }
-
-  &--olive {
-    color: $olive;
-  }
-
-  &--green {
-    color: $green;
-  }
-
-  &--lime {
-    color: $lime;
-  }
-
-  &--yellow {
-    color: $yellow;
-  }
-
-  &--orange {
-    color: $orange;
-  }
-
-  &--red {
-    color: $red;
-  }
-
-  &--fuchsia,
-  &--pink {
-    color: $fuchsia;
-  }
-
-  &--purple {
-    color: $purple;
-  }
-
-  &--maroon {
-    color: $maroon;
-  }
-
-  &--white {
-    color: $white;
-  }
-
-  &--silver {
-    color: $silver;
-  }
-
-  &--gray,
-  &--grey {
-    color: $gray;
-  }
-
-  &--black {
-    color: $black;
-  }*/
-}
 
 /* transform */
 
@@ -2576,84 +2475,62 @@ th {
     word-break: break-all;
   }
 
+/* color utils */
+
+.tx--primary {
+    color: #AC6BD6;
+  }
+
+.tx--secondary {
+    color: #623E79;
+  }
+
+.tx--error {
+    color: #F2416A;
+  }
+
+.tx--alert {
+    color: #F5C650;
+  }
+
+.tx--success {
+    color: #51D6B4;
+  }
+
+.tx--white {
+    color: #FFFFFF;
+  }
+
+.tx--darkwhite,
+  .tx--darkwhite {
+    color: #F9F9F9;
+  }
+
+.tx--lightgray,
+  .tx--lightgrey {
+    color: #E9E9E9;
+  }
+
+.tx--gray,
+  .tx--grey {
+    color: #B2B2B2;
+  }
+
+.tx--darkgray,
+  .tx--darkgrey {
+    color: #6B6B6B;
+  }
+
+.tx--black {
+    color: #2F2F2F;
+  }
+
 /*
   border:
 */
 
 .bdr {
   border: .065rem solid currentColor;
-
-  /* color utils */
-  
-  /*&--navy {
-    border-color: $navy;
-  }
-
-  &--blue {
-    border-color: $blue;
-  }
-
-  &--aqua {
-    border-color: $aqua;
-  }
-
-  &--teal {
-    border-color: $teal;
-  }
-
-  &--olive {
-    border-color: $olive;
-  }
-
-  &--green {
-    border-color: $green;
-  }
-
-  &--lime {
-    border-color: $lime;
-  }
-
-  &--yellow {
-    border-color: $yellow;
-  }
-
-  &--orange {
-    border-color: $orange;
-  }
-
-  &--red {
-    border-color: $red;
-  }
-
-  &--fuchsia,
-  &--pink {
-    border-color: $fuchsia;
-  }
-
-  &--purple {
-    border-color: $purple;
-  }
-
-  &--maroon {
-    border-color: $maroon;
-  }
-
-  &--white {
-    border-color: $white;
-  }
-
-  &--gray,
-  &--grey {
-    border-color: $gray;
-  }
-
-  &--silver {
-    border-color: $silver;
-  }
-
-  &--black {
-    border-color: $black;
-  }*/
 }
 
 /* position utils */
@@ -2676,6 +2553,56 @@ th {
 .bdr--r {
     border: none;
     border-right: .065rem solid currentColor;
+  }
+
+/* color utils */
+
+.bdr--primary {
+    border-color: #AC6BD6;
+  }
+
+.bdr--secondary {
+    border-color: #623E79;
+  }
+
+.bdr--error {
+    border-color: #F2416A;
+  }
+
+.bdr--alert {
+    border-color: #F5C650;
+  }
+
+.bdr--success {
+    border-color: #51D6B4;
+  }
+
+.bdr--white {
+    border-color: #FFFFFF;
+  }
+
+.bdr--darkwhite,
+  .bdr--darkwhite {
+    border-color: #F9F9F9;
+  }
+
+.bdr--lightgray,
+  .bdr--lightgrey {
+    border-color: #E9E9E9;
+  }
+
+.bdr--gray,
+  .bdr--grey {
+    border-color: #B2B2B2;
+  }
+
+.bdr--darkgray,
+  .bdr--darkgrey {
+    border-color: #6B6B6B;
+  }
+
+.bdr--black {
+    border-color: #2F2F2F;
   }
 
 /*
