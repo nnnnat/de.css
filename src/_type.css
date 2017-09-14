@@ -15,9 +15,8 @@ h4,
 h5,
 h6 {
   font-weight: bold;
-  letter-spacing: $line;
   line-height: $leadingTitle;
-  margin: 0 0 $ms;
+  margin: 0 0 $ms0;
 }
 
 h1 {
@@ -60,7 +59,7 @@ blockquote {
   border-left: $line solid currentColor;
   font-size: 125%;
   line-height: $leadingTitle;
-  margin: $ms 0;
+  margin: $ms3 0;
   padding: 0 0 0 $ms4;
 }
 
@@ -70,14 +69,14 @@ address {
 }
 
 caption {
-  margin: 0 0 $ms;
+  margin: 0 0 $ms0;
   text-align: left;
 }
 
 /* list */
 ul {
   list-style: disc;
-  margin: $ms2 0 $ms2 $ms;
+  margin: $ms2 0 $ms2 $ms0;
   padding: 0 0 0 $ms2;
 
   & ul,
@@ -92,7 +91,7 @@ ul {
 
 ol {
   list-style: decimal;
-  margin: $ms2 0 $ms2 $ms;
+  margin: $ms2 0 $ms2 $ms0;
   padding: 0 0 0 $ms2;
 
   & ul,
@@ -106,7 +105,7 @@ dl {
 
   & dt {
     font-weight: bold;
-    margin: 0 0 $ms;
+    margin: 0 0 $ms0;
   }
 
   & dd {
@@ -135,13 +134,13 @@ strong {
 }
 
 del {
-  background-color: color($gray2 a(50%));
+  background-color: $gray1;
   color: $secondary;
   padding: .25rem;
 }
 
 ins {
-  background-color: color($alert a(50%));
+  background-color: color($alert a(75%));
   color: $secondary;
   padding: .25rem;
 }
@@ -152,8 +151,9 @@ em {
 }
 
 abbr {
+  border-bottom: $line dotted $gray3;
+  color: $gray3;
   cursor: help;
-  border-bottom: $line dotted color($black a(50%));
 }
 
 code {
@@ -161,9 +161,8 @@ code {
   color: $black;
   display: inline-block;
   font-family: monospace;
-  font-size: 80%;
-  margin: $ms 0;
-  padding: $ms $ms2;
+  margin: $ms0 0;
+  padding: $ms0 $ms2;
   word-break: break-all;
 }
 
@@ -174,8 +173,7 @@ pre {
 }
 
 ::selection {
-  background-color: $primary;
-  color: $white;
+  background-color: color($primary tint(75%));
   text-shadow: none;
 }
 
