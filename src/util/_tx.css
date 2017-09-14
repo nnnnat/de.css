@@ -64,7 +64,7 @@
     font-size: 5rem;
     line-height: $leadingTitle;
     margin: 0;
-    max-width: 30em;
+    max-width: 34em;
     word-break: break-all;
   }
 
@@ -72,7 +72,7 @@
     font-size: 6rem;
     line-height: $leadingTitle;
     margin: 0;
-    max-width: 30em;
+    max-width: 34em;
     word-break: break-all;
   }
 

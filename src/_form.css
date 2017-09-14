@@ -74,6 +74,87 @@ input[type=checkbox] {
   }
 }
 
+input[type=range] {
+  margin: $ms2 0;
+  width: 100%;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track,
+input[type=range]::-moz-range-track {
+  background-color: $gray3;
+  border: none;
+  box-shadow: none;
+  cursor: pointer;
+  height: $line;
+  width: 100%;
+}
+
+input[type=range]::-webkit-slider-thumb,
+input[type=range]::-moz-range-thumb {
+  background-color: $primary;
+  border: none;
+  border-radius: 50%;
+  box-shadow: none;
+  cursor: pointer;
+  height: $ms1;
+  width: $ms1;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  margin-top: calc(-$ms1 / 2);
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background-color: $gray3;
+}
+
+input[type=range]::-ms-track {
+  background-color: transparent;
+  border-color: transparent;
+  color: transparent;
+  cursor: pointer;
+  height: $line;
+  width: 100%;
+}
+
+input[type=range]::-ms-fill-lower {
+  background-color: $gray3;
+  border: none;
+  box-shadow: none;
+}
+
+input[type=range]::-ms-fill-upper {
+  background-color: $gray3;
+  border: none;
+  box-shadow: none;
+}
+
+input[type=range]::-ms-thumb {
+  background-color: $primary;
+  border: none;
+  border-radius: 50%;
+  box-shadow: none;
+  cursor: pointer;
+  height: $ms1;
+  width: $ms1;
+}
+
+input[type=range]:focus::-ms-fill-lower {
+  background-color: $gray3;
+}
+
+input[type=range]:focus::-ms-fill-upper {
+  background-color: $gray3;
+}
+
 select {
   background-image:  url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2IiB2aWV3Qm94PSIwIDAgMTYgMTYiPgo8cGF0aCBkPSJNMTIuNDcxIDUuNTI5Yy0wLjI1OC0wLjI1OC0wLjY4My0wLjI1OC0wLjk0MiAwbC0zLjUyOSAzLjUyOS0zLjUyOS0zLjUyOWMtMC4yNTgtMC4yNTgtMC42ODMtMC4yNTgtMC45NDIgMHMtMC4yNTggMC42ODMgMCAwLjk0Mmw0IDRjMC4xMjkgMC4xMjkgMC4zIDAuMTk2IDAuNDcxIDAuMTk2czAuMzQyLTAuMDY3IDAuNDcxLTAuMTk2bDQtNGMwLjI2Mi0wLjI1OCAwLjI2Mi0wLjY4MyAwLTAuOTQyeiI+PC9wYXRoPgo8L3N2Zz4=);
   background-position: calc(100% - $ms);
