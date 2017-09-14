@@ -1,12 +1,10 @@
 /*
   button:
 */
-.btn,
-button,
-input[type="submit"],
-input[type="reset"] {
-  background-color: $black;
+.btn {
+  background-color: $primary;
   border: $line solid transparent;
+  border-radius: .125rem;
   color: $white;
   cursor: pointer;
   display: inline-block;
@@ -14,11 +12,9 @@ input[type="reset"] {
   font-size: $ms1;
   font-weight: bold;
   line-height: $leading;
-  letter-spacing: $line;
   margin: 0;
   padding: $ms $ms2;
   text-decoration: none;
-  text-transform: uppercase;
 
   -ms-touch-action: manipulation;
   touch-action: manipulation;
@@ -27,35 +23,33 @@ input[type="reset"] {
   -moz-appearance: none;
   appearance: none;
 
-  &:disabled {
-    background-color: $gray2;
+  &:disabled,
+  &:disabled:--enter {
+    background-color: $gray1;
     border-color: $gray2;
-    color: color($gray2 shade(55%));
+    color: $gray3;
     cursor: not-allowed;
-
-    &:--enter {
-      background-color: $gray2;
-      border-color: $gray2;
-      color: color($gray2 shade(50%));
-    }
   }
 
   &:--enter {
-    background-color: $white;
-    border-color: currentColor;
-    color: $black;
+    background-color: color($primary shade(25%));
   }
 
   &--alt {
     background-color: transparent;
     border-color: currentColor;
-    color: $black;
+    color: $primary;
+
+    &:--enter {
+      background-color: transparent;
+      color: color($primary shade(35%));
+    }
 
     &:disabled,
     &:disabled:--enter {
       background-color: transparent;
-      border-color: currentColor;
-      color: color($gray2 shade(25%));
+      border-color: $gray3;
+      color: $black;
     }
   }
 }

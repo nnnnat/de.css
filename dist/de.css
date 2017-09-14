@@ -85,7 +85,7 @@ textarea,
 /* links */
 
 a:not(.btn) {
-  border-bottom: .065rem solid currentColor;
+  border-bottom: .063rem solid currentColor;
   color: inherit;
   opacity: 1;
   text-decoration: none;
@@ -114,7 +114,7 @@ h4,
 h5,
 h6 {
   font-weight: bold;
-  letter-spacing: .065rem;
+  letter-spacing: .063rem;
   line-height: 1.25;
   margin: 0 0 .5rem;
 }
@@ -157,7 +157,7 @@ figcaption {
 }
 
 blockquote {
-  border-left: .065rem solid currentColor;
+  border-left: .063rem solid currentColor;
   font-size: 125%;
   line-height: 1.25;
   margin: .5rem 0;
@@ -255,7 +255,7 @@ em {
 
 abbr {
   cursor: help;
-  border-bottom: .065rem dotted rgba(47, 47, 47, 0.5);
+  border-bottom: .063rem dotted rgba(47, 47, 47, 0.5);
 }
 
 code {
@@ -291,7 +291,7 @@ pre {
 
 hr {
   border: none;
-  border-top: .065rem solid currentColor;
+  border-top: .063rem solid currentColor;
   color: inherit;
   display: block;
   margin: 1.5rem 0;
@@ -347,12 +347,10 @@ video {
   button:
 */
 
-.btn,
-button,
-input[type="submit"],
-input[type="reset"] {
-  background-color: #2F2F2F;
-  border: .065rem solid transparent;
+.btn {
+  background-color: #AC6BD6;
+  border: .063rem solid transparent;
+  border-radius: .125rem;
   color: #FFFFFF;
   cursor: pointer;
   display: inline-block;
@@ -360,11 +358,9 @@ input[type="reset"] {
   font-size: .875rem;
   font-weight: bold;
   line-height: 1.5;
-  letter-spacing: .065rem;
   margin: 0;
   padding: .5rem 1rem;
   text-decoration: none;
-  text-transform: uppercase;
 
   -ms-touch-action: manipulation;
   touch-action: manipulation;
@@ -374,60 +370,38 @@ input[type="reset"] {
   appearance: none;
 }
 
-.btn:disabled, button:disabled, input[type="submit"]:disabled, input[type="reset"]:disabled {
-    background-color: #B2B2B2;
+.btn:disabled,
+.btn:disabled:hover,
+.btn:disabled:focus {
+    background-color: #E9E9E9;
     border-color: #B2B2B2;
-    color: rgb(80, 80, 80);
+    color: #6B6B6B;
     cursor: not-allowed;
   }
 
-.btn:disabled:hover,
-.btn:disabled:focus,
-button:disabled:hover,
-button:disabled:focus,
-input[type="submit"]:disabled:hover,
-input[type="submit"]:disabled:focus,
-input[type="reset"]:disabled:hover,
-input[type="reset"]:disabled:focus {
-      background-color: #B2B2B2;
-      border-color: #B2B2B2;
-      color: rgb(89, 89, 89);
-    }
-
 .btn:hover,
-.btn:focus,
-button:hover,
-button:focus,
-input[type="submit"]:hover,
-input[type="submit"]:focus,
-input[type="reset"]:hover,
-input[type="reset"]:focus {
-    background-color: #FFFFFF;
-    border-color: currentColor;
-    color: #2F2F2F;
+.btn:focus {
+    background-color: rgb(129, 80, 161);
   }
 
-.btn--alt, button--alt, input[type="submit"]--alt, input[type="reset"]--alt {
+.btn--alt {
     background-color: transparent;
     border-color: currentColor;
-    color: #2F2F2F;
+    color: #AC6BD6;
   }
+
+.btn--alt:hover,
+.btn--alt:focus {
+      background-color: transparent;
+      color: rgb(112, 70, 139);
+    }
 
 .btn--alt:disabled,
 .btn--alt:disabled:hover,
-.btn--alt:disabled:focus,
-button--alt:disabled,
-button--alt:disabled:hover,
-button--alt:disabled:focus,
-input[type="submit"]--alt:disabled,
-input[type="submit"]--alt:disabled:hover,
-input[type="submit"]--alt:disabled:focus,
-input[type="reset"]--alt:disabled,
-input[type="reset"]--alt:disabled:hover,
-input[type="reset"]--alt:disabled:focus {
+.btn--alt:disabled:focus {
       background-color: transparent;
-      border-color: currentColor;
-      color: rgb(134, 134, 134);
+      border-color: #6B6B6B;
+      color: #2F2F2F;
     }
 
 /*
@@ -479,7 +453,7 @@ input[type=date],
 select,
 textarea {
   background-color: #FFFFFF;
-  border: .065rem solid #B2B2B2;
+  border: .063rem solid #B2B2B2;
   border-radius: 0;
   color: #2F2F2F;
   display: block;
@@ -600,7 +574,7 @@ table {
 
 td,
 th {
-  border:  .065rem solid currentColor;
+  border:  .063rem solid currentColor;
   padding:  .5rem 1rem;
 }
 
@@ -2529,29 +2503,29 @@ th {
 */
 
 .bdr {
-  border: .065rem solid currentColor;
+  border: .063rem solid currentColor;
 }
 
 /* position utils */
 
 .bdr--t {
     border: none;
-    border-top: .065rem solid currentColor;
+    border-top: .063rem solid currentColor;
   }
 
 .bdr--b {
     border: none;
-    border-bottom: .065rem solid currentColor;
+    border-bottom: .063rem solid currentColor;
   }
 
 .bdr--l {
     border: none;
-    border-left: .065rem solid currentColor;
+    border-left: .063rem solid currentColor;
   }
 
 .bdr--r {
     border: none;
-    border-right: .065rem solid currentColor;
+    border-right: .063rem solid currentColor;
   }
 
 /* color utils */
