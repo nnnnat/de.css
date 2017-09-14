@@ -37,7 +37,7 @@ legend {
 select,
 textarea {
   background-color: $white;
-  border: $line solid $gray2;
+  border: $line0 solid $gray2;
   border-radius: 0;
   color: $black;
   display: block;
@@ -89,7 +89,7 @@ input[type=range]::-moz-range-track {
   border: none;
   box-shadow: none;
   cursor: pointer;
-  height: $line;
+  height: $line0;
   width: 100%;
 }
 
@@ -121,7 +121,7 @@ input[type=range]::-ms-track {
   border-color: transparent;
   color: transparent;
   cursor: pointer;
-  height: $line;
+  height: $line0;
   width: 100%;
 }
 

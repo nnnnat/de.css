@@ -21,7 +21,7 @@ table {
 /* data */
 td,
 th {
-  border:  $line solid currentColor;
+  border:  $line0 solid currentColor;
   padding:  $ms $ms2;
 }
 

@@ -56,7 +56,7 @@ figcaption {
 }
 
 blockquote {
-  border-left: $line solid currentColor;
+  border-left: $line0 solid currentColor;
   font-size: 125%;
   line-height: $leadingTitle;
   margin: $ms3 0;
@@ -151,7 +151,7 @@ em {
 }
 
 abbr {
-  border-bottom: $line dotted $gray3;
+  border-bottom: $line0 dotted $gray3;
   color: $gray3;
   cursor: help;
 }
@@ -180,7 +180,7 @@ pre {
 /* hr */
 hr {
   border: none;
-  border-top: $line solid currentColor;
+  border-top: $line0 solid currentColor;
   color: inherit;
   display: block;
   margin: $ms4 0;

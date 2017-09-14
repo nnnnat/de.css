@@ -2,27 +2,27 @@
   border:
 */
 .bdr {
-  border: $line solid currentColor;
+  border: $line0 solid currentColor;
 
   /* position utils */
   &--t {
     border: none;
-    border-top: $line solid currentColor;
+    border-top: $line0 solid currentColor;
   }
 
   &--b {
     border: none;
-    border-bottom: $line solid currentColor;
+    border-bottom: $line0 solid currentColor;
   }
 
   &--l {
     border: none;
-    border-left: $line solid currentColor;
+    border-left: $line0 solid currentColor;
   }
 
   &--r {
     border: none;
-    border-right: $line solid currentColor;
+    border-right: $line0 solid currentColor;
   }
 
   /* color utils */

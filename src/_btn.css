@@ -3,8 +3,8 @@
 */
 .btn {
   background-color: $primary;
-  border: $line solid transparent;
-  border-radius: .125rem;
+  border: $line0 solid transparent;
+  border-radius: $line1;
   color: $white;
   cursor: pointer;
   display: inline-block;

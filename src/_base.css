@@ -27,7 +27,7 @@ textarea,
 
 /* links */
 a:not(.btn) {
-  border-bottom: $line solid currentColor;
+  border-bottom: $line0 solid currentColor;
   color: inherit;
   opacity: 1;
   text-decoration: none;
