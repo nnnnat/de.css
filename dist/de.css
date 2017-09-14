@@ -374,14 +374,13 @@ video {
 .btn:disabled:hover,
 .btn:disabled:focus {
     background-color: #E9E9E9;
-    border-color: #B2B2B2;
     color: #6B6B6B;
     cursor: not-allowed;
   }
 
 .btn:hover,
 .btn:focus {
-    background-color: rgb(129, 80, 161);
+    background-color: rgb(112, 70, 139);
   }
 
 .btn--alt {
@@ -401,7 +400,27 @@ video {
 .btn--alt:disabled:focus {
       background-color: transparent;
       border-color: #6B6B6B;
-      color: #2F2F2F;
+      color: #6B6B6B;
+    }
+
+.btn--clear {
+    background-color: transparent;
+    border-color: transparent;
+    color: #AC6BD6;
+  }
+
+.btn--clear:hover,
+.btn--clear:focus {
+      background-color: transparent;
+      color: rgb(112, 70, 139);
+    }
+
+.btn--clear:disabled,
+.btn--clear:disabled:hover,
+.btn--clear:disabled:focus {
+      background-color: transparent;
+      border-color: transparent;
+      color: #6B6B6B;
     }
 
 /*

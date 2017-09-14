@@ -26,13 +26,12 @@
   &:disabled,
   &:disabled:--enter {
     background-color: $gray1;
-    border-color: $gray2;
     color: $gray3;
     cursor: not-allowed;
   }
 
   &:--enter {
-    background-color: color($primary shade(25%));
+    background-color: color($primary shade(35%));
   }
 
   &--alt {
@@ -49,7 +48,25 @@
     &:disabled:--enter {
       background-color: transparent;
       border-color: $gray3;
-      color: $black;
+      color: $gray3;
+    }
+  }
+
+  &--clear {
+    background-color: transparent;
+    border-color: transparent;
+    color: $primary;
+
+    &:--enter {
+      background-color: transparent;
+      color: color($primary shade(35%));
+    }
+
+    &:disabled,
+    &:disabled:--enter {
+      background-color: transparent;
+      border-color: transparent;
+      color: $gray3;
     }
   }
 }
