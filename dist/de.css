@@ -367,6 +367,49 @@ video {
   appearance: none;
 }
 
+.btn:hover,
+.btn:focus {
+    background-color: rgb(112, 70, 139);
+  }
+
+.btn--secondary {
+    background-color: #623E79;
+  }
+
+.btn--secondary:hover,
+.btn--secondary:focus {
+      background-color: rgb(64, 40, 79);
+    }
+
+.btn--success {
+    background-color: #51D6B4;
+    color: #623E79;
+  }
+
+.btn--success:hover,
+.btn--success:focus {
+      background-color: rgb(53, 139, 117);
+    }
+
+.btn--alert {
+    background-color: #F5C650;
+    color: #623E79;
+  }
+
+.btn--alert:hover,
+.btn--alert:focus {
+      background-color: rgb(159, 129, 52);
+    }
+
+.btn--error {
+    background-color: #F2416A;
+  }
+
+.btn--error:hover,
+.btn--error:focus {
+      background-color: rgb(157, 42, 69);
+    }
+
 .btn:disabled,
 .btn:disabled:hover,
 .btn:disabled:focus {
@@ -375,50 +418,125 @@ video {
     cursor: not-allowed;
   }
 
-.btn:hover,
-.btn:focus {
-    background-color: rgb(112, 70, 139);
-  }
+/*
+  alt button:
+*/
 
 .btn--alt {
-    background-color: transparent;
-    border-color: currentColor;
-    color: #AC6BD6;
-  }
+  background-color: transparent;
+  border-color: currentColor;
+  color: #AC6BD6;
+}
 
 .btn--alt:hover,
 .btn--alt:focus {
-      background-color: transparent;
-      color: rgb(112, 70, 139);
+    background-color: transparent;
+    color: rgb(112, 70, 139);
+  }
+
+.btn--alt.btn--secondary {
+    color: #623E79;
+  }
+
+.btn--alt.btn--secondary:hover,
+.btn--alt.btn--secondary:focus {
+      color: rgb(64, 40, 79);
+    }
+
+.btn--alt.btn--success {
+    color: #51D6B4;
+  }
+
+.btn--alt.btn--success:hover,
+.btn--alt.btn--success:focus {
+      color: rgb(53, 139, 117);
+    }
+
+.btn--alt.btn--alert {
+    color: #F5C650;
+  }
+
+.btn--alt.btn--alert:hover,
+.btn--alt.btn--alert:focus {
+      color: rgb(159, 129, 52);
+    }
+
+.btn--alt.btn--error {
+    color: #F2416A;
+  }
+
+.btn--alt.btn--error:hover,
+.btn--alt.btn--error:focus {
+      color: rgb(157, 42, 69);
     }
 
 .btn--alt:disabled,
 .btn--alt:disabled:hover,
 .btn--alt:disabled:focus {
-      background-color: transparent;
-      border-color: #6B6B6B;
-      color: #6B6B6B;
-    }
+    background-color: transparent;
+    border-color: #6B6B6B;
+    color: #6B6B6B;
+  }
+
+/*
+  clear button
+*/
 
 .btn--clear {
-    background-color: transparent;
-    border-color: transparent;
-    color: #AC6BD6;
-  }
+  background-color: transparent;
+  border-color: transparent;
+  color: #AC6BD6;
+}
 
 .btn--clear:hover,
 .btn--clear:focus {
-      background-color: transparent;
-      color: rgb(112, 70, 139);
+    background-color: transparent;
+    color: rgb(112, 70, 139);
+  }
+
+.btn--clear.btn--secondary {
+    color: #623E79;
+  }
+
+.btn--clear.btn--secondary:hover,
+.btn--clear.btn--secondary:focus {
+      color: rgb(64, 40, 79);
+    }
+
+.btn--clear.btn--success {
+    color: #51D6B4;
+  }
+
+.btn--clear.btn--success:hover,
+.btn--clear.btn--success:focus {
+      color: rgb(53, 139, 117);
+    }
+
+.btn--clear.btn--alert {
+    color: #F5C650;
+  }
+
+.btn--clear.btn--alert:hover,
+.btn--clear.btn--alert:focus {
+      color: rgb(159, 129, 52);
+    }
+
+.btn--clear.btn--error {
+    color: #F2416A;
+  }
+
+.btn--clear.btn--error:hover,
+.btn--clear.btn--error:focus {
+      color: rgb(157, 42, 69);
     }
 
 .btn--clear:disabled,
 .btn--clear:disabled:hover,
 .btn--clear:disabled:focus {
-      background-color: transparent;
-      border-color: transparent;
-      color: #6B6B6B;
-    }
+    background-color: transparent;
+    border-color: transparent;
+    color: #6B6B6B;
+  }
 
 /*
   form:
@@ -735,7 +853,7 @@ th {
     }
 
 /*
-  container
+  container:
 */
 
 .cn {
@@ -1230,7 +1348,7 @@ th {
       }
 
 /*
-  cell
+  cell:
 */
 
 .cl {

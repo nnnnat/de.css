@@ -1,0 +1,53 @@
+/*
+  alt button:
+*/
+
+.btn--alt {
+  background-color: transparent;
+  border-color: currentColor;
+  color: $primary;
+
+  &:--enter {
+    background-color: transparent;
+    color: color($primary shade(35%));
+  }
+
+  &.btn--secondary {
+    color: $secondary;
+
+    &:--enter {
+      color: color($secondary shade(35%));
+    }
+  }
+
+  &.btn--success {
+    color: $success;
+
+    &:--enter {
+      color: color($success shade(35%));
+    }
+  }
+
+  &.btn--alert {
+    color: $alert;
+
+    &:--enter {
+      color: color($alert shade(35%));
+    }
+  }
+
+  &.btn--error {
+    color: $error;
+
+    &:--enter {
+      color: color($error shade(35%));
+    }
+  }
+
+  &:disabled,
+  &:disabled:--enter {
+    background-color: transparent;
+    border-color: $gray3;
+    color: $gray3;
+  }
+}

@@ -1,0 +1,70 @@
+/*
+  button:
+*/
+.btn {
+  background-color: $primary;
+  border: $line0 solid transparent;
+  border-radius: $line1;
+  color: $white;
+  cursor: pointer;
+  display: inline-block;
+  font-family: inherit;
+  font-size: $ms1;
+  font-weight: bold;
+  line-height: $leading;
+  margin: 0;
+  padding: $ms $ms2;
+  text-decoration: none;
+
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  &:--enter {
+    background-color: color($primary shade(35%));
+  }
+
+  &--secondary {
+    background-color: $secondary;
+
+    &:--enter {
+      background-color: color($secondary shade(35%));
+    }
+  }
+
+  &--success {
+    background-color: $success;
+    color: $secondary;
+
+    &:--enter {
+      background-color: color($success shade(35%));
+    }
+  }
+
+  &--alert {
+    background-color: $alert;
+    color: $secondary;
+
+    &:--enter {
+      background-color: color($alert shade(35%));
+    }
+  }
+
+  &--error {
+    background-color: $error;
+
+    &:--enter {
+      background-color: color($error shade(35%));
+    }
+  }
+
+  &:disabled,
+  &:disabled:--enter {
+    background-color: $gray1;
+    color: $gray3;
+    cursor: not-allowed;
+  }
+}
