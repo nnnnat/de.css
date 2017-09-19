@@ -1,0 +1,32 @@
+/*
+  fields:
+*/
+
+:--txInput,
+select,
+textarea {
+  background-color: $white;
+  border: $line0 solid $gray2;
+  border-radius: 0;
+  color: $black;
+  display: block;
+  font-size: $ms1;
+  margin: $ms 0 0;
+  padding: $ms;
+  width: inherit;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  &:invalid {
+    border-color: $error;
+    color: $error;
+  }
+
+  &:disabled {
+    background-color: $gray2;
+    border-color: color($gray2 shade(30%));
+    cursor: not-allowed;
+  }
+}

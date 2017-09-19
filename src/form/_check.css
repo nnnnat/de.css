@@ -1,0 +1,15 @@
+/*
+  check: checkbox & radio inputs
+*/
+
+input[type=radio],
+input[type=checkbox] {
+  font-size: $ms2;
+  margin: 0 $ms 0 0;
+
+  &:disabled {
+    background-color: $gray2;
+    border-color: color($gray2 shade(30%));
+    cursor: not-allowed;
+  }
+}

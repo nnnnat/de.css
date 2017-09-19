@@ -1,0 +1,8 @@
+/*
+  textarea:
+*/
+
+textarea {
+  min-height:  8.75rem;
+  resize: vertical;
+}

@@ -1,0 +1,10 @@
+/*
+  fieldset:
+*/
+
+legend {
+  display: block;
+  font-size:  $ms2;
+  line-height: $leadingTitle;
+  margin:  0;
+}

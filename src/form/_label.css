@@ -1,0 +1,21 @@
+/*
+  label:
+*/
+
+label {
+  display: block;
+  font-size: $ms1;
+  line-height: $leadingTitle;
+  margin: 0 0 $ms2;
+  width: 100%;
+
+  .group &,
+  .gp & {
+    margin: 0 $ms $ms2;
+
+    &:first-of-type,
+    &:last-of-type {
+      margin:  0 0 $ms2;
+    }
+  }
+}
