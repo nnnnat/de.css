@@ -559,12 +559,24 @@ video {
   opacity:  .5;
 }
 
+/* helper message */
+
+.hlp {
+  display: block;
+  font-size: .875rem;
+  font-style: italic;
+  font-weight: normal;
+  margin: .5rem 0 0;
+  opacity:  .75;
+}
+
 /* error message */
 
 .err {
   color: #F2416A;
   display: none;
-  font-size: 80%;
+  font-size: .875rem;
+  font-weight: normal;
   margin: .5rem 0 0;
 }
 
@@ -578,7 +590,7 @@ video {
 
 label {
   display: block;
-  font-size: .875rem;
+  font-weight: bold;
   line-height: 1.25;
   margin: 0 0 1rem;
   width: 100%;
@@ -638,12 +650,12 @@ select,
 textarea {
   background-color: #FFFFFF;
   border: .063rem solid #B2B2B2;
-  border-radius: 0;
+  border-radius: .125rem;
   color: #2F2F2F;
   display: block;
-  font-size: .875rem;
+  font-size: inherit;
   margin: .5rem 0 0;
-  padding: .5rem;
+  padding: 1rem .875rem;
   width: inherit;
 
   -webkit-appearance: none;
@@ -673,8 +685,8 @@ input[type=tel]:disabled,
 input[type=date]:disabled,
 select:disabled,
 textarea:disabled {
-    background-color: #B2B2B2;
-    border-color: rgb(125, 125, 125);
+    background-color: #E9E9E9;
+    border-color: #B2B2B2;
     cursor: not-allowed;
   }
 

@@ -8,12 +8,23 @@
   opacity:  .5;
 }
 
+/* helper message */
+.hlp {
+  display: block;
+  font-size: $ms1;
+  font-style: italic;
+  font-weight: normal;
+  margin: $ms0 0 0;
+  opacity:  .75;
+}
+
 /* error message */
 .err {
   color: $error;
   display: none;
-  font-size: 80%;
-  margin: $ms 0 0;
+  font-size: $ms1;
+  font-weight: normal;
+  margin: $ms0 0 0;
 
   :invalid + & {
     display: block;

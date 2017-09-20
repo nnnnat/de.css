@@ -8,86 +8,30 @@
   <link rel="stylesheet" href="./de.css">
 </head>
 <body>
-<section class="pd6--y">
-  <div class="cn cn1">
+<section class="pd2--y bg--gray0">
+  <div class="cn cn1 tx--grey3">
     <h1>de.css</h1>
     <p class="tx--lead">development page for de.css</p>
 
-    <!-- <div class="mg4--b">
-      <h2>buttons</h2>
-      <button class="btn">
-        primary
-      </button>
-      <button class="btn btn--secondary">
-        secondary
-      </button>
-      <button class="btn btn--success">
-        success
-      </button>
+    <label>
+      Nickname
+      <input type="text" placeholder="placeholder text">
+    </label>
 
-      <button class="btn btn--alert">
-        alert
-      </button>
-
-      <button class="btn btn--error">
-        error
-      </button>
-
-      <button class="btn" disabled>
-        disabled
-      </button>
-    </div>
+    <label>
+      Species
+      <span class="hlp">this is some helper text</span>
+      <input type="text" placeholder="placeholder text" required>
+      <span class="err">this is an error message</span>
+    </label>
 
 
-    <div class="mg4--b">
-      <h2>alt buttons</h2>
-      <button class="btn btn--alt">
-        primary
-      </button>
-      <button class="btn btn--alt btn--secondary">
-        secondary
-      </button>
-      <button class="btn btn--alt btn--success">
-        success
-      </button>
-
-      <button class="btn btn--alt btn--alert">
-        alert
-      </button>
-
-      <button class="btn btn--alt btn--error">
-        error
-      </button>
-
-      <button class="btn btn--alt" disabled>
-        disabled
-      </button>
-    </div>
-
-    <div class="mg4--b">
-      <h2>clear buttons</h2>
-      <button class="btn btn--clear">
-        primary
-      </button>
-      <button class="btn btn--clear btn--secondary">
-        secondary
-      </button>
-      <button class="btn btn--clear btn--success">
-        success
-      </button>
-
-      <button class="btn btn--clear btn--alert">
-        alert
-      </button>
-
-      <button class="btn btn--clear btn--error">
-        error
-      </button>
-
-      <button class="btn btn--clear" disabled>
-        disabled
-      </button>
-    </div> -->
+    <label>
+      Password
+      <span class="hlp">Upper case, lower case, number / special char and min 8 chars</span>
+      <input type="password" placeholder="placeholder text" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$">
+      <span class="err">Invalid password</span>
+    </label>
 
 
   </div>

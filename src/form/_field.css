@@ -7,12 +7,12 @@ select,
 textarea {
   background-color: $white;
   border: $line0 solid $gray2;
-  border-radius: 0;
+  border-radius: $line1;
   color: $black;
   display: block;
-  font-size: $ms1;
-  margin: $ms 0 0;
-  padding: $ms;
+  font-size: inherit;
+  margin: $ms0 0 0;
+  padding: $ms2 $ms1;
   width: inherit;
 
   -webkit-appearance: none;
@@ -25,8 +25,8 @@ textarea {
   }
 
   &:disabled {
-    background-color: $gray2;
-    border-color: color($gray2 shade(30%));
+    background-color: $gray1;
+    border-color: $gray2;
     cursor: not-allowed;
   }
 }
