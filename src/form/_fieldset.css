@@ -4,7 +4,7 @@
 
 legend {
   display: block;
-  font-size:  $ms2;
+  font-size: $ms2;
   line-height: $leadingTitle;
-  margin:  0;
+  margin: 0;
 }

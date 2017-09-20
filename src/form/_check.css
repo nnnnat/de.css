@@ -17,7 +17,7 @@ input[type=checkbox] {
 
   &:after {
     background-image: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2IiB2aWV3Qm94PSIwIDAgMTYgMTYiPgo8cGF0aCBkPSJNMTIuNjY3IDEuMzMzaC05LjMzM2MtMS4xMDQgMC0yIDAuODk2LTIgMnY5LjMzM2MwIDEuMTA0IDAuODk2IDIgMiAyaDkuMzMzYzEuMTA0IDAgMi0wLjg5NiAyLTJ2LTkuMzMzYzAtMS4xMDQtMC44OTYtMi0yLTJ6TTEzLjMzMyAxMi42NjdjMCAwLjM2Ny0wLjMgMC42NjctMC42NjcgMC42NjdoLTkuMzMzYy0wLjM2NyAwLTAuNjY3LTAuMy0wLjY2Ny0wLjY2N3YtOS4zMzNjMC0wLjM2NyAwLjMtMC42NjcgMC42NjctMC42NjdoOS4zMzNjMC4zNjcgMCAwLjY2NyAwLjMgMC42NjcgMC42Njd2OS4zMzN6Ij48L3BhdGg+Cjwvc3ZnPg==);
-    content: "\00a0";
+    content: '\00a0';
     display: inline-block;
     font-size: inherit;
     vertical-align: middle;

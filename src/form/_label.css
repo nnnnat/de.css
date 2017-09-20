@@ -15,7 +15,7 @@ label {
 
     &:first-of-type,
     &:last-of-type {
-      margin:  0 0 $ms2;
+      margin: 0 0 $ms2;
     }
   }
 }

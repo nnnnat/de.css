@@ -5,7 +5,7 @@
 /* placeholder */
 ::placeholder {
   color: inherit;
-  opacity:  .5;
+  opacity: .5;
 }
 
 /* helper message */
@@ -15,7 +15,7 @@
   font-style: italic;
   font-weight: normal;
   margin: $ms0 0 0;
-  opacity:  .75;
+  opacity: .75;
 }
 
 /* error message */
