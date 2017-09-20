@@ -11,7 +11,7 @@ label {
 
   .group &,
   .gp & {
-    margin: 0 $ms $ms2;
+    margin: 0 $ms0 $ms2;
 
     &:first-of-type,
     &:last-of-type {

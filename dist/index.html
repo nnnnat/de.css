@@ -8,33 +8,72 @@
   <link rel="stylesheet" href="./de.css">
 </head>
 <body>
-<section class="pd2--y bg--gray0">
-  <div class="cn cn1 tx--grey3">
-    <h1>de.css</h1>
-    <p class="tx--lead">development page for de.css</p>
+  <header class="cn cn1 pd0--y bdr bdr--b bdr--success">
+    <h2 class="tx--reset tx--primary">
+      Plantera
+    </h2>
+  </header>
+  <section class="bg--gray0">
+    <div class="cn cn1 tx--grey3">
+      <h1>de.css</h1>
+      <p class="tx--lead">development page for de.css</p>
 
-    <label>
-      Nickname
-      <input type="text" placeholder="placeholder text">
-    </label>
+      <label>
+        Nickname
+        <input type="text" placeholder="placeholder text">
+      </label>
 
-    <label>
-      Species
-      <span class="hlp">this is some helper text</span>
-      <input type="text" placeholder="placeholder text" required>
-      <span class="err">this is an error message</span>
-    </label>
-
-
-    <label>
-      Password
-      <span class="hlp">Upper case, lower case, number / special char and min 8 chars</span>
-      <input type="password" placeholder="placeholder text" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$">
-      <span class="err">Invalid password</span>
-    </label>
+      <label>
+        Species
+        <span class="hlp">this is some helper text</span>
+        <input type="text" placeholder="placeholder text">
+        <span class="err">this is an error message</span>
+      </label>
 
 
-  </div>
-</section>
+      <label>
+        Password
+        <span class="hlp">Upper case, lower case, number / special char and min 8 chars</span>
+        <input type="password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$">
+        <span class="err">Invalid password</span>
+      </label>
+
+      <label>
+        Select
+        <select>
+          <option value="option 1">Option 1</option>
+          <option value="option 2">Option 2</option>
+          <option value="option 3">Option 3</option>
+          <option value="option 4">Option 4</option>
+          <option value="option 5">Option 5</option>
+        </select>
+      </label>
+
+      <label>
+        Select Multiple
+        <select multiple>
+          <option value="option 1">Option 1</option>
+          <option value="option 2">Option 2</option>
+          <option value="option 3">Option 3</option>
+          <option value="option 4">Option 4</option>
+          <option value="option 5">Option 5</option>
+        </select>
+      </label>
+
+      <label>
+        <input type="checkbox"> Remeber Me
+      </label>
+
+      <label>
+        <input type="radio" name="pick1"> This one?
+      </label>
+
+      <label>
+        <input type="radio" name="pick1"> Or this one?
+      </label>
+
+
+    </div>
+  </section>
 </body>
 </html>

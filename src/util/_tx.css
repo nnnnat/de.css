@@ -32,6 +32,11 @@
     text-align: justify;
   }
 
+  /* reset */
+  &--reset {
+    margin: 0;
+  }
+
   /* simple size bumps */
   &--lead {
     font-size: $ms4;

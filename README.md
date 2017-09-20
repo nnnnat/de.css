@@ -36,7 +36,6 @@ You can report issues [here](https://github.com/nnnnat/de.css/issues)
 ### Projects
 * [CSS Reset](https://meyerweb.com/eric/tools/css/reset/)
 * [sanitize.css](https://jonathantneal.github.io/sanitize.css/)
-* [Colors](http://clrs.cc)
 
 ### Ideas
 * [OOCSS](https://github.com/stubbornella/oocss/wiki/FAQ)
@@ -44,12 +43,13 @@ You can report issues [here](https://github.com/nnnnat/de.css/issues)
 * [CSSModules](https://github.com/css-modules/css-modules)
 
 ## Resources
-* [A11y color combos](http://clrs.cc/a11y/)
-* [Feather icons](https://feathericons.com/)
-* [icomoon](https://icomoon.io/app)
-* [modular scale](http://www.modularscale.com/)
-* [solved by flexbox](https://philipwalton.github.io/solved-by-flexbox/)
+* [Colorable](http://jxnblk.com/colorable/demos/text/)
+* [Feather Icons](https://feathericons.com/)
+* [Icomoon](https://icomoon.io/app)
+* [Modular Scale](http://www.modularscale.com/)
+* [Solved By Flexbox](https://philipwalton.github.io/solved-by-flexbox/)
 * [Embed Responsively](http://embedresponsively.com/)
+* [Range.css](http://danielstern.ca/range.css)
 
 ## License
 [MIT](https://github.com/nnnnat/de.css/blob/master/LICENSE)
