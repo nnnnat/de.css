@@ -14,7 +14,7 @@ textarea {
   font-size: inherit;
   margin: $ms0 0 0;
   padding: $ms2 $ms1;
-  width: inherit;
+  width: 100%;
 
   -webkit-appearance: none;
   -moz-appearance: none;

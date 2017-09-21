@@ -8,10 +8,12 @@
   <link rel="stylesheet" href="./de.css">
 </head>
 <body>
-  <header class="cn cn1 pd0--y bdr bdr--b bdr--success">
-    <h2 class="tx--reset tx--primary">
-      Plantera
-    </h2>
+  <header class="bdr bdr--b bdr--success">
+    <div class="cn cn1 pd0--y">
+      <h2 class="tx--reset tx--primary">
+        Plantera
+      </h2>
+    </div>
   </header>
   <section class="bg--gray0">
     <div class="cn cn1 tx--grey3">
@@ -72,8 +74,95 @@
         <input type="radio" name="pick1"> Or this one?
       </label>
 
+      <label>
+        Message
+        <textarea></textarea>
+      </label>
+
+      <label>
+        Watering interval
+        <input name="interval" oninput="result.value=parseInt(interval.value)" type="range" min="1" max="30" value="7">
+        <output name="results">1 Week</output>
+      </label>
+
 
     </div>
   </section>
 </body>
 </html>
+
+<!-- <div class="mg4--b">
+      <h2>buttons</h2>
+      <button class="btn">
+        primary
+      </button>
+      <button class="btn btn--secondary">
+        secondary
+      </button>
+      <button class="btn btn--success">
+        success
+      </button>
+
+      <button class="btn btn--alert">
+        alert
+      </button>
+
+      <button class="btn btn--error">
+        error
+      </button>
+
+      <button class="btn" disabled>
+        disabled
+      </button>
+    </div>
+
+
+    <div class="mg4--b">
+      <h2>alt buttons</h2>
+      <button class="btn btn--alt">
+        primary
+      </button>
+      <button class="btn btn--alt btn--secondary">
+        secondary
+      </button>
+      <button class="btn btn--alt btn--success">
+        success
+      </button>
+
+      <button class="btn btn--alt btn--alert">
+        alert
+      </button>
+
+      <button class="btn btn--alt btn--error">
+        error
+      </button>
+
+      <button class="btn btn--alt" disabled>
+        disabled
+      </button>
+    </div>
+
+    <div class="mg4--b">
+      <h2>clear buttons</h2>
+      <button class="btn btn--clear">
+        primary
+      </button>
+      <button class="btn btn--clear btn--secondary">
+        secondary
+      </button>
+      <button class="btn btn--clear btn--success">
+        success
+      </button>
+
+      <button class="btn btn--clear btn--alert">
+        alert
+      </button>
+
+      <button class="btn btn--clear btn--error">
+        error
+      </button>
+
+      <button class="btn btn--clear" disabled>
+        disabled
+      </button>
+    </div> -->
