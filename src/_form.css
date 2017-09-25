@@ -3,6 +3,8 @@
 @import './form/_fieldset.css';
 @import './form/_check.css';
 @import './form/_field.css';
+@import './form/_file.css';
 @import './form/_range.css';
 @import './form/_select.css';
 @import './form/_textarea.css';
+@import './form/_progress.css';

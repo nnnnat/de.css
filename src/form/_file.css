@@ -1,0 +1,9 @@
+/*
+  file:
+*/
+
+input[type=file] {
+  display: block;
+  margin: $ms0 0;
+  width: 100%;
+}

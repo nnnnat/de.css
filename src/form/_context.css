@@ -13,7 +13,6 @@
   display: block;
   font-size: $ms1;
   font-style: italic;
-  font-weight: normal;
   margin: $ms0 0 0;
   opacity: .75;
 }
@@ -23,7 +22,6 @@
   color: $error;
   display: none;
   font-size: $ms1;
-  font-weight: normal;
   margin: $ms0 0 0;
 
   :invalid + & {

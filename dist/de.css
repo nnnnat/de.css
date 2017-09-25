@@ -565,7 +565,6 @@ video {
   display: block;
   font-size: .875rem;
   font-style: italic;
-  font-weight: normal;
   margin: .5rem 0 0;
   opacity: .75;
 }
@@ -576,7 +575,6 @@ video {
   color: #F2416A;
   display: none;
   font-size: .875rem;
-  font-weight: normal;
   margin: .5rem 0 0;
 }
 
@@ -590,21 +588,23 @@ video {
 
 label {
   display: block;
-  font-weight: bold;
   line-height: 1.25;
   margin: 0 0 1rem;
   width: 100%;
 }
 
-.group label,
-  .gp label {
-    margin: 0 .5rem 1rem;
+label .inline {
+    display: inline-block;
+    width: 50%;
   }
 
-.group label:first-of-type,
-    .group label:last-of-type,
-    .gp label:first-of-type,
-    .gp label:last-of-type {
+/* in groups */
+
+.gp label {
+    margin: 0 0 1rem .5rem;
+  }
+
+.gp label:first-of-type {
       margin: 0 0 1rem;
     }
 
@@ -612,11 +612,17 @@ label {
   fieldset:
 */
 
+fieldset .gp {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+
 legend {
   display: block;
   font-size: 1rem;
+  font-weight: bold;
   line-height: 1.25;
-  margin: 0;
+  margin: 0 0 .5rem;
 }
 
 /*
@@ -713,6 +719,16 @@ textarea:disabled {
     border-color: #B2B2B2;
     cursor: not-allowed;
   }
+
+/*
+  file:
+*/
+
+input[type=file] {
+  display: block;
+  margin: .5rem 0;
+  width: 100%;
+}
 
 input[type=range] {
   margin: 1rem 0 .5rem;
@@ -814,6 +830,37 @@ textarea {
   min-height: 8rem;
   resize: vertical;
 }
+
+progress {
+  background-color: #E9E9E9;
+  border: none;
+  display: block;
+  height: .250rem;
+  font-size: 0;
+  line-height: 0;
+  width: 100%;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+}
+
+progress[value] {
+    color: #AC6BD6;
+  }
+
+progress::-webkit-progress-bar {
+    background-color: #E9E9E9;
+  }
+
+progress::-webkit-progress-value {
+    background-color: #AC6BD6;
+  }
+
+progress::-moz-progress-bar {
+    background-color: #AC6BD6;
+  }
 
 /*
   table:

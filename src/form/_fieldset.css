@@ -2,9 +2,17 @@
   fieldset:
 */
 
+fieldset {
+
+  .gp {
+    flex-wrap: nowrap;
+  }
+}
+
 legend {
   display: block;
   font-size: $ms2;
+  font-weight: bold;
   line-height: $leadingTitle;
-  margin: 0;
+  margin: 0 0 $ms0;
 }
