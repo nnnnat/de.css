@@ -10,7 +10,7 @@ de.css is a default set of CSS Modules for designing mobile first interfaces
 * IE11+ support
 * Mobile first
 * Accessibility in mind
-* 30ish KB
+* 35ish KB
 * No JS needed
 
 <!--## Goals
