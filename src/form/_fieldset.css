@@ -14,5 +14,5 @@ legend {
   font-size: $ms2;
   font-weight: bold;
   line-height: $leadingTitle;
-  margin: 0 0 $ms0;
+  margin: $ms2 0 $ms0;
 }

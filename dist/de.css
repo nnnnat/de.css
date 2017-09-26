@@ -566,7 +566,6 @@ video {
   font-size: .875rem;
   font-style: italic;
   margin: .5rem 0 0;
-  opacity: .75;
 }
 
 /* error message */
@@ -622,7 +621,7 @@ legend {
   font-size: 1rem;
   font-weight: bold;
   line-height: 1.25;
-  margin: 0 0 .5rem;
+  margin: 1rem 0 .5rem;
 }
 
 /*

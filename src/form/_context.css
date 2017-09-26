@@ -14,7 +14,6 @@
   font-size: $ms1;
   font-style: italic;
   margin: $ms0 0 0;
-  opacity: .75;
 }
 
 /* error message */
