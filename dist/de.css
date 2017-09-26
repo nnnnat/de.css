@@ -275,12 +275,12 @@ pre {
 }
 
 ::-moz-selection {
-  background-color: rgb(234, 218, 245);
+  background-color: rgb(230, 209, 244);
   text-shadow: none;
 }
 
 ::selection {
-  background-color: rgb(234, 218, 245);
+  background-color: rgb(230, 209, 244);
   text-shadow: none;
 }
 
@@ -345,7 +345,7 @@ video {
 */
 
 .btn {
-  background-color: #AC6BD6;
+  background-color: #9C47D1;
   border: .063rem solid transparent;
   border-radius: .125rem;
   color: #FFFFFF;
@@ -369,7 +369,7 @@ video {
 
 .btn:hover,
 .btn:focus {
-    background-color: rgb(112, 70, 139);
+    background-color: rgb(101, 46, 136);
   }
 
 .btn--secondary {
@@ -425,13 +425,13 @@ video {
 .btn--alt {
   background-color: transparent;
   border-color: currentColor;
-  color: #AC6BD6;
+  color: #9C47D1;
 }
 
 .btn--alt:hover,
 .btn--alt:focus {
     background-color: transparent;
-    color: rgb(112, 70, 139);
+    color: rgb(101, 46, 136);
   }
 
 .btn--alt.btn--secondary {
@@ -485,13 +485,13 @@ video {
 .btn--clear {
   background-color: transparent;
   border-color: transparent;
-  color: #AC6BD6;
+  color: #9C47D1;
 }
 
 .btn--clear:hover,
 .btn--clear:focus {
     background-color: transparent;
-    color: rgb(112, 70, 139);
+    color: rgb(101, 46, 136);
   }
 
 .btn--clear.btn--secondary {
@@ -747,7 +747,7 @@ input[type=range]::-webkit-slider-runnable-track {
   }
 
 input[type=range]::-webkit-slider-thumb {
-    background-color: #AC6BD6;
+    background-color: #9C47D1;
     border: none;
     border-radius: 50%;
     cursor: pointer;
@@ -767,7 +767,7 @@ input[type=range]::-moz-range-track {
   }
 
 input[type=range]::-moz-range-thumb {
-    background-color: #AC6BD6;
+    background-color: #9C47D1;
     border: none;
     border-radius: 50%;
     cursor: pointer;
@@ -794,7 +794,7 @@ input[type=range]::-ms-fill-lower,
   }
 
 input[type=range]::-ms-thumb {
-    background-color: #AC6BD6;
+    background-color: #9C47D1;
     border: 1rem solid rgba(47, 47, 47, 0);
     border-radius: 50%;
     cursor: pointer;
@@ -846,7 +846,7 @@ progress {
 }
 
 progress[value] {
-    color: #AC6BD6;
+    color: #9C47D1;
   }
 
 progress::-webkit-progress-bar {
@@ -854,11 +854,11 @@ progress::-webkit-progress-bar {
   }
 
 progress::-webkit-progress-value {
-    background-color: #AC6BD6;
+    background-color: #9C47D1;
   }
 
 progress::-moz-progress-bar {
-    background-color: #AC6BD6;
+    background-color: #9C47D1;
   }
 
 /*
@@ -2634,7 +2634,7 @@ th {
 */
 
 .bg--primary {
-    background-color: #AC6BD6;
+    background-color: #9C47D1;
   }
 
 .bg--secondary {
@@ -2773,7 +2773,7 @@ th {
 /* color utils */
 
 .tx--primary {
-    color: #AC6BD6;
+    color: #9C47D1;
   }
 
 .tx--secondary {
@@ -2853,7 +2853,7 @@ th {
 /* color utils */
 
 .bdr--primary {
-    border-color: #AC6BD6;
+    border-color: #9C47D1;
   }
 
 .bdr--secondary {
