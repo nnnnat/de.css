@@ -1,10 +1,13 @@
 /*
   container:
 */
-.cn {
+[class^=cn] {
   margin: auto;
   padding: $ms2;
   width: 100%;
+}
+
+.cn {
 
   &0 {
     max-width: $xs;

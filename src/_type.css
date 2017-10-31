@@ -13,38 +13,82 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
   font-weight: bold;
   line-height: $leadingTitle;
   margin: 0 0 $ms0;
 }
 
-h1 {
+h1,
+.h1 {
   font-size: $ms6;
 }
 
-h2 {
+h2,
+.h2 {
   font-size: $ms5;
 }
 
-h3 {
+h3,
+.h3 {
   font-size: $ms4;
 }
 
-h4 {
+h4,
+.h4 {
   font-size: $ms3;
 }
 
-h5 {
+h5,
+.h5 {
   font-size: $ms2;
 }
 
-h6 {
+h6,
+.h6 {
   font-size: $ms1;
 }
 
 /* copy */
-p {
+p,
+.h1 {
+  font-size: $ms6;
+}
+
+h2,
+.h2 {
+  font-size: $ms5;
+}
+
+h3,
+.h3 {
+  font-size: $ms4;
+}
+
+h4,
+.h4 {
+  font-size: $ms3;
+}
+
+h5,
+.h5 {
+  font-size: $ms2;
+}
+
+h6,
+.h6 {
+  font-size: $ms1;
+}
+
+/* copy */
+p,
+.p {
   font-size: $ms2;
   margin: 0 0 $ms2;
 }
