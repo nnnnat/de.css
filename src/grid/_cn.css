@@ -1,7 +1,7 @@
 /*
   container:
 */
-[class^=cn] {
+[class*=cn] {
   margin: auto;
   padding: $ms2;
   width: 100%;
