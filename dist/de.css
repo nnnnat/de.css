@@ -389,7 +389,7 @@ video {
   button:
 */
 
-.btn {
+[class^=btn] {
   background-color: #9C47D1;
   border: .063rem solid transparent;
   border-radius: .125rem;
@@ -412,8 +412,8 @@ video {
   appearance: none;
 }
 
-.btn:hover,
-.btn:focus {
+[class^=btn]:hover,
+[class^=btn]:focus {
     background-color: rgb(101, 46, 136);
   }
 

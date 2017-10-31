@@ -1,7 +1,7 @@
 /*
   button:
 */
-.btn {
+[class^=btn] {
   background-color: $primary;
   border: $line0 solid transparent;
   border-radius: $line1;
@@ -26,6 +26,9 @@
   &:--enter {
     background-color: color($primary shade(35%));
   }
+}
+
+.btn {
 
   &--secondary {
     background-color: $secondary;
