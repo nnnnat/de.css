@@ -5,7 +5,7 @@
   "main": "/dist/de.min.css",
   "scripts": {
     "build": "node_modules/.bin/postcss dist/de.css -u cssnano -o dist/de.min.css --no-map",
-    "prebuild": "npm i && npm run lint && npm start",
+    "prebuild": "npm run lint && npm start",
     "start": "npm run css",
     "dev": "run-p browserSync css:watch",
     "css": "node_modules/.bin/postcss src/de.css -o dist/de.css",

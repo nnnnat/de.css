@@ -9,7 +9,6 @@
 }
 
 .gr {
-
   @each $size, $i in $ms0, $ms1, $ms2, $ms3, $ms4, $ms5, $ms6 {
 
     &--g$(i) {
