@@ -1,13 +1,16 @@
 /*
   cell:
 */
-.cl {
+[class^=cl] {
   flex-basis: 100%;
   max-width: 100%;
   flex-grow: 0;
   flex-shrink: 1;
   max-width: 100%;
   width: auto;
+}
+
+.cl {
 
   /* base cell sizes */
   &--1 {

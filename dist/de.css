@@ -1035,7 +1035,7 @@ th {
   grid:
 */
 
-.gr {
+[class^=gr] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1053,7 +1053,7 @@ th {
       width: calc(.5rem + 100%);
     }
 
-.gr--g0 > .cl {
+.gr--g0 > [class^=cl] {
         padding: .5rem 0 0 .5rem;
       }
 
@@ -1063,7 +1063,7 @@ th {
           width: calc(.5rem + 100%);
         }
 
-          .gr--xs-g0 > .cl {
+          .gr--xs-g0 > [class^=cl] {
             padding: .5rem 0 0 .5rem;
           }
       }
@@ -1074,7 +1074,7 @@ th {
           width: calc(.5rem + 100%);
         }
 
-          .gr--sm-g0 > .cl {
+          .gr--sm-g0 > [class^=cl] {
             padding: .5rem 0 0 .5rem;
           }
       }
@@ -1085,7 +1085,7 @@ th {
           width: calc(.5rem + 100%);
         }
 
-          .gr--md-g0 > .cl {
+          .gr--md-g0 > [class^=cl] {
             padding: .5rem 0 0 .5rem;
           }
       }
@@ -1096,7 +1096,7 @@ th {
           width: calc(.5rem + 100%);
         }
 
-          .gr--lg-g0 > .cl {
+          .gr--lg-g0 > [class^=cl] {
             padding: .5rem 0 0 .5rem;
           }
       }
@@ -1107,7 +1107,7 @@ th {
           width: calc(.5rem + 100%);
         }
 
-          .gr--xl-g0 > .cl {
+          .gr--xl-g0 > [class^=cl] {
             padding: .5rem 0 0 .5rem;
           }
       }
@@ -1117,7 +1117,7 @@ th {
       width: calc(.875rem + 100%);
     }
 
-.gr--g1 > .cl {
+.gr--g1 > [class^=cl] {
         padding: .875rem 0 0 .875rem;
       }
 
@@ -1127,7 +1127,7 @@ th {
           width: calc(.875rem + 100%);
         }
 
-          .gr--xs-g1 > .cl {
+          .gr--xs-g1 > [class^=cl] {
             padding: .875rem 0 0 .875rem;
           }
       }
@@ -1138,7 +1138,7 @@ th {
           width: calc(.875rem + 100%);
         }
 
-          .gr--sm-g1 > .cl {
+          .gr--sm-g1 > [class^=cl] {
             padding: .875rem 0 0 .875rem;
           }
       }
@@ -1149,7 +1149,7 @@ th {
           width: calc(.875rem + 100%);
         }
 
-          .gr--md-g1 > .cl {
+          .gr--md-g1 > [class^=cl] {
             padding: .875rem 0 0 .875rem;
           }
       }
@@ -1160,7 +1160,7 @@ th {
           width: calc(.875rem + 100%);
         }
 
-          .gr--lg-g1 > .cl {
+          .gr--lg-g1 > [class^=cl] {
             padding: .875rem 0 0 .875rem;
           }
       }
@@ -1171,7 +1171,7 @@ th {
           width: calc(.875rem + 100%);
         }
 
-          .gr--xl-g1 > .cl {
+          .gr--xl-g1 > [class^=cl] {
             padding: .875rem 0 0 .875rem;
           }
       }
@@ -1181,7 +1181,7 @@ th {
       width: calc(1rem + 100%);
     }
 
-.gr--g2 > .cl {
+.gr--g2 > [class^=cl] {
         padding: 1rem 0 0 1rem;
       }
 
@@ -1191,7 +1191,7 @@ th {
           width: calc(1rem + 100%);
         }
 
-          .gr--xs-g2 > .cl {
+          .gr--xs-g2 > [class^=cl] {
             padding: 1rem 0 0 1rem;
           }
       }
@@ -1202,7 +1202,7 @@ th {
           width: calc(1rem + 100%);
         }
 
-          .gr--sm-g2 > .cl {
+          .gr--sm-g2 > [class^=cl] {
             padding: 1rem 0 0 1rem;
           }
       }
@@ -1213,7 +1213,7 @@ th {
           width: calc(1rem + 100%);
         }
 
-          .gr--md-g2 > .cl {
+          .gr--md-g2 > [class^=cl] {
             padding: 1rem 0 0 1rem;
           }
       }
@@ -1224,7 +1224,7 @@ th {
           width: calc(1rem + 100%);
         }
 
-          .gr--lg-g2 > .cl {
+          .gr--lg-g2 > [class^=cl] {
             padding: 1rem 0 0 1rem;
           }
       }
@@ -1235,7 +1235,7 @@ th {
           width: calc(1rem + 100%);
         }
 
-          .gr--xl-g2 > .cl {
+          .gr--xl-g2 > [class^=cl] {
             padding: 1rem 0 0 1rem;
           }
       }
@@ -1245,7 +1245,7 @@ th {
       width: calc(1.25rem + 100%);
     }
 
-.gr--g3 > .cl {
+.gr--g3 > [class^=cl] {
         padding: 1.25rem 0 0 1.25rem;
       }
 
@@ -1255,7 +1255,7 @@ th {
           width: calc(1.25rem + 100%);
         }
 
-          .gr--xs-g3 > .cl {
+          .gr--xs-g3 > [class^=cl] {
             padding: 1.25rem 0 0 1.25rem;
           }
       }
@@ -1266,7 +1266,7 @@ th {
           width: calc(1.25rem + 100%);
         }
 
-          .gr--sm-g3 > .cl {
+          .gr--sm-g3 > [class^=cl] {
             padding: 1.25rem 0 0 1.25rem;
           }
       }
@@ -1277,7 +1277,7 @@ th {
           width: calc(1.25rem + 100%);
         }
 
-          .gr--md-g3 > .cl {
+          .gr--md-g3 > [class^=cl] {
             padding: 1.25rem 0 0 1.25rem;
           }
       }
@@ -1288,7 +1288,7 @@ th {
           width: calc(1.25rem + 100%);
         }
 
-          .gr--lg-g3 > .cl {
+          .gr--lg-g3 > [class^=cl] {
             padding: 1.25rem 0 0 1.25rem;
           }
       }
@@ -1299,7 +1299,7 @@ th {
           width: calc(1.25rem + 100%);
         }
 
-          .gr--xl-g3 > .cl {
+          .gr--xl-g3 > [class^=cl] {
             padding: 1.25rem 0 0 1.25rem;
           }
       }
@@ -1309,7 +1309,7 @@ th {
       width: calc(1.5rem + 100%);
     }
 
-.gr--g4 > .cl {
+.gr--g4 > [class^=cl] {
         padding: 1.5rem 0 0 1.5rem;
       }
 
@@ -1319,7 +1319,7 @@ th {
           width: calc(1.5rem + 100%);
         }
 
-          .gr--xs-g4 > .cl {
+          .gr--xs-g4 > [class^=cl] {
             padding: 1.5rem 0 0 1.5rem;
           }
       }
@@ -1330,7 +1330,7 @@ th {
           width: calc(1.5rem + 100%);
         }
 
-          .gr--sm-g4 > .cl {
+          .gr--sm-g4 > [class^=cl] {
             padding: 1.5rem 0 0 1.5rem;
           }
       }
@@ -1341,7 +1341,7 @@ th {
           width: calc(1.5rem + 100%);
         }
 
-          .gr--md-g4 > .cl {
+          .gr--md-g4 > [class^=cl] {
             padding: 1.5rem 0 0 1.5rem;
           }
       }
@@ -1352,7 +1352,7 @@ th {
           width: calc(1.5rem + 100%);
         }
 
-          .gr--lg-g4 > .cl {
+          .gr--lg-g4 > [class^=cl] {
             padding: 1.5rem 0 0 1.5rem;
           }
       }
@@ -1363,7 +1363,7 @@ th {
           width: calc(1.5rem + 100%);
         }
 
-          .gr--xl-g4 > .cl {
+          .gr--xl-g4 > [class^=cl] {
             padding: 1.5rem 0 0 1.5rem;
           }
       }
@@ -1373,7 +1373,7 @@ th {
       width: calc(2.25rem + 100%);
     }
 
-.gr--g5 > .cl {
+.gr--g5 > [class^=cl] {
         padding: 2.25rem 0 0 2.25rem;
       }
 
@@ -1383,7 +1383,7 @@ th {
           width: calc(2.25rem + 100%);
         }
 
-          .gr--xs-g5 > .cl {
+          .gr--xs-g5 > [class^=cl] {
             padding: 2.25rem 0 0 2.25rem;
           }
       }
@@ -1394,7 +1394,7 @@ th {
           width: calc(2.25rem + 100%);
         }
 
-          .gr--sm-g5 > .cl {
+          .gr--sm-g5 > [class^=cl] {
             padding: 2.25rem 0 0 2.25rem;
           }
       }
@@ -1405,7 +1405,7 @@ th {
           width: calc(2.25rem + 100%);
         }
 
-          .gr--md-g5 > .cl {
+          .gr--md-g5 > [class^=cl] {
             padding: 2.25rem 0 0 2.25rem;
           }
       }
@@ -1416,7 +1416,7 @@ th {
           width: calc(2.25rem + 100%);
         }
 
-          .gr--lg-g5 > .cl {
+          .gr--lg-g5 > [class^=cl] {
             padding: 2.25rem 0 0 2.25rem;
           }
       }
@@ -1427,7 +1427,7 @@ th {
           width: calc(2.25rem + 100%);
         }
 
-          .gr--xl-g5 > .cl {
+          .gr--xl-g5 > [class^=cl] {
             padding: 2.25rem 0 0 2.25rem;
           }
       }
@@ -1437,7 +1437,7 @@ th {
       width: calc(3rem + 100%);
     }
 
-.gr--g6 > .cl {
+.gr--g6 > [class^=cl] {
         padding: 3rem 0 0 3rem;
       }
 
@@ -1447,7 +1447,7 @@ th {
           width: calc(3rem + 100%);
         }
 
-          .gr--xs-g6 > .cl {
+          .gr--xs-g6 > [class^=cl] {
             padding: 3rem 0 0 3rem;
           }
       }
@@ -1458,7 +1458,7 @@ th {
           width: calc(3rem + 100%);
         }
 
-          .gr--sm-g6 > .cl {
+          .gr--sm-g6 > [class^=cl] {
             padding: 3rem 0 0 3rem;
           }
       }
@@ -1469,7 +1469,7 @@ th {
           width: calc(3rem + 100%);
         }
 
-          .gr--md-g6 > .cl {
+          .gr--md-g6 > [class^=cl] {
             padding: 3rem 0 0 3rem;
           }
       }
@@ -1480,7 +1480,7 @@ th {
           width: calc(3rem + 100%);
         }
 
-          .gr--lg-g6 > .cl {
+          .gr--lg-g6 > [class^=cl] {
             padding: 3rem 0 0 3rem;
           }
       }
@@ -1491,7 +1491,7 @@ th {
           width: calc(3rem + 100%);
         }
 
-          .gr--xl-g6 > .cl {
+          .gr--xl-g6 > [class^=cl] {
             padding: 3rem 0 0 3rem;
           }
       }
@@ -1500,7 +1500,7 @@ th {
   cell:
 */
 
-.cl {
+[class^=cl] {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   max-width: 100%;
@@ -2874,7 +2874,7 @@ th {
   border:
 */
 
-.bdr {
+[class*=bdr] {
   border: .063rem solid currentColor;
 }
 

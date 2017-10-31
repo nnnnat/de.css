@@ -1,8 +1,11 @@
 /*
   border:
 */
-.bdr {
+[class*=bdr] {
   border: $line0 solid currentColor;
+}
+
+.bdr {
 
   /* position utils */
   &--t {

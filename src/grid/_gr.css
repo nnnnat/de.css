@@ -1,11 +1,14 @@
 /*
   grid:
 */
-.gr {
+[class^=gr] {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   width: inherit;
+}
+
+.gr {
 
   @each $size, $i in $ms0, $ms1, $ms2, $ms3, $ms4, $ms5, $ms6 {
 
@@ -13,7 +16,7 @@
       margin: -$ms$(i) 0 $ms$(i) -$ms$(i);
       width: calc($ms$(i) + 100%);
 
-      & > .cl {
+      & > [class^=cl] {
         padding: $ms$(i) 0 0 $ms$(i);
       }
     }
@@ -24,7 +27,7 @@
           margin: -$ms$(i) 0 $ms$(i) -$ms$(i);
           width: calc($ms$(i) + 100%);
 
-          & > .cl {
+          & > [class^=cl] {
             padding: $ms$(i) 0 0 $ms$(i);
           }
         }
