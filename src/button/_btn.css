@@ -13,7 +13,8 @@
   font-weight: bold;
   line-height: $leading;
   margin: 0;
-  padding: $ms $ms2;
+  padding: $ms0 $ms2;
+  text-align: center;
   text-decoration: none;
 
   -ms-touch-action: manipulation;
@@ -25,6 +26,10 @@
 
   &:--enter {
     background-color: color($primary shade(35%));
+  }
+
+  & + [class*=btn] {
+    margin-left: $ms0
   }
 }
 
@@ -43,6 +48,7 @@
 
     &:--enter {
       background-color: color($success shade(35%));
+      color: $white;
     }
   }
 

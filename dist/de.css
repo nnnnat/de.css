@@ -84,15 +84,15 @@ textarea,
 
 /* links */
 
-a:not(.btn) {
+a:not([class*=btn]) {
   border-bottom: .063rem solid currentColor;
   color: inherit;
   opacity: 1;
   text-decoration: none;
 }
 
-a:not(.btn):hover,
-a:not(.btn):focus {
+a:not([class*=btn]):hover,
+a:not([class*=btn]):focus {
     opacity: .75;
   }
 
@@ -402,6 +402,7 @@ video {
   line-height: 1.5;
   margin: 0;
   padding: .5rem 1rem;
+  text-align: center;
   text-decoration: none;
 
   -ms-touch-action: manipulation;
@@ -415,6 +416,10 @@ video {
 [class^=btn]:hover,
 [class^=btn]:focus {
     background-color: rgb(101, 46, 136);
+  }
+
+[class^=btn] + [class*=btn] {
+    margin-left: .5rem
   }
 
 .btn--secondary {
@@ -434,6 +439,7 @@ video {
 .btn--success:hover,
 .btn--success:focus {
       background-color: rgb(53, 139, 117);
+      color: #FFFFFF;
     }
 
 .btn--alert {
@@ -965,17 +971,15 @@ th {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  max-width: 100%;
-  width: 100%;
 }
 
-.gp--start {
+.gp--left {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
 
-.gp--end {
+.gp--right {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
@@ -1006,7 +1010,6 @@ th {
 */
 
 [class*=cn] {
-  margin: auto;
   width: 100%;
 }
 
@@ -2983,10 +2986,6 @@ th {
       margin-top: .5rem;
     }
 
-.mg0--a {
-      margin: auto;
-    }
-
 .mg1 {
     margin: .875rem;
   }
@@ -3015,10 +3014,6 @@ th {
 
 .mg1--t {
       margin-top: .875rem;
-    }
-
-.mg1--a {
-      margin: auto;
     }
 
 .mg2 {
@@ -3051,10 +3046,6 @@ th {
       margin-top: 1rem;
     }
 
-.mg2--a {
-      margin: auto;
-    }
-
 .mg3 {
     margin: 1.25rem;
   }
@@ -3083,10 +3074,6 @@ th {
 
 .mg3--t {
       margin-top: 1.25rem;
-    }
-
-.mg3--a {
-      margin: auto;
     }
 
 .mg4 {
@@ -3119,10 +3106,6 @@ th {
       margin-top: 1.5rem;
     }
 
-.mg4--a {
-      margin: auto;
-    }
-
 .mg5 {
     margin: 2.25rem;
   }
@@ -3151,10 +3134,6 @@ th {
 
 .mg5--t {
       margin-top: 2.25rem;
-    }
-
-.mg5--a {
-      margin: auto;
     }
 
 .mg6 {
@@ -3187,9 +3166,9 @@ th {
       margin-top: 3rem;
     }
 
-.mg6--a {
-      margin: auto;
-    }
+.mg--auto {
+  margin: auto;
+}
 
 /*
   padding:

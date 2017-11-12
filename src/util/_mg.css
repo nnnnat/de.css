@@ -30,9 +30,9 @@
     &--t {
       margin-top: $ms$(i);
     }
-
-    &--a {
-      margin: auto;
-    }
   }
+}
+
+.mg--auto {
+  margin: auto;
 }

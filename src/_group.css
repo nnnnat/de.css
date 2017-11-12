@@ -6,17 +6,15 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  max-width: 100%;
-  width: 100%;
 }
 
 .gp {
 
-  &--start {
+  &--left {
     justify-content: flex-start;
   }
 
-  &--end {
+  &--right {
     justify-content: flex-end;
   }
 
