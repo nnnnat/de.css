@@ -9,7 +9,7 @@
     "start": "npm run css",
     "dev": "run-p browserSync css:watch",
     "css": "node_modules/.bin/postcss src/de.css -o dist/de.css -c ./config/postcss.config.js",
-    "css:watch": "npm start -- -w",
+    "css:watch": "npm run css -- -w",
     "browserSync": "node_modules/.bin/browser-sync start -s 'dist' -f 'dist' --port 3000 --no-ghost-mode",
     "lint": "node_modules/.bin/stylelint ./src/**/*.css"
   },
