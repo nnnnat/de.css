@@ -54,9 +54,9 @@
   "dependencies": {
     "de.a11y.css": "^1.0.0",
     "de.base.css": "^1.1.1",
-    "de.cta.css": "^1.0.0",
+    "de.cta.css": "^1.0.1",
     "de.form.css": "^1.0.0",
-    "de.layout.css": "^1.1.1",
+    "de.layout.css": "^1.1.2",
     "de.media.css": "^1.0.0",
     "de.table.css": "^1.0.0",
     "de.type.css": "^1.0.1",
