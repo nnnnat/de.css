@@ -1,6 +1,6 @@
 {
   "name": "de.css",
-  "version": "0.5.2",
+  "version": "0.6.0",
   "description": "de.css is a default set of CSS Modules for designing mobile first interfaces",
   "main": "/dist/de.min.css",
   "scripts": {
