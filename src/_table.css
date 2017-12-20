@@ -1,0 +1,22 @@
+/* ===============================================================================
+table: table, cells, 
+=============================================================================== */
+
+/* table */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+/* cells */
+td,
+th {
+  border: var(--line1) solid currentColor;
+  padding: var(--ms1) var(--ms3);
+}
+
+th {
+  font-weight: bold;
+  text-align: left;
+}

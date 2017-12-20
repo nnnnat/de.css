@@ -1,4 +1,726 @@
-body {
-  background-color: #F2416A;
+/* ===============================================================================
+a11y:  hidden, aria
+=============================================================================== */
+
+/* hidden */
+
+[hidden] {
+  display: none;
+}
+
+/* aria */
+
+[aria-busy='true'] {
+  cursor: progress;
+}
+
+[aria-controls] {
+  cursor: pointer;
+}
+
+[aria-disabled] {
+  cursor: default;
+}
+
+[aria-hidden='false'][hidden]:not(:focus) {
+  clip: rect(0, 0, 0, 0);
+  display: inherit;
+  position: absolute;
+}
+
+/* ===============================================================================
+base: selection, everything, body, svg, progress, html5 fix 
+=============================================================================== */
+
+/* selection */
+
+::-moz-selection {
+  background-color: #9C47D1;
   color: #FFFFFF;
+  text-shadow: none;
+}
+
+::selection {
+  background-color: #9C47D1;
+  color: #FFFFFF;
+  text-shadow: none;
+}
+
+/* everything: */
+
+*,
+::before,
+::after {
+  background-repeat: no-repeat;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* body: */
+
+body {
+  color: #2F2F2F;
+  font: normal normal 1rem / 1.5 system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  margin: 0;
+}
+
+/* hr: */
+
+hr {
+  border: none;
+  border-top: .063rem solid currentColor;
+  color: inherit;
+  display: block;
+  margin: 1rem 0;
+}
+
+/* svg: */
+
+svg {
+  stroke: currentColor;
+  fill: currentColor
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* progress */
+
+progress {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: #E9E9E9;
+  border: none;
+  display: block;
+  height: .250rem;
+  font-size: 0;
+  line-height: 0;
+  width: 100%
+
+}
+
+progress[value] {
+  color: #9C47D1;
+}
+
+progress::-webkit-progress-bar {
+  background-color: #E9E9E9;
+}
+
+progress::-webkit-progress-value {
+  background-color: #9C47D1;
+}
+
+progress::-moz-progress-bar {
+  background-color: #9C47D1;
+}
+
+/* html5 fix for IE9: TODO: might not need this! */
+
+article, aside, details, footer,
+header, menu, nav, section {
+  display: block;
+}
+
+/* ===============================================================================
+type: headers, copy, list, inline, code 
+=============================================================================== */
+
+/* headers
+=============================================================================== */
+
+/* h1 */
+
+h1 {
+  margin: 0 0 .5rem;
+  line-height: 1.5;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+/* h2 */
+
+h2 {
+  margin: 0 0 .5rem;
+  line-height: 1.5;
+  font-weight: bold;
+  font-size: 2.25rem;
+}
+
+/* h3 */
+
+h3 {
+  margin: 0 0 .5rem;
+  line-height: 1.5;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+/* h4 */
+
+h4 {
+  margin: 0 0 .5rem;
+  line-height: 1.5;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/* h5 */
+
+h5 {
+  margin: 0 0 .5rem;
+  line-height: 1.5;
+  font-weight: bold;
+  font-size: .875rem;
+}
+
+/* h6 */
+
+h6 {
+  margin: 0 0 .5rem;
+  line-height: 1.5;
+  font-weight: bold;
+  font-size: .5rem;
+}
+
+/* copy 
+=============================================================================== */
+
+/* p */
+
+p {
+  margin: .5rem 0 1rem;
+}
+
+/* figcaption */
+
+figcaption {
+  display: block;
+  font-size: 1rem;
+  font-style: italic;
+  margin: 1rem 0 0;
+}
+
+/* blockquote */
+
+blockquote {
+  border-left: .063rem solid currentColor;
+  font-size: 125%;
+  line-height: 1.25;
+  margin: 1.5rem 0;
+  padding: 0 0 0 2.25rem;
+}
+
+/* address */
+
+address {
+  font-size: 1rem;
+  margin: 0 0 .875rem;
+}
+
+/* caption */
+
+caption {
+  margin: 0 0 .5rem;
+  text-align: left;
+}
+
+/* list 
+=============================================================================== */
+
+/* unordered & ordered list */
+
+ul,
+ol {
+  margin: 1rem 0 1rem .5rem;
+  padding: 0 0 0 1rem
+}
+
+ul ul,
+  ul ol,
+  ol ul,
+  ol ol {
+  margin: .250rem 0;
+}
+
+/* list styles */
+
+ul {
+  list-style: disc
+}
+
+ul ul {
+  list-style: circle;
+}
+
+ol {
+  list-style: decimal;
+}
+
+/* discription list */
+
+dl {
+  margin: 1rem 0 0
+}
+
+dl dt {
+  font-weight: bold;
+  margin: 0;
+}
+
+dl dd {
+  margin: 0 0 1rem;
+}
+
+/* inline
+=============================================================================== */
+
+mark {
+  background-color: #F5C650;
+  color: #623E79;
+  padding: .250rem;
+}
+
+small {
+  font-size: 75%;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+del {
+  background-color: #F9F9F9;
+  color: #623E79;
+  padding: .250rem;
+}
+
+ins {
+  background-color: rgba(#F5C650, .75);
+  color: #623E79;
+  padding: .250rem;
+}
+
+i,
+em {
+  font-style: italic;
+}
+
+abbr {
+  border-bottom: .063rem dotted #B2B2B2;
+  color: #B2B2B2;
+  cursor: help;
+  text-decoration: none;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -.250rem;
+}
+
+sup {
+  top: -.5rem;
+}
+
+/* code
+=============================================================================== */
+
+code {
+  color: #2F2F2F;
+  border-radius: .125rem;
+  background-color: #E9E9E9;
+  display: inline-block;
+  margin: .5rem 0;
+  padding: .5rem 1rem;
+  word-break: break-all;
+}
+
+pre {
+  color: #2F2F2F;
+  border-radius: .125rem;
+  background-color: #E9E9E9;
+  font-size: 75%;
+  margin: 1rem 0;
+  white-space: pre-wrap;
+}
+
+/* ===============================================================================
+cta: link, button
+=============================================================================== */
+
+/* link */
+
+a {
+  background-color: transparent;
+  border-bottom: .063rem solid currentColor;
+  color: inherit;
+  text-decoration: none;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation
+}
+
+a:hover,
+a:focus {
+  color: #6B6B6B;
+}
+
+/* button */
+
+button,
+[type=submit],
+[type=reset],
+[type=button] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: #9C47D1;
+  border: .063rem solid transparent;
+  border-radius: .125rem;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.5;
+  margin: 0;
+  padding: .5rem 1rem;
+  text-align: center;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation
+}
+
+button:hover,
+[type=submit]:hover,
+[type=reset]:hover,
+[type=button]:hover,
+button:focus,
+[type=submit]:focus,
+[type=reset]:focus,
+[type=button]:focus {
+  background-color: rgb(101, 46, 136);
+  color: #FFFFFF;
+}
+
+button + button,
+[type=submit] + button,
+[type=reset] + button,
+[type=button] + button,
+button + [type=submit],
+[type=submit] + [type=submit],
+[type=reset] + [type=submit],
+[type=button] + [type=submit],
+button + [type=reset],
+[type=submit] + [type=reset],
+[type=reset] + [type=reset],
+[type=button] + [type=reset],
+button + [type=button],
+[type=submit] + [type=button],
+[type=reset] + [type=button],
+[type=button] + [type=button] {
+  margin-left: 1rem;
+}
+
+button:disabled,
+[type=submit]:disabled,
+[type=reset]:disabled,
+[type=button]:disabled {
+  background-color: #E9E9E9 !important;
+  color: #6B6B6B !important;
+  cursor: not-allowed !important;
+}
+
+/* ===============================================================================
+form: label, legend, fieldset, fields, checks, select, textarea, file, range
+=============================================================================== */
+
+/* label */
+
+label {
+  color: inherit;
+  display: block;
+  font-size: 1rem;
+  line-height: 1.25;
+  margin: 0 0 1rem;
+  width: 100%;
+}
+
+/* legend */
+
+legend {
+  color: inherit;
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.25;
+  margin: 0 0 .5rem;
+}
+
+/* fieldset */
+
+fieldset {
+  border: .063rem solid currentColor;
+  margin: 0 0 1rem;
+  padding: .5rem 1rem
+}
+
+fieldset div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+fieldset div > label:not(:first-of-type) {
+  margin-left: 1rem;
+}
+
+/* fields */
+
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=search],
+input[type=number],
+input[type=tel],
+input[type=date],
+select,
+textarea {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: #FFFFFF;
+  border: .063rem solid #B2B2B2;
+  border-radius: .125rem;
+  color: #2F2F2F;
+  display: block;
+  font-family: inherit;
+  font-size: inherit;
+  margin: .5rem 0 0;
+  padding: 1rem .875rem;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  width: 100%
+}
+
+input[type=text]:invalid,
+input[type=email]:invalid,
+input[type=password]:invalid,
+input[type=search]:invalid,
+input[type=number]:invalid,
+input[type=tel]:invalid,
+input[type=date]:invalid,
+select:invalid,
+textarea:invalid {
+  border-color: #F2416A;
+  color: #F2416A;
+}
+
+input[type=text]:disabled,
+input[type=email]:disabled,
+input[type=password]:disabled,
+input[type=search]:disabled,
+input[type=number]:disabled,
+input[type=tel]:disabled,
+input[type=date]:disabled,
+select:disabled,
+textarea:disabled {
+  background-color: #E9E9E9;
+  border-color: #B2B2B2;
+  cursor: not-allowed;
+}
+
+/* checks */
+
+input[type=radio],
+input[type=checkbox] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  font-size: 1rem;
+  margin: 0
+}
+
+input[type=radio]:disabled, input[type=checkbox]:disabled {
+  cursor: not-allowed;
+}
+
+input[type=radio]:after, input[type=checkbox]:after {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2IiB2aWV3Qm94PSIwIDAgMTYgMTYiPgo8cGF0aCBmaWxsPSIjNkI2QjZCIiBkPSJNMTIuNjY3IDEuMzMzaC05LjMzM2MtMS4xMDQgMC0yIDAuODk2LTIgMnY5LjMzM2MwIDEuMTA0IDAuODk2IDIgMiAyaDkuMzMzYzEuMTA0IDAgMi0wLjg5NiAyLTJ2LTkuMzMzYzAtMS4xMDQtMC44OTYtMi0yLTJ6TTEzLjMzMyAxMi42NjdjMCAwLjM2Ny0wLjMgMC42NjctMC42NjcgMC42NjdoLTkuMzMzYy0wLjM2NyAwLTAuNjY3LTAuMy0wLjY2Ny0wLjY2N3YtOS4zMzNjMC0wLjM2NyAwLjMtMC42NjcgMC42NjctMC42NjdoOS4zMzNjMC4zNjcgMCAwLjY2NyAwLjMgMC42NjcgMC42Njd2OS4zMzN6Ij48L3BhdGg+Cjwvc3ZnPg==);
+  content: '\00a0';
+  display: inline-block;
+  font-size: inherit;
+  vertical-align: middle;
+  width: 1rem;
+}
+
+input[type=radio]:checked:after, input[type=checkbox]:checked:after {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2IiB2aWV3Qm94PSIwIDAgMTYgMTYiPgo8cGF0aCBmaWxsPSIjNkI2QjZCIiBkPSJNMTUuODA0IDEuNTI5Yy0wLjI1OC0wLjI1OC0wLjY4My0wLjI1OC0wLjk0MiAwbC02Ljg2MiA2Ljg2Mi0xLjUyOS0xLjUyOWMtMC4yNTgtMC4yNTgtMC42ODMtMC4yNTgtMC45NDIgMHMtMC4yNTggMC42ODMgMCAwLjk0MmwyIDJjMC4xMjkgMC4xMjkgMC4zIDAuMTk2IDAuNDcxIDAuMTk2czAuMzQyLTAuMDY3IDAuNDcxLTAuMTk2bDcuMzMzLTcuMzMzYzAuMjYyLTAuMjU4IDAuMjYyLTAuNjgzIDAtMC45NDJ6Ij48L3BhdGg+CjxwYXRoIGZpbGw9IiM2QjZCNkIiIGQ9Ik0xNCA3LjMzM2MtMC4zNjcgMC0wLjY2NyAwLjMtMC42NjcgMC42Njd2NC42NjdjMCAwLjM2Ny0wLjMgMC42NjctMC42NjcgMC42NjdoLTkuMzMzYy0wLjM2NyAwLTAuNjY3LTAuMy0wLjY2Ny0wLjY2N3YtOS4zMzNjMC0wLjM2NyAwLjMtMC42NjcgMC42NjctMC42NjdoNy4zMzNjMC4zNjcgMCAwLjY2Ny0wLjMgMC42NjctMC42NjdzLTAuMy0wLjY2Ny0wLjY2Ny0wLjY2N2gtNy4zMzNjLTEuMTA0IDAtMiAwLjg5Ni0yIDJ2OS4zMzNjMCAxLjEwNCAwLjg5NiAyIDIgMmg5LjMzM2MxLjEwNCAwIDItMC44OTYgMi0ydi00LjY2N2MwLTAuMzY3LTAuMy0wLjY2Ny0wLjY2Ny0wLjY2N3oiPjwvcGF0aD4KPC9zdmc+);
+}
+
+input[type=radio]:after {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2IiB2aWV3Qm94PSIwIDAgMTYgMTYiPgo8cGF0aCBmaWxsPSIjNkI2QjZCIiBkPSJNOCAwLjY2N2MtNC4wNDIgMC03LjMzMyAzLjI5Mi03LjMzMyA3LjMzM3MzLjI5MiA3LjMzMyA3LjMzMyA3LjMzMyA3LjMzMy0zLjI5MiA3LjMzMy03LjMzMy0zLjI5Mi03LjMzMy03LjMzMy03LjMzM3pNOCAxNGMtMy4zMDggMC02LTIuNjkyLTYtNnMyLjY5Mi02IDYtNmMzLjMwOCAwIDYgMi42OTIgNiA2cy0yLjY5MiA2LTYgNnoiPjwvcGF0aD4KPC9zdmc+);
+}
+
+input[type=radio]:checked:after {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2IiB2aWV3Qm94PSIwIDAgMTYgMTYiPgo8cGF0aCBmaWxsPSIjNkI2QjZCIiBkPSJNOCAwLjY2N2MtNC4wNDIgMC03LjMzMyAzLjI5Mi03LjMzMyA3LjMzM3MzLjI5MiA3LjMzMyA3LjMzMyA3LjMzMyA3LjMzMy0zLjI5MiA3LjMzMy03LjMzMy0zLjI5Mi03LjMzMy03LjMzMy03LjMzM3pNOCAxNGMtMy4zMDggMC02LTIuNjkyLTYtNnMyLjY5Mi02IDYtNmMzLjMwOCAwIDYgMi42OTIgNiA2cy0yLjY5MiA2LTYgNnoiPjwvcGF0aD4KPHBhdGggZmlsbD0iIzZCNkI2QiIgZD0iTTggNS4zMzNjLTEuNDcxIDAtMi42NjcgMS4xOTYtMi42NjcgMi42NjdzMS4xOTYgMi42NjcgMi42NjcgMi42NjdjMS40NzEgMCAyLjY2Ny0xLjE5NiAyLjY2Ny0yLjY2N3MtMS4xOTYtMi42NjctMi42NjctMi42Njd6TTggOS4zMzNjLTAuNzMzIDAtMS4zMzMtMC42LTEuMzMzLTEuMzMzczAuNi0xLjMzMyAxLjMzMy0xLjMzM2MwLjczMyAwIDEuMzMzIDAuNiAxLjMzMyAxLjMzM3MtMC42IDEuMzMzLTEuMzMzIDEuMzMzeiI+PC9wYXRoPgo8L3N2Zz4=);
+}
+
+/* select */
+
+select {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2IiB2aWV3Qm94PSIwIDAgMTYgMTYiPgo8cGF0aCBmaWxsPSIjNkI2QjZCIiBkPSJNMTIuNDcxIDUuNTI5Yy0wLjI1OC0wLjI1OC0wLjY4My0wLjI1OC0wLjk0MiAwbC0zLjUyOSAzLjUyOS0zLjUyOS0zLjUyOWMtMC4yNTgtMC4yNTgtMC42ODMtMC4yNTgtMC45NDIgMHMtMC4yNTggMC42ODMgMCAwLjk0Mmw0IDRjMC4xMjkgMC4xMjkgMC4zIDAuMTk2IDAuNDcxIDAuMTk2czAuMzQyLTAuMDY3IDAuNDcxLTAuMTk2bDQtNGMwLjI2Mi0wLjI1OCAwLjI2Mi0wLjY4MyAwLTAuOTQyeiI+PC9wYXRoPgo8L3N2Zz4=);
+  background-position: calc(100% - 0.5rem);
+  background-size: 1.5rem
+}
+
+select[multiple] {
+  background-image: none;
+  padding: 0;
+
+  option {
+      padding: .5rem .875rem;
+  }
+}
+
+/* textarea */
+
+textarea {
+  min-height: 8rem;
+  resize: vertical;
+}
+
+/* file */
+
+input[type=file] {
+  display: block;
+  margin: .5rem 0;
+  width: 100%;
+}
+
+/* range */
+
+input[type=range] {
+  margin: 1rem 0 .5rem;
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  apperance: none
+
+  /* webkit version */
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  background-color: #E9E9E9;
+  cursor: pointer;
+  height: .063rem;
+  width: 100%;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  background-color: #9C47D1;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 1rem;
+  margin-top: -.5rem;
+  width: 1rem;
+  -webkit-appearance: none;
+}
+
+input[type=range] {/* Firefox version */
+}
+
+input[type=range]::-moz-range-track {
+  background-color: #E9E9E9;
+  cursor: pointer;
+  height: .063rem;
+  width: 100%;
+}
+
+input[type=range]::-moz-range-thumb {
+  background-color: #9C47D1;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 1rem;
+  width: 1rem;
+}
+
+input[type=range] {/* IE version */
+}
+
+input[type=range]::-ms-track {
+  background-color: transparent;
+  border-color: transparent;
+  color: transparent;
+  cursor: pointer;
+  height: .063rem;
+  width: 100%;
+}
+
+input[type=range]::-ms-fill-lower,
+  input[type=range]::-ms-fill-upper,
+  input[type=range]:focus::-ms-fill-lower,
+  input[type=range]:focus::-ms-fill-upper {
+  background-color: #E9E9E9;
+}
+
+input[type=range]::-ms-thumb {
+  background-color: #9C47D1;
+  border: 1rem solid rgba(47, 47, 47, 0);
+  border-radius: 50%;
+  cursor: pointer;
+  height: 1rem;
+  width: 1rem;
+}
+
+/* ===============================================================================
+media:
+=============================================================================== */
+
+audio,
+figure,
+img,
+video {
+  border-style: none;
+  display: block;
+  margin: 1rem 0;
+  padding: 0;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* ===============================================================================
+table: table, cells, 
+=============================================================================== */
+
+/* table */
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+/* cells */
+
+td,
+th {
+  border: .063rem solid currentColor;
+  padding: .5rem 1rem;
+}
+
+th {
+  font-weight: bold;
+  text-align: left;
 }

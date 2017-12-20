@@ -1,0 +1,196 @@
+/* ===============================================================================
+type: headers, copy, list, inline, code 
+=============================================================================== */
+
+/* headers
+=============================================================================== */
+
+/* h1 */
+h1 {
+  @apply --header;
+  font-size: var(--ms6);
+}
+
+/* h2 */
+h2 {
+  @apply --header;
+  font-size: var(--ms5);
+}
+
+/* h3 */
+h3 {
+  @apply --header;
+  font-size: var(--ms4);
+}
+
+/* h4 */
+h4 {
+  @apply --header;
+  font-size: var(--ms3);
+}
+
+/* h5 */
+h5 {
+  @apply --header;
+  font-size: var(--ms2);
+}
+
+/* h6 */
+h6 {
+  @apply --header;
+  font-size: var(--ms1);
+}
+
+/* copy 
+=============================================================================== */
+
+/* p */
+p {
+  margin: var(--ms1) 0 var(--ms3);
+}
+
+/* figcaption */
+figcaption {
+  display: block;
+  font-size: var(--ms3);
+  font-style: italic;
+  margin: var(--ms3) 0 0;
+}
+
+/* blockquote */
+blockquote {
+  border-left: var(--line1) solid currentColor;
+  font-size: 125%;
+  line-height: var(--lhHeader);
+  margin: var(--ms4) 0;
+  padding: 0 0 0 var(--ms5);
+}
+
+/* address */
+address {
+  font-size: var(--ms3);
+  margin: 0 0 var(--ms2);
+}
+
+/* caption */
+caption {
+  margin: 0 0 var(--ms1);
+  text-align: left;
+}
+
+/* list 
+=============================================================================== */
+
+/* unordered & ordered list */
+ul,
+ol {
+  margin: var(--ms3) 0 var(--ms3) var(--ms1);
+  padding: 0 0 0 var(--ms3);
+
+  & ul,
+  & ol {
+    margin: var(--line4) 0;
+  }
+}
+
+/* list styles */
+ul {
+  list-style: disc;
+
+  & ul {
+    list-style: circle;
+  }
+}
+
+ol {
+  list-style: decimal;
+}
+
+/* discription list */
+dl {
+  margin: var(--ms3) 0 0;
+
+  & dt {
+    font-weight: bold;
+    margin: 0;
+  }
+
+  & dd {
+    margin: 0 0 var(--ms3);
+  }
+}
+
+
+/* inline
+=============================================================================== */
+mark {
+  background-color: var(--alert);
+  color: var(--secondary);
+  padding: var(--line4);
+}
+
+small {
+  font-size: var(--small);
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+del {
+  background-color: var(--gray1);
+  color: var(--secondary);
+  padding: var(--line4);
+}
+
+ins {
+  background-color: rgba(var(--alert), .75);
+  color: var(--secondary);
+  padding: var(--line4);
+}
+
+i,
+em {
+  font-style: italic;
+}
+
+abbr {
+  border-bottom: var(--line1) dotted var(--gray3);
+  color: var(--gray3);
+  cursor: help;
+  text-decoration: none;
+}
+
+sub,
+sup {
+  font-size: var(--small);
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -var(--line4);
+}
+
+sup {
+  top: -var(--ms1);
+}
+
+/* code
+=============================================================================== */
+code {
+  @apply --code;
+  display: inline-block;
+  margin: var(--ms1) 0;
+  padding: var(--ms1) var(--ms3);
+  word-break: break-all;
+}
+
+pre {
+  @apply --code;
+  font-size: var(--small);
+  margin: var(--ms3) 0;
+  white-space: pre-wrap;
+}
