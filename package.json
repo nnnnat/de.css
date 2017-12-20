@@ -4,14 +4,13 @@
   "description": "de.css is a default set of CSS Modules for designing mobile first interfaces",
   "main": "/dist/de.min.css",
   "scripts": {
-    "build": "node_modules/.bin/postcss dist/de.css -u cssnano -o dist/de.min.css --no-map -c ./config/postcss.config.js",
-    "prebuild": "npm run lint && npm start",
-    "start": "npm run css",
-    "dev": "run-p browserSync css:watch",
-    "css": "node_modules/.bin/postcss src/de.css -o dist/de.css -c ./config/postcss.config.js",
-    "css:watch": "npm run css -- -w",
-    "browserSync": "node_modules/.bin/browser-sync start -s 'dist' -f 'dist' --port 3000 --no-ghost-mode",
-    "lint": "node_modules/.bin/stylelint ./src/**/*.css"
+    "build": "postcss ./dist/de.css -u cssnano -o ./dist/de.min.css --no-map -c ./config/postcss.config.js",
+    "prebuild": "npm run lint && npm run css",
+    "start": "run-p start:*",
+    "start:css": "npm run css -- -w",
+    "start:sync": "browser-sync start -s 'dist' -f 'dist' --port 3000 --no-ghost-mode",
+    "css": "postcss ./src/de.css -o ./dist/de.css -c ./config/postcss.config.js",
+    "lint": "stylelint ./src/**/*.css"
   },
   "keywords": [
     "internet",
@@ -34,32 +33,14 @@
     "IE 11"
   ],
   "devDependencies": {
-    "autoprefixer": "^7.1.2",
     "browser-sync": "^2.18.13",
     "cssnano": "^3.10.0",
-    "npm-run-all": "^4.1.0",
-    "postcss": "^6.0.8",
-    "postcss-cli": "^4.1.0",
-    "postcss-color-function": "^4.0.0",
-    "postcss-custom-media": "^6.0.0",
-    "postcss-custom-selectors": "^4.0.1",
-    "postcss-each": "^0.10.0",
-    "postcss-font-family-system-ui": "^2.0.1",
-    "postcss-import": "^10.0.0",
-    "postcss-nested": "^2.1.0",
-    "postcss-simple-vars": "^4.0.0",
-    "stylelint": "^8.0.0",
-    "stylelint-de-standard": "1.0.0"
-  },
-  "dependencies": {
-    "de.a11y.css": "^1.0.0",
-    "de.base.css": "^1.1.1",
-    "de.cta.css": "^1.0.0",
-    "de.form.css": "^1.0.0",
-    "de.layout.css": "^1.0.0",
-    "de.media.css": "^1.0.0",
-    "de.table.css": "^1.0.0",
-    "de.type.css": "^1.0.1",
-    "de.utils.css": "^1.0.0"
+    "npm-run-all": "^4.1.2",
+    "postcss": "^6.0.14",
+    "postcss-cli": "^4.1.1",
+    "postcss-cssnext": "^3.0.2",
+    "postcss-import": "^11.0.0",
+    "stylelint": "^8.2.0",
+    "stylelint-de-standard": "^1.0.0"
   }
 }
