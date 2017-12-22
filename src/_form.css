@@ -1,5 +1,6 @@
 /* ===============================================================================
-form: label, legend, fieldset, fields, checks, select, textarea, file, range
+form: label, legend, fieldset, placeholder, fields, checks, select, textarea, 
+      file, range
 =============================================================================== */
 
 /* label */
@@ -35,6 +36,12 @@ fieldset {
       margin-left: $ms3;
     }
   }
+}
+
+/* placeholder */
+::placeholder {
+  color: inherit;
+  opacity: .5;
 }
 
 /* fields */

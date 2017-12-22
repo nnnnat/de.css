@@ -441,7 +441,8 @@ button:disabled,
   }
 
 /* ===============================================================================
-form: label, legend, fieldset, fields, checks, select, textarea, file, range
+form: label, legend, fieldset, placeholder, fields, checks, select, textarea, 
+      file, range
 =============================================================================== */
 
 /* label */
@@ -483,6 +484,28 @@ fieldset div {
 fieldset div > label:not(:first-of-type) {
       margin-left: 1rem;
     }
+
+/* placeholder */
+
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: .5;
+}
+
+:-ms-input-placeholder {
+  color: inherit;
+  opacity: .5;
+}
+
+::-ms-input-placeholder {
+  color: inherit;
+  opacity: .5;
+}
+
+::placeholder {
+  color: inherit;
+  opacity: .5;
+}
 
 /* fields */
 
