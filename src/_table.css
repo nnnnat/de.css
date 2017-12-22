@@ -12,8 +12,8 @@ table {
 /* cells */
 td,
 th {
-  border: var(--line1) solid currentColor;
-  padding: var(--ms1) var(--ms3);
+  border: $line1 solid currentColor;
+  padding: $ms1 $ms3;
 }
 
 th {

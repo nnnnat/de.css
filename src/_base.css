@@ -4,8 +4,8 @@ base: selection, everything, body, svg, progress, html5 fix
 
 /* selection */
 ::selection {
-  background-color: var(--primary);
-  color: var(--white);
+  background-color: $primary;
+  color: $white;
   text-shadow: none;
 }
 
@@ -19,18 +19,18 @@ base: selection, everything, body, svg, progress, html5 fix
 
 /* body: */
 body {
-  color: var(--black);
-  font: normal normal var(--ms3) / var(--lh) var(--font);
+  color: $black;
+  font: normal normal $ms3 / $lh $font;
   margin: 0;
 }
 
 /* hr: */
 hr {
   border: none;
-  border-top: var(--line1) solid currentColor;
+  border-top: $line1 solid currentColor;
   color: inherit;
   display: block;
-  margin: var(--ms3) 0;
+  margin: $ms3 0;
 }
 
 /* svg: */
@@ -46,28 +46,28 @@ svg {
 /* progress */
 progress {
   appearance: none;
-  background-color: var(--gray2);
+  background-color: $gray2;
   border: none;
   display: block;
-  height: var(--line4);
+  height: $line4;
   font-size: 0;
   line-height: 0;
   width: 100%;
 
   &[value] {
-    color: var(--primary);
+    color: $primary;
   }
 
   &::-webkit-progress-bar {
-    background-color: var(--gray2);
+    background-color: $gray2;
   }
 
   &::-webkit-progress-value {
-    background-color: var(--primary);
+    background-color: $primary;
   }
 
   &::-moz-progress-bar {
-    background-color: var(--primary);
+    background-color: $primary;
   }
 
 }

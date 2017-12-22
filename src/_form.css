@@ -6,9 +6,9 @@ form: label, legend, fieldset, fields, checks, select, textarea, file, range
 label {
   color: inherit;
   display: block;
-  font-size: var(--ms3);
-  line-height: var(--lhHeader);
-  margin: 0 0 var(--ms3);
+  font-size: $ms3;
+  line-height: $lhHeader;
+  margin: 0 0 $ms3;
   width: 100%;
 }
 
@@ -16,23 +16,23 @@ label {
 legend {
   color: inherit;
   display: block;
-  font-size: var(--ms4);
+  font-size: $ms4;
   font-weight: bold;
-  line-height: var(--lhHeader);
-  margin: 0 0 var(--ms1);
+  line-height: $lhHeader;
+  margin: 0 0 $ms1;
 }
 
 /* fieldset */
 fieldset {
-  border: var(--line1) solid currentColor;
-  margin: 0 0 var(--ms3);
-  padding: var(--ms1) var(--ms3);
+  border: $line1 solid currentColor;
+  margin: 0 0 $ms3;
+  padding: $ms1 $ms3;
 
   & div {
     display: flex;
 
     & > label:not(:first-of-type) {
-      margin-left: var(--ms3);
+      margin-left: $ms3;
     }
   }
 }
@@ -40,26 +40,26 @@ fieldset {
 /* fields */
 :--fields {
   appearance: none;
-  background-color: var(--white);
-  border: var(--line1) solid var(--gray3);
-  border-radius: var(--line2);
-  color: var(--black);
+  background-color: $white;
+  border: $line1 solid $gray3;
+  border-radius: $line2;
+  color: $black;
   display: block;
   font-family: inherit;
   font-size: inherit;
-  margin: var(--ms1) 0 0;
-  padding: var(--ms3) var(--ms2);
+  margin: $ms1 0 0;
+  padding: $ms3 $ms2;
   touch-action: manipulation;
   width: 100%;
 
   &:invalid {
-    border-color: var(--error);
-    color: var(--error);
+    border-color: $error;
+    color: $error;
   }
 
   &:disabled {
-    background-color: var(--gray2);
-    border-color: var(--gray3);
+    background-color: $gray2;
+    border-color: $gray3;
     cursor: not-allowed;
   }
 }
@@ -68,7 +68,7 @@ fieldset {
 input[type=radio],
 input[type=checkbox] {
   appearance: none;
-  font-size: var(--ms3);
+  font-size: $ms3;
   margin: 0;
   
   &:disabled {
@@ -81,7 +81,7 @@ input[type=checkbox] {
     display: inline-block;
     font-size: inherit;
     vertical-align: middle;
-    width: var(--ms3);
+    width: $ms3;
   }
 
   &:checked:after {
@@ -100,15 +100,15 @@ input[type=radio]:checked:after {
 /* select */
 select {
   background-image: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2IiB2aWV3Qm94PSIwIDAgMTYgMTYiPgo8cGF0aCBmaWxsPSIjNkI2QjZCIiBkPSJNMTIuNDcxIDUuNTI5Yy0wLjI1OC0wLjI1OC0wLjY4My0wLjI1OC0wLjk0MiAwbC0zLjUyOSAzLjUyOS0zLjUyOS0zLjUyOWMtMC4yNTgtMC4yNTgtMC42ODMtMC4yNTgtMC45NDIgMHMtMC4yNTggMC42ODMgMCAwLjk0Mmw0IDRjMC4xMjkgMC4xMjkgMC4zIDAuMTk2IDAuNDcxIDAuMTk2czAuMzQyLTAuMDY3IDAuNDcxLTAuMTk2bDQtNGMwLjI2Mi0wLjI1OCAwLjI2Mi0wLjY4MyAwLTAuOTQyeiI+PC9wYXRoPgo8L3N2Zz4=);
-  background-position: calc(100% - var(--ms1));
-  background-size: var(--ms4);
+  background-position: calc(100% - $ms1);
+  background-size: $ms4;
 
   &[multiple] {
     background-image: none;
     padding: 0;
 
     option {
-      padding: var(--ms1) var(--ms2);
+      padding: $ms1 $ms2;
     }
   }
 }
@@ -122,13 +122,13 @@ textarea {
 /* file */
 input[type=file] {
   display: block;
-  margin: var(--ms1) 0;
+  margin: $ms1 0;
   width: 100%;
 }
 
 /* range */
 input[type=range] {
-  margin: var(--ms3) 0 var(--ms1);
+  margin: $ms3 0 $ms1;
   width: 100%;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -136,38 +136,38 @@ input[type=range] {
 
   /* webkit version */
   &::-webkit-slider-runnable-track {
-    background-color: var(--gray2);
+    background-color: $gray2;
     cursor: pointer;
-    height: var(--line1);
+    height: $line1;
     width: 100%;
   }
 
   &::-webkit-slider-thumb {
-    background-color: var(--primary);
+    background-color: $primary;
     border: none;
     border-radius: 50%;
     cursor: pointer;
-    height: var(--ms3);
-    margin-top: -var(--ms1);
-    width: var(--ms3);
+    height: $ms3;
+    margin-top: -$ms1;
+    width: $ms3;
     -webkit-appearance: none;
   }
 
   /* Firefox version */
   &::-moz-range-track {
-    background-color: var(--gray2);
+    background-color: $gray2;
     cursor: pointer;
-    height: var(--line1);
+    height: $line1;
     width: 100%;
   }
 
   &::-moz-range-thumb {
-    background-color: var(--primary);
+    background-color: $primary;
     border: none;
     border-radius: 50%;
     cursor: pointer;
-    height: var(--ms3);
-    width: var(--ms3);
+    height: $ms3;
+    width: $ms3;
   }
 
   /* IE version */
@@ -176,7 +176,7 @@ input[type=range] {
     border-color: transparent;
     color: transparent;
     cursor: pointer;
-    height: var(--line1);
+    height: $line1;
     width: 100%;
   }
 
@@ -184,15 +184,15 @@ input[type=range] {
   &::-ms-fill-upper,
   &:focus::-ms-fill-lower,
   &:focus::-ms-fill-upper {
-    background-color: var(--gray2);
+    background-color: $gray2;
   }
 
   &::-ms-thumb {
-    background-color: var(--primary);
-    border: var(--ms3) solid color(var(--black) a(0));
+    background-color: $primary;
+    border: $ms3 solid color($black a(0));
     border-radius: 50%;
     cursor: pointer;
-    height: var(--ms3);
-    width: var(--ms3);
+    height: $ms3;
+    width: $ms3;
   }
 }

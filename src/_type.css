@@ -7,38 +7,38 @@ type: headers, copy, list, inline, code
 
 /* h1 */
 h1 {
-  @apply --header;
-  font-size: var(--ms6);
+  @mixin __header;
+  font-size: $ms6;
 }
 
 /* h2 */
 h2 {
-  @apply --header;
-  font-size: var(--ms5);
+  @mixin __header;
+  font-size: $ms5;
 }
 
 /* h3 */
 h3 {
-  @apply --header;
-  font-size: var(--ms4);
+  @mixin __header;
+  font-size: $ms4;
 }
 
 /* h4 */
 h4 {
-  @apply --header;
-  font-size: var(--ms3);
+  @mixin __header;
+  font-size: $ms3;
 }
 
 /* h5 */
 h5 {
-  @apply --header;
-  font-size: var(--ms2);
+  @mixin __header;
+  font-size: $ms2;
 }
 
 /* h6 */
 h6 {
-  @apply --header;
-  font-size: var(--ms1);
+  @mixin __header;
+  font-size: $ms1;
 }
 
 /* copy 
@@ -46,35 +46,35 @@ h6 {
 
 /* p */
 p {
-  margin: var(--ms1) 0 var(--ms3);
+  margin: $ms1 0 $ms3;
 }
 
 /* figcaption */
 figcaption {
   display: block;
-  font-size: var(--ms3);
+  font-size: $ms3;
   font-style: italic;
-  margin: var(--ms3) 0 0;
+  margin: $ms3 0 0;
 }
 
 /* blockquote */
 blockquote {
-  border-left: var(--line1) solid currentColor;
+  border-left: $line1 solid currentColor;
   font-size: 125%;
-  line-height: var(--lhHeader);
-  margin: var(--ms4) 0;
-  padding: 0 0 0 var(--ms5);
+  line-height: $lhHeader;
+  margin: $ms4 0;
+  padding: 0 0 0 $ms5;
 }
 
 /* address */
 address {
-  font-size: var(--ms3);
-  margin: 0 0 var(--ms2);
+  font-size: $ms3;
+  margin: 0 0 $ms2;
 }
 
 /* caption */
 caption {
-  margin: 0 0 var(--ms1);
+  margin: 0 0 $ms1;
   text-align: left;
 }
 
@@ -84,12 +84,12 @@ caption {
 /* unordered & ordered list */
 ul,
 ol {
-  margin: var(--ms3) 0 var(--ms3) var(--ms1);
-  padding: 0 0 0 var(--ms3);
+  margin: $ms3 0 $ms3 $ms1;
+  padding: 0 0 0 $ms3;
 
   & ul,
   & ol {
-    margin: var(--line4) 0;
+    margin: $line4 0;
   }
 }
 
@@ -108,7 +108,7 @@ ol {
 
 /* discription list */
 dl {
-  margin: var(--ms3) 0 0;
+  margin: $ms3 0 0;
 
   & dt {
     font-weight: bold;
@@ -116,7 +116,7 @@ dl {
   }
 
   & dd {
-    margin: 0 0 var(--ms3);
+    margin: 0 0 $ms3;
   }
 }
 
@@ -124,13 +124,13 @@ dl {
 /* inline
 =============================================================================== */
 mark {
-  background-color: var(--alert);
-  color: var(--secondary);
-  padding: var(--line4);
+  background-color: $alert;
+  color: $secondary;
+  padding: $line4;
 }
 
 small {
-  font-size: var(--small);
+  font-size: $small;
 }
 
 b,
@@ -139,15 +139,15 @@ strong {
 }
 
 del {
-  background-color: var(--gray1);
-  color: var(--secondary);
-  padding: var(--line4);
+  background-color: $gray1;
+  color: $secondary;
+  padding: $line4;
 }
 
 ins {
-  background-color: rgba(var(--alert), .75);
-  color: var(--secondary);
-  padding: var(--line4);
+  background-color: rgba($alert, .75);
+  color: $secondary;
+  padding: $line4;
 }
 
 i,
@@ -156,41 +156,41 @@ em {
 }
 
 abbr {
-  border-bottom: var(--line1) dotted var(--gray3);
-  color: var(--gray3);
+  border-bottom: $line1 dotted $gray3;
+  color: $gray3;
   cursor: help;
   text-decoration: none;
 }
 
 sub,
 sup {
-  font-size: var(--small);
+  font-size: $small;
   line-height: 0;
   position: relative;
   vertical-align: baseline;
 }
 
 sub {
-  bottom: -var(--line4);
+  bottom: -$line4;
 }
 
 sup {
-  top: -var(--ms1);
+  top: -$ms1;
 }
 
 /* code
 =============================================================================== */
 code {
-  @apply --code;
+  @mixin __code;
   display: inline-block;
-  margin: var(--ms1) 0;
-  padding: var(--ms1) var(--ms3);
+  margin: $ms1 0;
+  padding: $ms1 $ms3;
   word-break: break-all;
 }
 
 pre {
-  @apply --code;
-  font-size: var(--small);
-  margin: var(--ms3) 0;
+  @mixin __code;
+  font-size: $small;
+  margin: $ms3 0;
   white-space: pre-wrap;
 }
