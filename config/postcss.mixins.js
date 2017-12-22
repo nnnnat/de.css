@@ -5,7 +5,7 @@ const themes = {
   // header style
   __header: {
     fontWeight: 'bold',
-    lineHeight: variables.lh,
+    lineHeight: variables.lhHeader,
     margin: `0 0 ${variables.ms1}`
   },
   // code & pre style
