@@ -8,37 +8,37 @@ type: headers, copy, list, inline, code
 /* h1 */
 h1 {
   @mixin __header;
-  font-size: $ms6;
+  font-size: $ms7;
 }
 
 /* h2 */
 h2 {
   @mixin __header;
-  font-size: $ms5;
+  font-size: $ms6;
 }
 
 /* h3 */
 h3 {
   @mixin __header;
-  font-size: $ms4;
+  font-size: $ms5;
 }
 
 /* h4 */
 h4 {
   @mixin __header;
-  font-size: $ms3;
+  font-size: $ms4;
 }
 
 /* h5 */
 h5 {
   @mixin __header;
-  font-size: $ms2;
+  font-size: $ms3;
 }
 
 /* h6 */
 h6 {
   @mixin __header;
-  font-size: $ms1;
+  font-size: $ms2;
 }
 
 /* copy 
@@ -46,24 +46,25 @@ h6 {
 
 /* p */
 p {
-  margin: $ms1 0 $ms3;
+  margin: 0 0 $ms3;
 }
 
 /* figcaption */
 figcaption {
   display: block;
-  font-size: $ms3;
+  font-size: $ms2;
   font-style: italic;
-  margin: $ms3 0 0;
+  margin: $ms1 0 0;
 }
 
 /* blockquote */
 blockquote {
   border-left: $line1 solid currentColor;
-  font-size: 125%;
+  display: block;
+  font-size: $large;
   line-height: $lhHeader;
-  margin: $ms4 0;
-  padding: 0 0 0 $ms5;
+  margin: 0 0 $ms3;
+  padding: 0 0 0 $ms3;
 }
 
 /* address */
@@ -183,14 +184,14 @@ sup {
 code {
   @mixin __code;
   display: inline-block;
-  margin: $ms1 0;
-  padding: $ms1 $ms3;
+  font-family: monospace;
+  padding: $line2 $ms2;
   word-break: break-all;
 }
 
 pre {
   @mixin __code;
-  font-size: $small;
   margin: $ms3 0;
+  padding: $ms1 0;
   white-space: pre-wrap;
 }

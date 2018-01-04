@@ -26,9 +26,10 @@ module.exports = {
   'ms1': '.5rem',
   'ms2': '.875rem',
   'ms3': '1rem',
-  'ms4': '1.5rem',
-  'ms5': '2.25rem',
-  'ms6': '3rem',
+  'ms4': '1.25rem',
+  'ms5': '1.5rem',
+  'ms6': '2.25rem',
+  'ms7': '3rem',
   // widths
   'xs': '30rem',
   'sm': '48rem',

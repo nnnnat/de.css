@@ -30,7 +30,7 @@ hr {
   border-top: $line1 solid currentColor;
   color: inherit;
   display: block;
-  margin: $ms3 0;
+  margin: 0 0 $ms3;
 }
 
 /* svg: */
