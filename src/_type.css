@@ -185,6 +185,7 @@ code {
   @mixin __code;
   display: inline-block;
   font-family: monospace;
+  font-size: $ms2;
   padding: $line2 $ms2;
   word-break: break-all;
 }

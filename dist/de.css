@@ -342,6 +342,7 @@ code {
   color: #2F2F2F;
   display: inline-block;
   font-family: monospace;
+  font-size: .875rem;
   padding: .125rem .875rem;
   word-break: break-all;
 }
