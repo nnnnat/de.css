@@ -1,5 +1,5 @@
 /* ===============================================================================
-media:
+media: all media elements, figcaption, svg
 =============================================================================== */
 
 audio,
@@ -17,4 +17,14 @@ video {
 /* nested img */
 figure img {
   margin: 0;
+}
+
+/* svg: */
+svg {
+  stroke: currentColor;
+  fill: currentColor;
+
+  &:not(:root) {
+    overflow: hidden;
+  }
 }

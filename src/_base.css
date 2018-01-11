@@ -1,5 +1,5 @@
 /* ===============================================================================
-base: selection, everything, body, svg, progress, html5 fix 
+base: selection, all elements, html5 fix, horizontal rule, progress 
 =============================================================================== */
 
 /* selection */
@@ -9,7 +9,7 @@ base: selection, everything, body, svg, progress, html5 fix
   text-shadow: none;
 }
 
-/* everything: */
+/* all elements: */
 *,
 ::before,
 ::after {
@@ -17,30 +17,20 @@ base: selection, everything, body, svg, progress, html5 fix
   box-sizing: border-box;
 }
 
-/* body: */
-body {
-  color: $black;
-  font: normal normal $ms3 / $lh $font;
-  margin: 0;
+/* html5 fix for IE9: TODO: might not need this! */
+article, aside, details, footer,
+header, menu, nav, section {
+  display: block;
 }
 
 /* hr: */
 hr {
-  border: none;
+  border: 0;
   border-top: $line1 solid currentColor;
   color: inherit;
   display: block;
-  margin: 0 0 $ms3;
-}
-
-/* svg: */
-svg {
-  stroke: currentColor;
-  fill: currentColor;
-
-  &:not(:root) {
-    overflow: hidden;
-  }
+  margin: $ms3 0;
+  opacity: .3;
 }
 
 /* progress */
@@ -70,10 +60,4 @@ progress {
     background-color: $primary;
   }
 
-}
-
-/* html5 fix for IE9: TODO: might not need this! */
-article, aside, details, footer,
-header, menu, nav, section {
-  display: block;
 }
