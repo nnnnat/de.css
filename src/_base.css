@@ -36,6 +36,7 @@ progress {
   height: $line4;
   font-size: 0;
   line-height: 0;
+  vertical-align: baseline;
   width: 100%;
 
   &[value] {

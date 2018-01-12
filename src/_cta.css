@@ -38,6 +38,15 @@ a {
     color: $white;
   }
 
+  &::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+  }
+
+  &:-moz-focusring {
+    outline: $line1 dotted ButtonText;
+  }
+
   & + :--button {
     margin-left: $ms3;
   }

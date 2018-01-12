@@ -9,6 +9,13 @@
     <link rel="stylesheet" href="https://unpkg.com/de.utils.css/dist/de.utils.min.css">
     <link rel="stylesheet" href="https://unpkg.com/de.table.css/dist/de.table.min.css">
     <link rel="stylesheet" href="./de.css">
+    <script>
+      function updateFilename (input) {
+        const filename = input.files[0].name
+      input.labels[0].attributes['data-filename'].value = input.files[0].name
+      
+      }
+    </script>
   </head>
   <body>
     <progress min="0" max="100" value="95"></progress>    
@@ -18,32 +25,56 @@
         <p class="tx--lead">development page for de.css</p>
         <hr/>
 
-        <h2>IMG</h2>
-        <code>img</code>        
-        <img class="mg2--y" src="https://source.unsplash.com/600x350/?blue" alt="">
+        <form>
 
-        <hr/>
-        <h2>Picture</h2>
-        <code>picture</code>
-        <picture>
-          <source srcset="https://source.unsplash.com/600x350/?pink" media="(min-width: 62rem)">
-            <source srcset="https://source.unsplash.com/800x450/?dark" media="(min-width: 30rem)">
-              <img class="mg2--y" src="https://source.unsplash.com/512x400/?orange" alt="">
-        </picture>
+          <label>
+            Input Label
+            <input type="email" value="" />
+          </label>
 
-        <hr/>
-        <h2>Figure</h2>
-        <code>figure, figcaption</code>
-        <figure>
-          <picture>
-            <source srcset="https://source.unsplash.com/600x350/?dark" media="(min-width: 45rem)">
-              <source srcset="https://source.unsplash.com/800x650/?dark" media="(min-width: 30rem)">
-                <img class="mg2--y" src="https://source.unsplash.com/512x400/?dark" alt="">
-          </picture>
-          <figcaption>Fig 3: Dolor labore fugiat export nisi irure velit cillum esse malis elit quis nulla amet multos duis tempor malis culpa minim quem irure nisi quae eram magna amet quis nisi ipsum enim velit illum quis culpa dolore enim tempor fugiat quem noster cillum ipsum legam sun.</figcaption>
-        </figure>
+          <label>
+            <input type="checkbox" value=""/>
+            Terms Checkbox
+          </label>
 
-        <p>Aliquam malesuada bibendum arcu vitae elementum!</p>
+          <label>
+            Radio Label
+            <input type="radio" value=""/>            
+          </label>
+
+          <input id="file" type="file" value=""/>
+          <label for="file">File Input</label>
+
+          <input id="file2" type="file" onchange="this.labels[0].attributes['data-filename'].value = this.files[0].name" value=""/>
+          <label for="file2" data-filename="Select a File">File Input</label>
+          
+          <label>
+            Range Label
+            <input type="range" value=""/>            
+          </label>
+
+          <label>
+            Message
+            <textarea placeholder="Message Placeholder"></textarea>            
+          </label>
+
+          <label>
+            Select Box
+            <select>
+              <option value="">option 1</option>
+              <option value="">option 2</option>
+              <option value="">option 3</option>
+              <option value="">option 4</option>
+              <option value="">option 5</option>
+              <option value="">option 6</option>
+              <option value="">option 7</option>
+              <option value="">option 8</option>
+            </select>
+          </label>
+          
+          <button>button</button>                             
+          
+        </form>
         
       </div>
     </main>
