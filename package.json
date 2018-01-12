@@ -40,6 +40,6 @@
     "postcss": "^6.0.14",
     "postcss-cli": "^4.1.1",
     "stylelint": "^8.2.0",
-    "stylelint-de-standard": "^1.0.0"
+    "stylelint-de-standard": "^1.1.0"
   }
 }
