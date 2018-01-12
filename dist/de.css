@@ -29,7 +29,7 @@ a11y:  hidden, aria
 }
 
 /* ===============================================================================
-base: selection, all elements, html5 fix, horizontal rule, progress 
+base: selection, all elements, horizontal rule, progress 
 =============================================================================== */
 
 /* selection */
@@ -54,13 +54,6 @@ base: selection, all elements, html5 fix, horizontal rule, progress
   background-repeat: no-repeat;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-}
-
-/* html5 fix for IE9: TODO: might not need this! */
-
-article, aside, details, footer,
-header, menu, nav, section {
-  display: block;
 }
 
 /* hr: */
@@ -107,7 +100,7 @@ progress::-moz-progress-bar {
   }
 
 /* ===============================================================================
-type: body, headers, copy, list, inline, code 
+type: body, headers, copy, list, miscellaneous elements, inline elements 
 =============================================================================== */
 
 /* body: */
@@ -182,15 +175,6 @@ p {
   margin: 0 0 1rem;
 }
 
-/* figcaption */
-
-figcaption {
-  display: block;
-  font-size: .875rem;
-  font-style: italic;
-  margin: .5rem 0 0;
-}
-
 /* blockquote */
 
 blockquote {
@@ -202,27 +186,13 @@ blockquote {
   padding: 0 0 0 1rem;
 }
 
-/* address */
-
-address {
-  font-size: 1rem;
-  margin: 0 0 .875rem;
-}
-
-/* caption */
-
-caption {
-  margin: 0 0 .5rem;
-  text-align: left;
-}
-
 /* list  */
 
 /* unordered & ordered list */
 
 ul,
 ol {
-  margin: 1rem 0 1rem .5rem;
+  margin: 0 0 1rem .250rem;
   padding: 0 0 0 1rem;
 }
 
@@ -230,7 +200,7 @@ ul ul,
   ul ol,
   ol ul,
   ol ol {
-    margin: .250rem 0;
+    margin: .250rem 0 .250rem .5rem;
   }
 
 /* list styles */
@@ -250,7 +220,7 @@ ol {
 /* discription list */
 
 dl {
-  margin: 1rem 0 0;
+  margin: 0;
 }
 
 dl dt {
@@ -262,7 +232,54 @@ dl dd {
     margin: 0 0 1rem;
   }
 
-/* inline */
+/* miscellaneous elements */
+
+/* address */
+
+address {
+  font-style: normal;
+  margin: 0 0 1rem;
+}
+
+/* monospaced */
+
+code,
+kbd,
+samp {
+  font-family: monospace;
+  font-size: .875rem;
+}
+
+/* code */
+
+code {
+  background-color: #E9E9E9;
+  border-radius: .125rem;
+  color: #623E79;
+  display: inline-block;
+  line-height: 1;
+  padding: .125rem .5rem;
+  word-break: break-word;
+  vertical-align: middle;
+}
+
+/* preformated */
+
+pre {
+  border-radius: .125rem;
+  display: block;
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+
+pre code {
+    display: block;
+    padding: .875rem;
+    overflow-x: auto;
+    word-break: normal;
+  }
+
+/* inline elements */
 
 mark {
   background-color: #F5C650;
@@ -297,8 +314,8 @@ em {
 }
 
 abbr {
-  border-bottom: .063rem dotted #B2B2B2;
-  color: #B2B2B2;
+  border-bottom: .063rem dotted currentColor;
+  color: inherit;
   cursor: help;
   text-decoration: none;
 }
@@ -317,28 +334,6 @@ sub {
 
 sup {
   top: -.5rem;
-}
-
-/* code */
-
-code {
-  background-color: #E9E9E9;
-  border-radius: .125rem;
-  color: #2F2F2F;
-  display: inline-block;
-  font-family: monospace;
-  font-size: .875rem;
-  padding: .125rem .875rem;
-  word-break: break-all;
-}
-
-pre {
-  background-color: #E9E9E9;
-  border-radius: .125rem;
-  color: #2F2F2F;
-  margin: 1rem 0;
-  padding: .5rem 0;
-  white-space: pre-wrap;
 }
 
 /* ===============================================================================
@@ -714,6 +709,14 @@ figure img {
   margin: 0;
 }
 
+/* figcaption */
+
+figcaption {
+  display: block;
+  font-style: italic;
+  margin: .5rem 0 0;
+}
+
 /* svg: */
 
 svg {
@@ -726,7 +729,7 @@ svg:not(:root) {
   }
 
 /* ===============================================================================
-table: table, cells, 
+table: table, caption, cells, 
 =============================================================================== */
 
 /* table */
@@ -735,6 +738,13 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
   width: 100%;
+}
+
+/* caption */
+
+caption {
+  margin: 0 0 .5rem;
+  text-align: left;
 }
 
 /* cells */

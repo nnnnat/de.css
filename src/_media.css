@@ -19,6 +19,13 @@ figure img {
   margin: 0;
 }
 
+/* figcaption */
+figcaption {
+  display: block;
+  font-style: italic;
+  margin: $ms1 0 0;
+}
+
 /* svg: */
 svg {
   stroke: currentColor;

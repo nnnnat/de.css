@@ -1,5 +1,5 @@
 /* ===============================================================================
-base: selection, all elements, html5 fix, horizontal rule, progress 
+base: selection, all elements, horizontal rule, progress 
 =============================================================================== */
 
 /* selection */
@@ -15,12 +15,6 @@ base: selection, all elements, html5 fix, horizontal rule, progress
 ::after {
   background-repeat: no-repeat;
   box-sizing: border-box;
-}
-
-/* html5 fix for IE9: TODO: might not need this! */
-article, aside, details, footer,
-header, menu, nav, section {
-  display: block;
 }
 
 /* hr: */

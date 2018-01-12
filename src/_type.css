@@ -1,5 +1,5 @@
 /* ===============================================================================
-type: body, headers, copy, list, inline, code 
+type: body, headers, copy, list, miscellaneous elements, inline elements 
 =============================================================================== */
 
 /* body: */
@@ -54,14 +54,6 @@ p {
   margin: 0 0 $ms3;
 }
 
-/* figcaption */
-figcaption {
-  display: block;
-  font-size: $ms2;
-  font-style: italic;
-  margin: $ms1 0 0;
-}
-
 /* blockquote */
 blockquote {
   border-left: $line1 solid currentColor;
@@ -72,29 +64,17 @@ blockquote {
   padding: 0 0 0 $ms3;
 }
 
-/* address */
-address {
-  font-size: $ms3;
-  margin: 0 0 $ms2;
-}
-
-/* caption */
-caption {
-  margin: 0 0 $ms1;
-  text-align: left;
-}
-
 /* list  */
 
 /* unordered & ordered list */
 ul,
 ol {
-  margin: $ms3 0 $ms3 $ms1;
+  margin: 0 0 $ms3 $line4;
   padding: 0 0 0 $ms3;
 
   & ul,
   & ol {
-    margin: $line4 0;
+    margin: $line4 0 $line4 $ms1;
   }
 }
 
@@ -113,7 +93,7 @@ ol {
 
 /* discription list */
 dl {
-  margin: $ms3 0 0;
+  margin: 0;
 
   & dt {
     font-weight: bold;
@@ -126,7 +106,50 @@ dl {
 }
 
 
-/* inline */
+/* miscellaneous elements */
+
+/* address */
+address {
+  font-style: normal;
+  margin: 0 0 $ms3;
+}
+
+/* monospaced */
+code,
+kbd,
+samp {
+  font-family: monospace;
+  font-size: $ms2;
+}
+
+/* code */
+code {
+  background-color: $gray2;
+  border-radius: $line2;
+  color: $secondary;
+  display: inline-block;
+  line-height: 1;
+  padding: $line2 $ms1;
+  word-break: break-word;
+  vertical-align: middle;
+}
+
+/* preformated */
+pre {
+  border-radius: $line2;
+  display: block;
+  font-size: $ms3;
+  margin: $ms3 0;  
+
+  code {
+    display: block;
+    padding: $ms2;
+    overflow-x: auto;
+    word-break: normal;
+  }
+}
+
+/* inline elements */
 mark {
   background-color: $alert;
   color: $secondary;
@@ -160,8 +183,8 @@ em {
 }
 
 abbr {
-  border-bottom: $line1 dotted $gray3;
-  color: $gray3;
+  border-bottom: $line1 dotted currentColor;
+  color: inherit;
   cursor: help;
   text-decoration: none;
 }
@@ -180,21 +203,4 @@ sub {
 
 sup {
   top: -$ms1;
-}
-
-/* code */
-code {
-  @mixin __code;
-  display: inline-block;
-  font-family: monospace;
-  font-size: $ms2;
-  padding: $line2 $ms2;
-  word-break: break-all;
-}
-
-pre {
-  @mixin __code;
-  margin: $ms3 0;
-  padding: $ms1 0;
-  white-space: pre-wrap;
 }
