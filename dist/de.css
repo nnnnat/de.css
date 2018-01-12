@@ -706,7 +706,6 @@ video {
 /* figcaption */
 
 figcaption {
-  display: block;
   font-style: italic;
   line-height: 1.25;
   margin: .5rem 0;

@@ -16,7 +16,6 @@ video {
 
 /* figcaption */
 figcaption {
-  display: block;
   font-style: italic;
   line-height: $lhHeader;
   margin: $ms1 0;
