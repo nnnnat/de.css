@@ -468,15 +468,6 @@ legend {
   margin: 0 0 .5rem;
 }
 
-:invalid {
-  color: #F2416A;
-}
-
-:disabled {
-  color: #6B6B6B;
-  cursor: not-allowed;
-}
-
 /* fieldset */
 
 fieldset {
@@ -515,6 +506,13 @@ fieldset div > label:not(:first-of-type) {
 ::placeholder {
   color: inherit;
   opacity: .5;
+}
+
+/* disabled */
+
+:disabled {
+  color: #6B6B6B;
+  cursor: not-allowed;
 }
 
 /* fields */

@@ -38,15 +38,6 @@ legend {
   margin: 0 0 $ms1;
 }
 
-:invalid {
-  color: $error;
-}
-
-:disabled {
-  color: $gray4;
-  cursor: not-allowed;
-}
-
 /* fieldset */
 fieldset {
   border: $line1 solid currentColor;
@@ -66,6 +57,12 @@ fieldset {
 ::placeholder {
   color: inherit;
   opacity: .5;
+}
+
+/* disabled */
+:disabled {
+  color: $gray4;
+  cursor: not-allowed;
 }
 
 /* fields */
