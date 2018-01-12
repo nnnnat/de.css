@@ -8,22 +8,18 @@ img,
 video {
   border-style: none;
   display: block;
-  margin: 0 0 $ms3;
+  margin: 0;
   padding: 0;
   vertical-align: middle;
   width: 100%;
-}
-
-/* nested img */
-figure img {
-  margin: 0;
 }
 
 /* figcaption */
 figcaption {
   display: block;
   font-style: italic;
-  margin: $ms1 0 0;
+  line-height: $lhHeader;
+  margin: $ms1 0;
 }
 
 /* svg: */

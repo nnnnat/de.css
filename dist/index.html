@@ -7,6 +7,7 @@
     <title>de.css development page</title>
     <link rel="stylesheet" href="https://unpkg.com/de.layout.css/dist/de.layout.min.css">
     <link rel="stylesheet" href="https://unpkg.com/de.utils.css/dist/de.utils.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/de.table.css/dist/de.table.min.css">
     <link rel="stylesheet" href="./de.css">
   </head>
   <body>
@@ -17,33 +18,33 @@
         <p class="tx--lead">development page for de.css</p>
         <hr/>
 
-        <h2>Ultrices gravida dictum fusce.</h2>
-        <p>Neque <code>npm start</code> laoreet <abbr title="Pretty Dang Quick">PDQ</abbr> interdum consectetur libero? Nibh tortor, id aliquet lectus proin nibh nisl, condimentum id venenatis a, condimentum vitae sapien pellentesque <samp>habitant</samp> morbi tristique senectus et netus et malesuada? Eleifend quam adipiscing vitae proin sagittis, nisl <kbd>META</kbd> mattis <code>npm run dev</code>, urna neque viverra justo, nec ultrices dui sapien eget mi proin sed libero enim, sed faucibus turpis? Vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus?</p>
-
-        <address>
-          <b>Twitter, Inc.</b><br/>
-          1355 Market St, Suite 900<br/>
-          San Francisco, CA 94103<br/>
-          P: (123) 456-7890
-        </address>
+        <h2>IMG</h2>
+        <code>img</code>        
+        <img class="mg2--y" src="https://source.unsplash.com/600x350/?blue" alt="">
 
         <hr/>
+        <h2>Picture</h2>
+        <code>picture</code>
+        <picture>
+          <source srcset="https://source.unsplash.com/600x350/?pink" media="(min-width: 62rem)">
+            <source srcset="https://source.unsplash.com/800x450/?dark" media="(min-width: 30rem)">
+              <img class="mg2--y" src="https://source.unsplash.com/512x400/?orange" alt="">
+        </picture>
 
-        <p>Viverra justo, nec ultrices dui sapien eget mi proin sed libero enim, sed faucibus turpis! In vitae turpis massa sed elementum tempus egestas sed sed risus pretium quam vulputate dignissim? Vulputate eu scelerisque felis imperdiet proin fermentum leo vel orci porta non pulvinar neque laoreet suspendisse interdum consectetur libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula ipsum a!</p>
+        <hr/>
+        <h2>Figure</h2>
+        <code>figure, figcaption</code>
+        <figure>
+          <picture>
+            <source srcset="https://source.unsplash.com/600x350/?dark" media="(min-width: 45rem)">
+              <source srcset="https://source.unsplash.com/800x650/?dark" media="(min-width: 30rem)">
+                <img class="mg2--y" src="https://source.unsplash.com/512x400/?dark" alt="">
+          </picture>
+          <figcaption>Fig 3: Dolor labore fugiat export nisi irure velit cillum esse malis elit quis nulla amet multos duis tempor malis culpa minim quem irure nisi quae eram magna amet quis nisi ipsum enim velit illum quis culpa dolore enim tempor fugiat quem noster cillum ipsum legam sun.</figcaption>
+        </figure>
 
-        <h2>Enim ut tellus elementum.</h2>
-        <code>blockquote</code>
-<pre>
-<code>&#60label&#62
-  Text Input
-  &#60input placeholder="Placeholder Text" type="text"&#62
-  &#60span class="err"&#62Text input is a required field&#60/span&#62
-&#60/label&#62</code></pre>
+        <p>Aliquam malesuada bibendum arcu vitae elementum!</p>
         
-<pre>This text
-   is
-  preformated</pre>
-
       </div>
     </main>
   </body>

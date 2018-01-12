@@ -697,16 +697,10 @@ img,
 video {
   border-style: none;
   display: block;
-  margin: 0 0 1rem;
+  margin: 0;
   padding: 0;
   vertical-align: middle;
   width: 100%;
-}
-
-/* nested img */
-
-figure img {
-  margin: 0;
 }
 
 /* figcaption */
@@ -714,7 +708,8 @@ figure img {
 figcaption {
   display: block;
   font-style: italic;
-  margin: .5rem 0 0;
+  line-height: 1.25;
+  margin: .5rem 0;
 }
 
 /* svg: */
