@@ -25,23 +25,28 @@
         <p class="tx--lead">development page for de.css</p>
         <hr/>
 
-        <form class="bg--gray1 cn0 mg--auto pd4 bdr--gray2">
+        <form class="bg--gray1 cn0 pd4 bdr--gray2">
 
           <label>
             Input Label
-            <input type="email" value="" />
+            <input placeholder="disabled placholder" type="email" value="" />
           </label>
 
           <label>
-            <input type="checkbox" value=""/>
+            <input disabled type="checkbox" value=""/>
             Terms Checkbox
           </label>
 
           <label>
-            Radio Label
-            <input type="radio" value=""/>            
+            <input  name="radio" type="radio" value=""/>
+            Radio One
           </label>
 
+          <label>
+            <input disabled name="radio" type="radio" value=""/>
+            Radio Two
+          </label>
+          
           <input id="file" type="file" value=""/>
           <label for="file">File Input</label>
 
