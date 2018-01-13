@@ -40,7 +40,7 @@ legend {
 
 /* fieldset */
 fieldset {
-  border: $line1 solid currentColor;
+  border: $line1 solid $gray3;
   margin: 0 0 $ms3;
   padding: $ms1 $ms3;
 
@@ -226,8 +226,7 @@ input[type=file] {
   position: absolute;
   
   & + label {
-    cursor: default;
-    height: 4.063rem;
+    display: table;
     position: relative;
     width: auto;
   }
@@ -238,14 +237,13 @@ input[type=file] {
     background-position: $ms2 center;
     background-size: $ms3;
     border: $line1 solid currentColor;
-    border-radius: $line2;
-    bottom: 0;
+    border-radius: $line2;    
     color: $primary;
     content: 'Browse...';
     cursor: pointer;
-    left: 0;
-    padding: $ms1 $ms2 $ms1 $ms6;
-    position: absolute;
+    display: block;
+    margin: $ms1 0 0;
+    padding: $ms1 $ms2 $ms1 $ms6;    
     vertical-align: text-top;
     width: auto;
   }

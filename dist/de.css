@@ -471,7 +471,7 @@ legend {
 /* fieldset */
 
 fieldset {
-  border: .063rem solid currentColor;
+  border: .063rem solid #B2B2B2;
   margin: 0 0 1rem;
   padding: .5rem 1rem;
 }
@@ -689,8 +689,7 @@ input[type=file] {
 }
 
 input[type=file] + label {
-    cursor: default;
-    height: 4.063rem;
+    display: table;
     position: relative;
     width: auto;
   }
@@ -701,14 +700,13 @@ input[type=file] + label:after {
     background-position: .875rem center;
     background-size: 1rem;
     border: .063rem solid currentColor;
-    border-radius: .125rem;
-    bottom: 0;
+    border-radius: .125rem;    
     color: #9C47D1;
     content: 'Browse...';
     cursor: pointer;
-    left: 0;
-    padding: .5rem .875rem .5rem 2.25rem;
-    position: absolute;
+    display: block;
+    margin: .5rem 0 0;
+    padding: .5rem .875rem .5rem 2.25rem;    
     vertical-align: text-top;
     width: auto;
   }

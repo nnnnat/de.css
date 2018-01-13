@@ -25,11 +25,11 @@
         <p class="tx--lead">development page for de.css</p>
         <hr/>
 
-        <form class="bg--gray1 cn0 pd4 bdr--gray2">
+        <form>
 
           <label>
             Input Label
-            <input placeholder="disabled placholder" type="email" value="" />
+            <input disabled placeholder="disabled placholder" type="email" value="" />
           </label>
 
           <label>
@@ -46,6 +46,26 @@
             <input disabled name="radio" type="radio" value=""/>
             Radio Two
           </label>
+
+          <fieldset>
+            <legend>Birthdate</legend>
+            <div>
+              <label>
+              Day
+              <input type="number" value=""/>              
+            </label>
+
+            <label>
+              Month
+              <input type="number" value=""/>              
+            </label>
+
+            <label>
+              Year
+              <input type="number" value=""/>              
+            </label>
+            </div>
+          </fieldset>
           
           <input id="file" type="file" value=""/>
           <label for="file">File Input</label>
