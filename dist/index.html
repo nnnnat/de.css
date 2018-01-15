@@ -7,11 +7,10 @@
     <title>de.css development page</title>
     <link rel="stylesheet" href="https://unpkg.com/de.layout.css/dist/de.layout.min.css">
     <link rel="stylesheet" href="https://unpkg.com/de.utils.css/dist/de.utils.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/de.table.css/dist/de.table.min.css">
     <link rel="stylesheet" href="./de.css">
     <script>
       function updateFilename (input) {
-        const filename = input.files[0].name
+      const filename = input.files[0].name
       input.labels[0].attributes['data-filename'].value = input.files[0].name
       
       }
@@ -25,81 +24,11 @@
         <p class="tx--lead">development page for de.css</p>
         <hr/>
 
-        <form>
 
-          <label>
-            Input Label
-            <input disabled placeholder="disabled placholder" type="email" value="" />
-          </label>
-
-          <label>
-            <input disabled type="checkbox" value=""/>
-            Terms Checkbox
-          </label>
-
-          <label>
-            <input  name="radio" type="radio" value=""/>
-            Radio One
-          </label>
-
-          <label>
-            <input disabled name="radio" type="radio" value=""/>
-            Radio Two
-          </label>
-
-          <fieldset>
-            <legend>Birthdate</legend>
-            <div>
-              <label>
-              Day
-              <input type="number" value=""/>              
-            </label>
-
-            <label>
-              Month
-              <input type="number" value=""/>              
-            </label>
-
-            <label>
-              Year
-              <input type="number" value=""/>              
-            </label>
-            </div>
-          </fieldset>
-          
-          <input id="file" type="file" value=""/>
-          <label for="file">File Input</label>
-
-          <input id="file2" type="file" onchange="this.labels[0].attributes['data-filename'].value = this.files[0].name" value=""/>
-          <label for="file2" data-filename="Select a File">File Input</label>
-          
-          <label>
-            Range Label
-            <input type="range" value=""/>            
-          </label>
-
-          <label>
-            Message
-            <textarea placeholder="Message Placeholder"></textarea>            
-          </label>
-
-          <label>
-            Select Box
-            <select>
-              <option value="">option 1</option>
-              <option value="">option 2</option>
-              <option value="">option 3</option>
-              <option value="">option 4</option>
-              <option value="">option 5</option>
-              <option value="">option 6</option>
-              <option value="">option 7</option>
-              <option value="">option 8</option>
-            </select>
-          </label>
-          
-          <button>button</button>                             
-          
-        </form>
+        <div>
+          <h2 aria-hidden="false" hidden>Screen Reader</h2>
+        </div>
+        
         
       </div>
     </main>
