@@ -846,7 +846,7 @@ svg:not(:root) {
   }
 
 /* ===============================================================================
-table: table, caption, cells, 
+table: table, caption, cells, responsive table
 =============================================================================== */
 
 /* table */
@@ -860,6 +860,7 @@ table {
 /* caption */
 
 caption {
+  font-size: 1.25rem;
   margin: 0 0 .5rem;
   text-align: left;
 }
@@ -876,3 +877,74 @@ th {
   font-weight: bold;
   text-align: left;
 }
+
+/* responsive table helper */
+
+table[data-responsive] tr {
+    border: .063rem solid currentColor;
+  }
+
+@media (min-width: 48rem) {
+
+table[data-responsive] tr {
+      border: none
+  }
+    }
+
+table[data-responsive] th {
+    display: none;
+  }
+
+@media (min-width: 48rem) {
+
+table[data-responsive] th {
+      display: table-cell
+  }
+    }
+
+table[data-responsive] td {
+    border: none;
+    display: block;
+  }
+
+@media (min-width: 48rem) {
+
+table[data-responsive] td {
+      border: .063rem solid currentColor;
+      display: table-cell
+  }
+    }
+
+table[data-responsive] td:first-child {
+      padding-top: 1rem;
+    }
+
+@media (min-width: 48rem) {
+
+table[data-responsive] td:first-child {
+        padding-top: .5rem
+    }
+      }
+
+table[data-responsive] td:last-child {
+      padding-bottom: 1rem;
+    }
+
+@media (min-width: 48rem) {
+
+table[data-responsive] td:last-child {
+        padding-bottom: .5rem
+    }
+      }
+
+table[data-responsive] td:before {
+      content: attr(data-th)': ';
+      font-weight: bold;
+    }
+
+@media (min-width: 48rem) {
+
+table[data-responsive] td:before {
+        display: none
+    }
+      }
