@@ -5,7 +5,8 @@
   "main": "/dist/de.min.css",
   "scripts": {
     "build": "postcss ./dist/de.css -u cssnano -o ./dist/de.min.css --no-map -c ./config/postcss.config.js",
-    "prebuild": "npm run lint && npm run css",
+    "prebuild": "npm run lint && npm run clear && npm run css",
+    "clear": "npx rimraf ./dist/**.css",
     "start": "run-p start:*",
     "start:css": "npm run css -- -w",
     "start:sync": "browser-sync start -s 'dist' -f 'dist' --port 3000 --no-ghost-mode",
@@ -39,6 +40,7 @@
     "npm-run-all": "^4.1.2",
     "postcss": "^6.0.14",
     "postcss-cli": "^4.1.1",
+    "rimraf": "^2.6.2",
     "stylelint": "^8.2.0",
     "stylelint-de-standard": "^1.1.0"
   }
