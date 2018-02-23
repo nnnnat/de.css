@@ -1,0 +1,27 @@
+/* ===============================================================================
+a11y:  hidden, aria
+=============================================================================== */
+
+/* hidden */
+[hidden] {
+  display: none;
+}
+
+/* aria */
+[aria-busy='true'] {
+  cursor: progress;
+}
+
+[aria-controls] {
+  cursor: pointer;
+}
+
+[aria-disabled] {
+  cursor: default;
+}
+
+[aria-hidden='false'][hidden]:not(:focus) {
+  clip: rect(0, 0, 0, 0);
+  display: inherit;
+  position: absolute;
+}

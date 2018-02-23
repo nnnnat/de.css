@@ -1,0 +1,342 @@
+/* ===============================================================================
+form: label, legend, fieldset, placeholder, fields, checks, select, textarea, 
+      file, range
+=============================================================================== */
+
+/* icon colors */
+$rgbWhite: rgb(250, 250, 250);
+$rgbGray1: rgb(249,249,249);
+$rgbGray2: rgb(233,233,233);
+$rgbGray3: rgb(178, 178, 178);
+$rgbGray4: rgb(107, 107, 107);
+$rgbBlack: rgb(47,47,47);
+$rgbPrimary: rgb(156,71,209);
+$rgbPrimaryHover: rgb(101, 46, 136);
+$rgbSecondary: rgb(98,62,121);
+$rgbError: rgb(242,65,106);
+$rgbAlert: rgb(245,198,80);
+$rgbSuccess: rgb(81,214,180);
+
+/* label */
+label {
+  color: inherit;
+  cursor: pointer;
+  display: block;
+  font-size: $ms3;
+  line-height: $lhHeader;
+  margin: 0 0 $ms3;
+  width: 100%;
+}
+
+/* legend */
+legend {
+  color: inherit;
+  display: block;
+  font-size: $ms4;
+  font-weight: bold;
+  line-height: $lhHeader;
+  margin: 0 0 $ms1;
+}
+
+/* fieldset */
+fieldset {
+  border: $line1 solid $gray3;
+  margin: 0 0 $ms3;
+  padding: $ms1 $ms3;
+
+  & div {
+    display: flex;
+
+    & > label:not(:first-of-type) {
+      margin-left: $ms3;
+    }
+  }
+}
+
+/* placeholder */
+::placeholder {
+  color: inherit;
+  opacity: .5;
+}
+
+/* fields */
+:--fields {
+  appearance: none;
+  background-color: $white;
+  border: $line1 solid $gray3;
+  border-radius: $line2;
+  color: $black;
+  cursor: text;
+  display: block;
+  font-family: inherit;
+  font-size: inherit;
+  margin: $ms1 0 0;
+  padding: $ms3 $ms2;
+  touch-action: manipulation;
+  width: 100%;
+
+  &:invalid {
+    border-color: $error;
+    color: $error;
+  }
+
+  &:disabled {
+    background-color: $gray2;
+    border-color: $gray3;
+    color: $gray4;
+    cursor: not-allowed;
+  }
+}
+
+/* checkbox and radio */
+input[type=radio],
+input[type=checkbox] {
+  appearance: none;
+  cursor: pointer;
+  font-size: $ms3;
+  margin: 0;
+
+  &:after {
+    content: '\00a0';
+    display: inline-block;
+    font-size: inherit;
+    vertical-align: top;
+    width: $ms4;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+}
+
+/* checkbox */
+
+/* checkbox square icon */
+@define-mixin squareIcon $color {
+  background-image: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='$color' width='1rem' height='1rem' viewBox='0 0 24 24'%3E%3Cpath d='M19 2h-14c-1.7 0-3 1.3-3 3v14c0 1.7 1.3 3 3 3h14c1.7 0 3-1.3 3-3v-14c0-1.7-1.3-3-3-3zM20 19c0 0.6-0.4 1-1 1h-14c-0.6 0-1-0.4-1-1v-14c0-0.6 0.4-1 1-1h14c0.6 0 1 0.4 1 1v14z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+/* checkbox square checked icon */
+@define-mixin squareCheckIcon $color {
+  background-image: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='$color' width='1rem' height='1rem' viewBox='0 0 24 24'%3E%3Cpath d='M23.7 2.3c-0.4-0.4-1-0.4-1.4 0l-10.3 10.3-2.3-2.3c-0.4-0.4-1-0.4-1.4 0s-0.4 1 0 1.4l3 3c0.2 0.2 0.5 0.3 0.7 0.3s0.5-0.1 0.7-0.3l11-11c0.4-0.4 0.4-1 0-1.4z'%3E%3C/path%3E%3Cpath d='M21 11c-0.6 0-1 0.4-1 1v7c0 0.6-0.4 1-1 1h-14c-0.6 0-1-0.4-1-1v-14c0-0.6 0.4-1 1-1h11c0.6 0 1-0.4 1-1s-0.4-1-1-1h-11c-1.7 0-3 1.3-3 3v14c0 1.7 1.3 3 3 3h14c1.7 0 3-1.3 3-3v-7c0-0.6-0.4-1-1-1z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+@define-mixin squareDisabledIcon $color {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='$color' width='1rem' height='1rem' viewBox='0 0 24 24'%3E%3Cpath d='M19 2h-14c-1.7 0-3 1.3-3 3v14c0 1.7 1.3 3 3 3h14c1.7 0 3-1.3 3-3v-14c0-1.7-1.3-3-3-3zM20 19c0 0.6-0.4 1-1 1h-14c-0.6 0-1-0.4-1-1v-14c0-0.6 0.4-1 1-1h14c0.6 0 1 0.4 1 1v14z'%3E%3C/path%3E%3Cpath d='M15.7 8.3c-0.4-0.4-1-0.4-1.4 0l-2.3 2.3-2.3-2.3c-0.4-0.4-1-0.4-1.4 0s-0.4 1 0 1.4l2.3 2.3-2.3 2.3c-0.4 0.4-0.4 1 0 1.4 0.2 0.2 0.4 0.3 0.7 0.3s0.5-0.1 0.7-0.3l2.3-2.3 2.3 2.3c0.2 0.2 0.5 0.3 0.7 0.3s0.5-0.1 0.7-0.3c0.4-0.4 0.4-1 0-1.4l-2.3-2.3 2.3-2.3c0.4-0.4 0.4-1 0-1.4z'%3E%3C/path%3E%3C/svg%3E ");
+}
+
+/* checkbox icons */
+input[type=checkbox]:after {
+  @mixin squareIcon $rgbGray4;
+}
+
+input[type=checkbox]:checked:after {
+  @mixin squareCheckIcon $rgbGray4;
+}
+
+input[type=checkbox]:invalid:after {
+  @mixin squareIcon $rgbError;
+}
+
+input[type=checkbox]:disabled:after {
+  @mixin squareDisabledIcon $rgbGray4;
+}
+
+/* radio */
+
+/* radio circle icon */
+@define-mixin circleIcon $color {
+  background-image: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='$color' width='1rem' height='1rem' viewBox='0 0 24 24'%3E%3Cpath d='M12 1c-6.1 0-11 4.9-11 11s4.9 11 11 11 11-4.9 11-11-4.9-11-11-11zM12 21c-5 0-9-4-9-9s4-9 9-9c5 0 9 4 9 9s-4 9-9 9z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+/* radio circle checked icon */
+@define-mixin circleCheckIcon $color {
+  background-image: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='$color' width='1rem' height='1rem' viewBox='0 0 24 24'%3E%3Cpath d='M22 10.1c-0.6 0-1 0.4-1 1v0.9c0 5-4 9-9 9 0 0 0 0 0 0-5 0-9-4-9-9s4-9 9-9c0 0 0 0 0 0 1.3 0 2.5 0.3 3.7 0.8 0.5 0.2 1.1 0 1.3-0.5s0-1.1-0.5-1.3c-1.4-0.6-2.9-1-4.5-1 0 0 0 0 0 0-6.1 0-11 4.9-11 11s4.9 11 11 11c0 0 0 0 0 0 6.1 0 11-4.9 11-11v-0.9c0-0.6-0.4-1-1-1z'%3E%3C/path%3E%3Cpath d='M23.7 2.3c-0.4-0.4-1-0.4-1.4 0l-10.3 10.3-2.3-2.3c-0.4-0.4-1-0.4-1.4 0s-0.4 1 0 1.4l3 3c0.2 0.2 0.5 0.3 0.7 0.3s0.5-0.1 0.7-0.3l11-11c0.4-0.4 0.4-1 0-1.4z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+/* radio circle disabled icon */
+@define-mixin circleDisabledIcon $color {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='$color' width='1rem' height='1rem' viewBox='0 0 24 24'%3E%3Cpath d='M12 1c-6.1 0-11 4.9-11 11s4.9 11 11 11 11-4.9 11-11-4.9-11-11-11zM12 21c-5 0-9-4-9-9s4-9 9-9c5 0 9 4 9 9s-4 9-9 9z'%3E%3C/path%3E%3Cpath d='M15.7 8.3c-0.4-0.4-1-0.4-1.4 0l-2.3 2.3-2.3-2.3c-0.4-0.4-1-0.4-1.4 0s-0.4 1 0 1.4l2.3 2.3-2.3 2.3c-0.4 0.4-0.4 1 0 1.4 0.2 0.2 0.4 0.3 0.7 0.3s0.5-0.1 0.7-0.3l2.3-2.3 2.3 2.3c0.2 0.2 0.5 0.3 0.7 0.3s0.5-0.1 0.7-0.3c0.4-0.4 0.4-1 0-1.4l-2.3-2.3 2.3-2.3c0.4-0.4 0.4-1 0-1.4z'%3E%3C/path%3E%3C/svg%3E%0A");
+}
+
+/* radio icons */
+input[type=radio]:after {
+  @mixin circleIcon $rgbGray4;
+}
+
+input[type=radio]:checked:after {
+  @mixin circleCheckIcon $rgbGray4;
+}
+
+input[type=radio]:invalid:after {
+  @mixin circleIcon $rgbError;
+}
+
+input[type=radio]:disabled:after {
+  @mixin circleDisabledIcon $rgbGray4;
+}
+
+/* select */
+
+/* select arrow icon */
+@define-mixin selectIcon $color {
+  background-image: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='$color' width='1rem' height='1rem' viewBox='0 0 24 24'%3E%3Cpath d='M18.7 8.3c-0.4-0.4-1-0.4-1.4 0l-5.3 5.3-5.3-5.3c-0.4-0.4-1-0.4-1.4 0s-0.4 1 0 1.4l6 6c0.2 0.2 0.5 0.3 0.7 0.3s0.5-0.1 0.7-0.3l6-6c0.4-0.4 0.4-1 0-1.4z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+/* select element */
+select {
+  @mixin selectIcon $rgbGray4;
+  background-position: calc(100% - $ms1);
+  background-size: $ms5;
+  cursor: pointer;
+
+  &[multiple] {
+    background-image: none;
+    min-height: 8rem;
+    padding: 0;
+
+    option {
+      padding: $ms1 $ms2;
+    }
+  }
+
+  &:invalid {
+    @mixin selectIcon $rgbError;
+  }
+}
+
+/* textarea */
+textarea {
+  min-height: 8rem;
+  resize: vertical;
+}
+
+/* file */
+
+/* file upload icon */
+@define-mixin uploadIcon $color {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='$color' width='1rem' height='1rem' viewBox='0 0 24 24'%3E%3Cpath d='M21 16c-0.6 0-1 0.4-1 1v3c0 0.6-0.4 1-1 1h-14c-0.6 0-1-0.4-1-1v-3c0-0.6-0.4-1-1-1s-1 0.4-1 1v3c0 1.7 1.3 3 3 3h14c1.7 0 3-1.3 3-3v-3c0-0.6-0.4-1-1-1z'%3E%3C/path%3E%3Cpath d='M8.7 6.7l2.3-2.3v11.6c0 0.6 0.4 1 1 1s1-0.4 1-1v-11.6l2.3 2.3c0.2 0.2 0.4 0.3 0.7 0.3s0.5-0.1 0.7-0.3c0.4-0.4 0.4-1 0-1.4l-4-4c-0.1-0.1-0.2-0.2-0.3-0.2-0.2-0.1-0.5-0.1-0.8 0-0.1 0.1-0.2 0.1-0.3 0.2l-4 4c-0.4 0.4-0.4 1 0 1.4s1 0.4 1.4 0z'%3E%3C/path%3E%3C/svg%3E%0A");
+}
+
+/* file input */
+input[type=file] {
+  appearance: none;
+  clip: rect(0, 0, 0, 0);
+  display: inherit;
+  position: absolute;
+  
+  & + label {
+    display: table;
+    position: relative;
+    width: auto;
+  }
+
+  & + label:after {
+    @mixin uploadIcon $rgbPrimary;
+    background-color: transparent;
+    background-position: $ms2 center;
+    background-size: $ms3;
+    border: $line1 solid currentColor;
+    border-radius: $line2;    
+    color: $primary;
+    content: 'Browse...';
+    cursor: pointer;
+    display: block;
+    margin: $ms1 0 0;
+    padding: $ms1 $ms2 $ms1 $ms6;    
+    vertical-align: text-top;
+    width: auto;
+  }
+
+  & + label[data-filename]:after {
+    content: attr(data-filename);
+  }
+
+  &:--enter + label:after {
+    @mixin uploadIcon $rgbPrimaryHover;
+    color: color($primary shade(35%));
+  }
+}
+
+/* range */
+input[type=range] {
+  margin: $ms3 0 $ms1;
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  apperance: none;
+
+  /* webkit version */
+  &::-webkit-slider-runnable-track {
+    background-color: $gray3;
+    cursor: pointer;
+    height: $line1;
+    width: 100%;
+  }
+
+  &::-webkit-slider-thumb {
+    background-color: $primary;
+    border: none;
+    border-radius: 50%;
+    cursor: grab;
+    height: $ms3;
+    margin-top: -$ms1;
+    width: $ms3;
+    -webkit-appearance: none;
+    
+    &:active {
+      cursor: grabbing;
+    }
+  }
+
+  /* Firefox version */
+  &::-moz-range-track {
+    background-color: $gray3;
+    cursor: grab;
+    height: $line1;
+    width: 100%;
+  }
+
+  &::-moz-range-thumb {
+    background-color: $primary;
+    border: none;
+    border-radius: 50%;
+    cursor: grab;
+    height: $ms3;
+    width: $ms3;
+
+    &:active {
+      cursor: grabbing;
+    }
+  }
+
+  /* IE version */
+  &::-ms-track {
+    background-color: transparent;
+    border-color: transparent;
+    color: transparent;
+    cursor: grab;
+    height: $line1;
+    width: 100%;
+  }
+
+  &::-ms-fill-lower,
+  &::-ms-fill-upper,
+  &:focus::-ms-fill-lower,
+  &:focus::-ms-fill-upper {
+    background-color: $gray3;
+  }
+
+  &::-ms-thumb {
+    background-color: $primary;
+    border: $ms3 solid color($black a(0));
+    border-radius: 50%;
+    cursor: grab;
+    height: $ms3;
+    width: $ms3;
+
+    &:active {
+      cursor: grabbing;
+    }
+  }
+}

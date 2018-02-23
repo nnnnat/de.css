@@ -1,20 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>de.css development page</title>
-  <link rel="stylesheet" href="./de.css">
-</head>
-<body>
-  <section>
-    <div class="cn1 mg--auto pd4 tx--primary">
-      <h1>de.css</h1>
-      <p class="tx--lead">development page for de.css</p>
-
-      <hr/>
-    </div>
-  </section>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>de.css development page</title>
+    <link rel="stylesheet" href="https://unpkg.com/de.layout.css/dist/de.layout.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/de.utils.css/dist/de.utils.min.css">
+    <link rel="stylesheet" href="./de.css">
+    <script>
+      function updateFilename (input) {
+      const filename = input.files[0].name
+      input.labels[0].attributes['data-filename'].value = input.files[0].name      
+      }
+    </script>
+  </head>
+  <body>
+    <main>
+      <div class="cn3 mg--auto pd4">
+        <h1 class="tx--display1">de.css</h1>
+        <p class="tx--lead">development page for de.css</p>
+        <hr/>
+      </div>
+    </main>
+  </body>
 </html>

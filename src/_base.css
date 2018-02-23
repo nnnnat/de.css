@@ -1,0 +1,58 @@
+/* ===============================================================================
+base: selection, all elements, horizontal rule, progress 
+=============================================================================== */
+
+/* selection */
+::selection {
+  background-color: $primary;
+  color: $white;
+  text-shadow: none;
+}
+
+/* all elements: */
+*,
+::before,
+::after {
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+}
+
+/* hr: */
+hr {
+  border: 0;
+  border-top: $line1 solid currentColor;
+  color: inherit;
+  display: block;
+  margin: $ms3 0;
+  opacity: .3;
+}
+
+/* progress */
+progress {
+  appearance: none;
+  background-color: $gray2;
+  border: none;
+  display: block;
+  height: $line4;
+  font-size: 0;
+  line-height: 0;
+  vertical-align: baseline;
+  width: 100%;
+
+  &[value] {
+    color: $primary;
+  }
+
+  &::-webkit-progress-bar {
+    background-color: $gray2;
+  }
+
+  &::-webkit-progress-value {
+    background-color: $primary;
+  }
+
+  &::-moz-progress-bar {
+    background-color: $primary;
+  }
+
+}

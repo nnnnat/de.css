@@ -1,22 +1,21 @@
 # de.css
-de.css is a default set of CSS Modules for designing mobile first interfaces
+de.css is a set of default browser styles.
 <hr>
 
-## Usage
+## Quick Start
+Include into your project via npm using
+`npm i -S de.css`
+or include it via CDN by adding this link tag 
+```htm 
+<link rel="stylesheet" href="https://unpkg.com/de.css/dist/de.min.css">
+```
 
-```npm i -S de.css``` or
-```<link rel="stylesheet" href="https://unpkg.com/de.css/dist/de.min.css">```
 ## Features
 * IE11+ support
 * Mobile first
 * Accessibility in mind
-* 35ish KB
+* 15ish KB
 * No JS needed
-
-<!--## Goals
-* Highly readable
-* Predictable
-* Composable-->
 
 ## Docs
 <i>Coming Soon</i>
@@ -55,4 +54,4 @@ You can report issues [here](https://github.com/nnnnat/de.css/issues)
 [MIT](https://github.com/nnnnat/de.css/blob/master/LICENSE)
 
 ## Author
-[Nat Hamilton](http://nnnn.at)
+[Nat Hamilton](https://nnnn.at)

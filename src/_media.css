@@ -1,0 +1,32 @@
+/* ===============================================================================
+media: all media elements, figcaption, svg
+=============================================================================== */
+
+audio,
+figure,
+img,
+video {
+  border-style: none;
+  display: block;
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* figcaption */
+figcaption {
+  font-style: italic;
+  line-height: $lhHeader;
+  margin: $ms1 0;
+}
+
+/* svg: */
+svg {
+  stroke: currentColor;
+  fill: currentColor;
+
+  &:not(:root) {
+    overflow: hidden;
+  }
+}
