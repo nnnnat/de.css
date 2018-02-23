@@ -1,9 +1,7 @@
-@import 'de.base.css';
-@import 'de.a11y.css';
-@import 'de.type.css';
-@import 'de.media.css';
-@import 'de.cta.css';
-@import 'de.form.css';
-@import 'de.table.css';
-@import 'de.layout.css';
-@import 'de.utils.css';
+@import './_a11y.css';
+@import './_base.css';
+@import './_type.css';
+@import './_cta.css';
+@import './_form.css';
+@import './_media.css';
+@import './_table.css';

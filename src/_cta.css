@@ -1,0 +1,59 @@
+/* ===============================================================================
+cta: link, button
+=============================================================================== */
+
+/* link */
+a {
+  background-color: transparent;
+  border-bottom: $line1 solid currentColor;
+  color: inherit;
+  text-decoration: none;
+  touch-action: manipulation;
+
+  &:--enter {
+    color: $gray4;
+  }
+}
+
+/* button */
+:--button {
+  appearance: none;
+  background-color: $primary;
+  border: $line1 solid transparent;
+  border-radius: $line2;
+  color: $white;
+  cursor: pointer;
+  display: inline-block;
+  font-family: inherit;
+  font-size: $ms3;
+  font-weight: bold;
+  line-height: $lh;
+  margin: 0;
+  padding: $ms1 $ms3;
+  text-align: center;
+  touch-action: manipulation;
+
+  &:--enter {
+    background-color: color($primary shade(35%));
+    color: $white;
+  }
+
+  &::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+  }
+
+  &:-moz-focusring {
+    outline: $line1 dotted ButtonText;
+  }
+
+  & + :--button {
+    margin-left: $ms3;
+  }
+
+  &:disabled {
+    background-color: $gray2 !important;
+    color: $gray4 !important;
+    cursor: not-allowed !important;
+  }
+}

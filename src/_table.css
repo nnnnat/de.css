@@ -1,0 +1,83 @@
+/* ===============================================================================
+table: table, caption, cells, responsive table
+=============================================================================== */
+
+/* table */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+/* caption */
+caption {
+  font-size: $ms4;
+  margin: 0 0 $ms1;
+  text-align: left;
+}
+
+/* cells */
+td,
+th {
+  border: $line1 solid currentColor;
+  padding: $ms1 $ms3;
+}
+
+th {
+  font-weight: bold;
+  text-align: left;
+}
+
+/* responsive table helper */
+table[data-responsive] {
+  tr {
+    border: $line1 solid currentColor;
+
+    @media (--sm) {
+      border: none;
+    }
+  }
+  
+  th {
+    display: none;
+
+    @media (--sm) {
+      display: table-cell;
+    }
+  }
+
+  td {
+    border: none;
+    display: block;
+
+    @media (--sm) {
+      border: $line1 solid currentColor;
+      display: table-cell;
+    }
+
+    &:first-child {
+      padding-top: $ms3;
+
+      @media (--sm) {
+        padding-top: $ms1;
+      }
+    }
+
+    &:last-child {
+      padding-bottom: $ms3;
+
+      @media (--sm) {
+        padding-bottom: $ms1;
+      }
+    }
+
+    &:before {
+      content: attr(data-th)': ';
+      font-weight: bold;
+
+      @media (--sm) {
+        display: none;
+      }
+    }
+  }
+}
